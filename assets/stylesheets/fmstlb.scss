@@ -1,0 +1,20 @@
+.titrenews {
+    color: #d6bdbd;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.floatl {
+    float: left; 
+    margin-right: 10px;
+}
+
+.floatr {
+    float: right; 
+    margin-left: 10px;
+}
+
+button.ember-view.btn.no-text.list, button.ember-view.btn.no-text.bullet, .d-editor-spacer {
+    display: none;
+}

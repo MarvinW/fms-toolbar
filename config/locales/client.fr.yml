@@ -1,0 +1,21 @@
+fr:
+  js:
+    composer:
+      underline_ui_button_title: "Souligner du texte"
+      underline_ui_default_text: "Texte"
+      titlenews_ui_button_title: "Utiliser la mise en page d'un titre"
+      titlenews_ui_default_text: "Titre"
+      color_ui_button_title: "Colorer un texte"
+      color_ui_default_text: "Texte"
+      police_ui_button_title: "Changer la police du texte"
+      police_ui_default_text: "Texte"
+      addimg_ui_button_title: "Ajouter une image"
+      addimg_ui_default_text: "http://"
+      floatl_ui_button_title: "Ajouter du contenu à gauche"
+      floatl_ui_default_text: "Texte"
+      center_ui_button_title: "Centrer un texte ou une image"
+      center_ui_default_text: "Texte"
+      right_ui_button_title: "Aligner à droite"
+      right_ui_default_text: "Texte"
+      justify_ui_button_title: "Justifier un texte"
+      justify_ui_default_text: "Texte"
