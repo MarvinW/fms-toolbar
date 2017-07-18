@@ -1,4 +1,4 @@
-en:
+﻿en:
   js:
     composer:
       underline_ui_button_title: "Underline text"
@@ -19,3 +19,5 @@ en:
       right_ui_default_text: "Text"
       justify_ui_button_title: "Justify the text"
       justify_ui_default_text: "Text"
+      retourligne_ui_button_title: "Line break"
+      retourligne_ui_default_text: ""

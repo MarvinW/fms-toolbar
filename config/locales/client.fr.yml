@@ -1,4 +1,4 @@
-fr:
+﻿fr:
   js:
     composer:
       underline_ui_button_title: "Souligner du texte"
@@ -11,11 +11,13 @@ fr:
       police_ui_default_text: "Texte"
       addimg_ui_button_title: "Ajouter une image"
       addimg_ui_default_text: "http://"
-      floatl_ui_button_title: "Ajouter du contenu � gauche"
+      floatl_ui_button_title: "Ajouter du contenu à gauche"
       floatl_ui_default_text: "Texte"
       center_ui_button_title: "Centrer un texte ou une image"
       center_ui_default_text: "Texte"
-      right_ui_button_title: "Aligner � droite"
+      right_ui_button_title: "Aligner à droite"
       right_ui_default_text: "Texte"
       justify_ui_button_title: "Justifier un texte"
       justify_ui_default_text: "Texte"
+      retourligne_ui_button_title: "Passer à la ligne"
+      retourligne_ui_default_text: ""

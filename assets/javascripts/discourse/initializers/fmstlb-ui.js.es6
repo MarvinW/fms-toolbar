@@ -86,6 +86,15 @@ function initializePlugin(api)
           perform: e => e.applySurround('[font=]', '[/font]', 'police_ui_default_text')
         });
       });
+
+    api.onToolbarCreate(toolbar => {
+        toolbar.addButton({
+          id: "retourligne_ui_button",
+          group: "extras",
+          icon: "level-down",
+          perform: e => e.applySurround('<br>', ' ', 'retourligne_ui_default_text')
+        });
+      });
   }
 }
 

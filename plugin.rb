@@ -1,6 +1,6 @@
 # name: fms-toolbar
 # about: Ajout de boutons sur l'éditeur
-# version: 1.0
+# version: 1.1
 # authors: Steven - iunctis.fr
 # url: https://github.com/iunctis/fms-toolbar
 
