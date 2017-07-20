@@ -20,4 +20,4 @@ fr:
       justify_ui_button_title: "Justifier un texte"
       justify_ui_default_text: "Texte"
       retourligne_ui_button_title: "Passer à la ligne"
-      retourligne_ui_default_text: ""
+      retourligne_ui_default_text: "<br>"
