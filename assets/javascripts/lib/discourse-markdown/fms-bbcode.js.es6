@@ -102,9 +102,9 @@ function setupMarkdownIt(md) {
     wrap: wrap('div', 'style', ()=>'text-align:justify')
   });
 
-  ruler.push('head1', {
-    tag: 'head1',
-    wrap: wrap('div', 'class', ()=>'head1')
+  md.block.bbcode.ruler.push('groot', {
+    tag: 'groot',
+    wrap: 'div.groot'
   });
 
 }
@@ -115,7 +115,7 @@ export function setup(helper) {
     'div.floatl',
     'div.floatr',
     'div.titrenews',
-    'div.head1',
+    'div.groot',
     'font[color=*]',
     'font[size=*]',
     'font[face=*]'
@@ -147,7 +147,7 @@ export function setup(helper) {
   replaceBBCode("floatl", contents => ['div', {'class': 'floatl'}].concat(contents));
   replaceBBCode("floatr", contents => ['div', {'class': 'floatr'}].concat(contents));
   replaceBBCode("t", contents => ['div', {'class': 'titrenews'}].concat(contents));
-  replaceBBCode("head1", contents => ['div', {'class': 'head1'}].concat(contents));
+  replaceBBCode("groot", contents => ['div', {'class': 'groot'}].concat(contents));
 
   ["left", "center", "right", "justify"].forEach(direction => {
     replaceBBCode(direction, contents => ['div', {'style': "text-align:" + direction}].concat(contents));
