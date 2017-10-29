@@ -147,6 +147,7 @@ export function setup(helper) {
   replaceBBCode("floatl", contents => ['div', {'class': 'floatl'}].concat(contents));
   replaceBBCode("floatr", contents => ['div', {'class': 'floatr'}].concat(contents));
   replaceBBCode("t", contents => ['div', {'class': 'titrenews'}].concat(contents));
+  replaceBBCode("head1", contents => ['div', {'class': 'head1'}].concat(contents));
 
   ["left", "center", "right", "justify"].forEach(direction => {
     replaceBBCode(direction, contents => ['div', {'style': "text-align:" + direction}].concat(contents));
