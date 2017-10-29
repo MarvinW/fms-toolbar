@@ -102,6 +102,11 @@ function setupMarkdownIt(md) {
     wrap: wrap('div', 'style', ()=>'text-align:justify')
   });
 
+  md.block.bbcode.ruler.push('colortab1', {
+    tag: 'colortab1',
+    wrap: 'div.colortab1'
+  });
+
   md.block.bbcode.ruler.push('colortaba', {
     tag: 'colortaba',
     wrap: 'div.colortaba'
@@ -135,6 +140,7 @@ export function setup(helper) {
     'div.floatl',
     'div.floatr',
     'div.titrenews',
+    'div.colortab1',
     'div.colortaba',
     'div.colortabb',
     'div.colortabc',
@@ -171,6 +177,7 @@ export function setup(helper) {
   replaceBBCode("floatl", contents => ['div', {'class': 'floatl'}].concat(contents));
   replaceBBCode("floatr", contents => ['div', {'class': 'floatr'}].concat(contents));
   replaceBBCode("t", contents => ['div', {'class': 'titrenews'}].concat(contents));
+  replaceBBCode("colortab1", contents => ['div', {'class': 'colortab1'}].concat(contents));
   replaceBBCode("colortaba", contents => ['div', {'class': 'colortaba'}].concat(contents));
   replaceBBCode("colortabb", contents => ['div', {'class': 'colortabb'}].concat(contents));
   replaceBBCode("colortabc", contents => ['div', {'class': 'colortabc'}].concat(contents));
