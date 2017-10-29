@@ -102,9 +102,9 @@ function setupMarkdownIt(md) {
     wrap: wrap('div', 'style', ()=>'text-align:justify')
   });
 
-  md.block.bbcode.ruler.push('head1', {
+  ruler.push('head1', {
     tag: 'head1',
-    wrap: 'div.head1'
+    wrap: wrap('div', 'class', ()=>'head1')
   });
 
 }
