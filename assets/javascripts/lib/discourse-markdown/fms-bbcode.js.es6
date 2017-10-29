@@ -102,6 +102,11 @@ function setupMarkdownIt(md) {
     wrap: wrap('div', 'style', ()=>'text-align:justify')
   });
 
+  md.block.bbcode.ruler.push('head1', {
+    tag: 'head1',
+    wrap: 'div.head1'
+  });
+
 }
 
 export function setup(helper) {
@@ -110,6 +115,7 @@ export function setup(helper) {
     'div.floatl',
     'div.floatr',
     'div.titrenews',
+    'div.head1',
     'font[color=*]',
     'font[size=*]',
     'font[face=*]'
