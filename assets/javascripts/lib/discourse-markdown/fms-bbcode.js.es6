@@ -102,8 +102,28 @@ function setupMarkdownIt(md) {
     wrap: wrap('div', 'style', ()=>'text-align:justify')
   });
 
-  md.block.bbcode.ruler.push('groot', {
-    tag: 'groot',
+  md.block.bbcode.ruler.push('colortab1', {
+    tag: 'colortab1',
+    wrap: 'div.groot'
+  });
+
+  md.block.bbcode.ruler.push('colortab2', {
+    tag: 'colortab2',
+    wrap: 'div.groot'
+  });
+
+  md.block.bbcode.ruler.push('colortab3', {
+    tag: 'colortab3',
+    wrap: 'div.groot'
+  });
+
+  md.block.bbcode.ruler.push('colortab4', {
+    tag: 'colortab4',
+    wrap: 'div.groot'
+  });
+
+  md.block.bbcode.ruler.push('colortab5', {
+    tag: 'colortab5',
     wrap: 'div.groot'
   });
 
@@ -115,7 +135,11 @@ export function setup(helper) {
     'div.floatl',
     'div.floatr',
     'div.titrenews',
-    'div.groot',
+    'div.colortab1',
+    'div.colortab2',
+    'div.colortab3',
+    'div.colortab4',
+    'div.colortab5',
     'font[color=*]',
     'font[size=*]',
     'font[face=*]'
@@ -147,7 +171,11 @@ export function setup(helper) {
   replaceBBCode("floatl", contents => ['div', {'class': 'floatl'}].concat(contents));
   replaceBBCode("floatr", contents => ['div', {'class': 'floatr'}].concat(contents));
   replaceBBCode("t", contents => ['div', {'class': 'titrenews'}].concat(contents));
-  replaceBBCode("groot", contents => ['div', {'class': 'groot'}].concat(contents));
+  replaceBBCode("colortab1", contents => ['div', {'class': 'colortab1'}].concat(contents));
+  replaceBBCode("colortab2", contents => ['div', {'class': 'colortab2'}].concat(contents));
+  replaceBBCode("colortab3", contents => ['div', {'class': 'colortab3'}].concat(contents));
+  replaceBBCode("colortab4", contents => ['div', {'class': 'colortab4'}].concat(contents));
+  replaceBBCode("colortab5", contents => ['div', {'class': 'colortab5'}].concat(contents));
 
   ["left", "center", "right", "justify"].forEach(direction => {
     replaceBBCode(direction, contents => ['div', {'style': "text-align:" + direction}].concat(contents));
