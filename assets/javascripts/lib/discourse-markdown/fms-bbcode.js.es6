@@ -104,27 +104,27 @@ function setupMarkdownIt(md) {
 
   md.block.bbcode.ruler.push('colortab1', {
     tag: 'colortab1',
-    wrap: 'div.groot'
+    wrap: 'div.colortab1'
   });
 
   md.block.bbcode.ruler.push('colortab2', {
     tag: 'colortab2',
-    wrap: 'div.groot'
+    wrap: 'div.colortab2'
   });
 
   md.block.bbcode.ruler.push('colortab3', {
     tag: 'colortab3',
-    wrap: 'div.groot'
+    wrap: 'div.colortab3'
   });
 
   md.block.bbcode.ruler.push('colortab4', {
     tag: 'colortab4',
-    wrap: 'div.groot'
+    wrap: 'div.colortab4'
   });
 
   md.block.bbcode.ruler.push('colortab5', {
     tag: 'colortab5',
-    wrap: 'div.groot'
+    wrap: 'div.colortab5'
   });
 
 }
