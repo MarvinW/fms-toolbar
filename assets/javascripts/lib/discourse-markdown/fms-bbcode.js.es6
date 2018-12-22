@@ -177,6 +177,71 @@ function setupMarkdownIt(md) {
     wrap: 'div.coltabo'
   });
 
+  md.block.bbcode.ruler.push('coltabp', {
+    tag: 'coltabp',
+    wrap: 'div.coltabp'
+  });
+
+  md.block.bbcode.ruler.push('coltabq', {
+    tag: 'coltabq',
+    wrap: 'div.coltabq'
+  });
+
+  md.block.bbcode.ruler.push('coltabr', {
+    tag: 'coltabr',
+    wrap: 'div.coltabr'
+  });
+
+  md.block.bbcode.ruler.push('coltabt', {
+    tag: 'coltabt',
+    wrap: 'div.coltabt'
+  });
+
+  md.block.bbcode.ruler.push('coltabs', {
+    tag: 'coltabs',
+    wrap: 'div.coltabs'
+  });
+
+  md.block.bbcode.ruler.push('coltabu', {
+    tag: 'coltabu',
+    wrap: 'div.coltabu'
+  });
+
+  md.block.bbcode.ruler.push('coltabv', {
+    tag: 'coltabv',
+    wrap: 'div.coltabv'
+  });
+
+  md.block.bbcode.ruler.push('coltabw', {
+    tag: 'coltabw',
+    wrap: 'div.coltabw'
+  });
+
+  md.block.bbcode.ruler.push('coltabx', {
+    tag: 'coltabx',
+    wrap: 'div.coltabx'
+  });
+
+  md.block.bbcode.ruler.push('coltaby', {
+    tag: 'coltaby',
+    wrap: 'div.coltaby'
+  });
+
+  md.block.bbcode.ruler.push('coltabz', {
+    tag: 'coltabz',
+    wrap: 'div.coltabz'
+  });
+
+  md.block.bbcode.ruler.push('coltabface', {
+    tag: 'coltabface',
+    wrap: 'div.coltabface'
+  });
+
+  md.block.bbcode.ruler.push('coltablogo', {
+    tag: 'coltablogo',
+    wrap: 'div.coltablogo'
+  });
+
 }
 
 export function setup(helper) {
@@ -201,6 +266,19 @@ export function setup(helper) {
     'div.coltabm',
     'div.coltabn',
     'div.coltabo',
+    'div.coltabp',
+    'div.coltabq',
+    'div.coltabr',
+    'div.coltabs',
+    'div.coltabt',
+    'div.coltabu',
+    'div.coltabv',
+    'div.coltabw',
+    'div.coltabx',
+    'div.coltaby',
+    'div.coltabz',
+    'div.coltabface',
+    'div.coltablogo',
     'font[color=*]',
     'font[size=*]',
     'font[face=*]'
@@ -247,6 +325,19 @@ export function setup(helper) {
   replaceBBCode("coltabm", contents => ['div', {'class': 'coltabm'}].concat(contents));
   replaceBBCode("coltabn", contents => ['div', {'class': 'coltabn'}].concat(contents));
   replaceBBCode("coltabo", contents => ['div', {'class': 'coltabo'}].concat(contents));
+  replaceBBCode("coltabp", contents => ['div', {'class': 'coltabp'}].concat(contents));
+  replaceBBCode("coltabq", contents => ['div', {'class': 'coltabq'}].concat(contents));
+  replaceBBCode("coltabr", contents => ['div', {'class': 'coltabr'}].concat(contents));
+  replaceBBCode("coltabs", contents => ['div', {'class': 'coltabs'}].concat(contents));
+  replaceBBCode("coltabt", contents => ['div', {'class': 'coltabt'}].concat(contents));
+  replaceBBCode("coltabu", contents => ['div', {'class': 'coltabu'}].concat(contents));
+  replaceBBCode("coltabv", contents => ['div', {'class': 'coltabv'}].concat(contents));
+  replaceBBCode("coltabw", contents => ['div', {'class': 'coltabw'}].concat(contents));
+  replaceBBCode("coltabx", contents => ['div', {'class': 'coltabx'}].concat(contents));
+  replaceBBCode("coltaby", contents => ['div', {'class': 'coltaby'}].concat(contents));
+  replaceBBCode("coltabz", contents => ['div', {'class': 'coltabz'}].concat(contents));
+  replaceBBCode("coltabface", contents => ['div', {'class': 'coltabface'}].concat(contents));
+  replaceBBCode("coltablogo", contents => ['div', {'class': 'coltablogo'}].concat(contents));
 
   ["left", "center", "right", "justify"].forEach(direction => {
     replaceBBCode(direction, contents => ['div', {'style': "text-align:" + direction}].concat(contents));
