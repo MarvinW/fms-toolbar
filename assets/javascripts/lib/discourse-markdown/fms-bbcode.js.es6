@@ -418,6 +418,7 @@ export function setup(helper) {
     'div.tabsainte',
     'div.tablosc',
     'div.tabangers',
+    'div.tabbordeaux',
     'div.tabrennes',
     'div.tabtoulouse',
     'div.tabligue',
@@ -504,6 +505,7 @@ export function setup(helper) {
   replaceBBCode("tabrennes", contents => ['div', {'class': 'tabrennes'}].concat(contents));
   replaceBBCode("tabangers", contents => ['div', {'class': 'tabangers'}].concat(contents));
   replaceBBCode("tabtoulouse", contents => ['div', {'class': 'tabtoulouse'}].concat(contents));
+  replaceBBCode("tabbordeaux", contents => ['div', {'class': 'tabbordeaux'}].concat(contents));
   replaceBBCode("tabligue", contents => ['div', {'class': 'tabligue'}].concat(contents));
   replaceBBCode("tabcobresal", contents => ['div', {'class': 'tabcobresal'}].concat(contents));
   replaceBBCode("tableauaa", contents => ['div', {'class': 'tableauaa'}].concat(contents));
