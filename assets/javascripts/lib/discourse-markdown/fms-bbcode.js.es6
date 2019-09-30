@@ -241,7 +241,136 @@ function setupMarkdownIt(md) {
     tag: 'coltablogo',
     wrap: 'div.coltablogo'
   });
+  
+  md.block.bbcode.ruler.push('tabstadereims', {
+    tag: 'tabstadereims',
+    wrap: 'div.tabstadereims'
+  });
+  
+  md.block.bbcode.ruler.push('tabmonaco', {
+    tag: 'tabmonaco',
+    wrap: 'div.tabmonaco'
+  });
+  
+  md.block.bbcode.ruler.push('tabparis', {
+    tag: 'tabparis',
+    wrap: 'div.tabparis'
+  });
+  
+  md.block.bbcode.ruler.push('tabnantes', {
+    tag: 'tabnantes',
+    wrap: 'div.tabnantes'
+  });
+  
+  md.block.bbcode.ruler.push('tabmontpellier', {
+    tag: 'tabmontpellier',
+    wrap: 'div.tabmontpellier'
+  });
+  
+  md.block.bbcode.ruler.push('tabbordeaux', {
+    tag: 'tabbordeaux',
+    wrap: 'div.tabbordeaux'
+  });
+  
+  md.block.bbcode.ruler.push('tabmetz', {
+    tag: 'tabmetz',
+    wrap: 'div.tabmetz'
+  });
+  
+  md.block.bbcode.ruler.push('tabsainte', {
+    tag: 'tabsainte',
+    wrap: 'div.tabsainte'
+  });
+  
+  md.block.bbcode.ruler.push('tabmarseille', {
+    tag: 'tabmarseille',
+    wrap: 'div.tabmarseille'
+  });
+  
+  md.block.bbcode.ruler.push('tablosc', {
+    tag: 'tablosc',
+    wrap: 'div.tablosc'
+  });
+  
+  md.block.bbcode.ruler.push('tabrennes', {
+    tag: 'tabrennes',
+    wrap: 'div.tabrennes'
+  });
+  
+  md.block.bbcode.ruler.push('tabangers', {
+    tag: 'tabangers',
+    wrap: 'div.tabangers'
+  });
 
+  md.block.bbcode.ruler.push('tabtoulouse', {
+    tag: 'tabtoulouse',
+    wrap: 'div.tabtoulouse'
+  });
+  
+  md.block.bbcode.ruler.push('tabligue', {
+    tag: 'tabligue',
+    wrap: 'div.tabligue'
+  });
+  
+  md.block.bbcode.ruler.push('tabcobresal', {
+    tag: 'tabcobresal',
+    wrap: 'div.tabcobresal'
+  });
+  
+  md.block.bbcode.ruler.push('tableauaa', {
+    tag: 'tableauaa',
+    wrap: 'div.tableauaa'
+  });
+  
+  md.block.bbcode.ruler.push('tableauab', {
+    tag: 'tableauab',
+    wrap: 'div.tableauab'
+  });
+  
+  md.block.bbcode.ruler.push('tableauac', {
+    tag: 'tableauac',
+    wrap: 'div.tableauac'
+  });
+  
+  md.block.bbcode.ruler.push('tableauad', {
+    tag: 'tableauad',
+    wrap: 'div.tableauad'
+  });
+  
+  md.block.bbcode.ruler.push('tableauae', {
+    tag: 'tableauae',
+    wrap: 'div.tableauae'
+  });
+  
+  md.block.bbcode.ruler.push('tableauaf', {
+    tag: 'tableauaf',
+    wrap: 'div.tableauaf'
+  });
+  
+  md.block.bbcode.ruler.push('tableauag', {
+    tag: 'tableauag',
+    wrap: 'div.tableauag'
+  });
+  
+  md.block.bbcode.ruler.push('tableauah', {
+    tag: 'tableauah',
+    wrap: 'div.tableauah'
+  });
+  
+  md.block.bbcode.ruler.push('tableauai', {
+    tag: 'tableauai',
+    wrap: 'div.tableauai'
+  });
+  
+  md.block.bbcode.ruler.push('tableauaj', {
+    tag: 'tableauaj',
+    wrap: 'div.tableauaj'
+  });
+  
+  md.block.bbcode.ruler.push('tableauak', {
+    tag: 'tableauak',
+    wrap: 'div.tableauak'
+  });
 }
 
 export function setup(helper) {
@@ -279,6 +408,31 @@ export function setup(helper) {
     'div.coltabz',
     'div.coltabface',
     'div.coltablogo',
+    'div.tabstadereims',
+    'div.tabmonaco',
+    'div.tabnantes',
+    'div.tabparis',
+    'div.tabmontpellier',
+    'div.tabmarseille',
+    'div.tabmetz',
+    'div.tabsainte',
+    'div.tablosc',
+    'div.tabangers',
+    'div.tabrennes',
+    'div.tabtoulouse',
+    'div.tabligue',
+    'div.tabcobresal',
+    'div.tableauaa',
+    'div.tableauab',
+    'div.tableauac',
+    'div.tableauad',
+    'div.tableauae',
+    'div.tableauaf',
+    'div.tableauag',
+    'div.tableauah',
+    'div.tableauai',
+    'div.tableauaj',
+    'div.tableauak',
     'font[color=*]',
     'font[size=*]',
     'font[face=*]'
@@ -338,6 +492,32 @@ export function setup(helper) {
   replaceBBCode("coltabz", contents => ['div', {'class': 'coltabz'}].concat(contents));
   replaceBBCode("coltabface", contents => ['div', {'class': 'coltabface'}].concat(contents));
   replaceBBCode("coltablogo", contents => ['div', {'class': 'coltablogo'}].concat(contents));
+  replaceBBCode("tabstadereims", contents => ['div', {'class': 'tabstadereims'}].concat(contents));
+  replaceBBCode("tabmonaco", contents => ['div', {'class': 'tabmonaco'}].concat(contents));
+  replaceBBCode("tabparis", contents => ['div', {'class': 'tabparis'}].concat(contents));
+  replaceBBCode("tabnantes", contents => ['div', {'class': 'tabnantes'}].concat(contents));
+  replaceBBCode("tabmontpellier", contents => ['div', {'class': 'tabmontpellier'}].concat(contents));
+  replaceBBCode("tabmetz", contents => ['div', {'class': 'tabmetz'}].concat(contents));
+  replaceBBCode("tabmarseille", contents => ['div', {'class': 'tabmarseille'}].concat(contents));
+  replaceBBCode("tabsainte", contents => ['div', {'class': 'tabsainte'}].concat(contents));
+  replaceBBCode("tablosc", contents => ['div', {'class': 'tablosc'}].concat(contents));
+  replaceBBCode("tabrennes", contents => ['div', {'class': 'tabrennes'}].concat(contents));
+  replaceBBCode("tabangers", contents => ['div', {'class': 'tabangers'}].concat(contents));
+  replaceBBCode("tabtoulouse", contents => ['div', {'class': 'tabtoulouse'}].concat(contents));
+  replaceBBCode("tabligue", contents => ['div', {'class': 'tabligue'}].concat(contents));
+  replaceBBCode("tabcobresal", contents => ['div', {'class': 'tabcobresal'}].concat(contents));
+  replaceBBCode("tableauaa", contents => ['div', {'class': 'tableauaa'}].concat(contents));
+  replaceBBCode("tableauab", contents => ['div', {'class': 'tableauab'}].concat(contents));
+  replaceBBCode("tableauac", contents => ['div', {'class': 'tableauac'}].concat(contents));
+  replaceBBCode("tableauad", contents => ['div', {'class': 'tableauad'}].concat(contents));
+  replaceBBCode("tableauae", contents => ['div', {'class': 'tableauae'}].concat(contents));
+  replaceBBCode("tableauaf", contents => ['div', {'class': 'tableauaf'}].concat(contents));
+  replaceBBCode("tableauag", contents => ['div', {'class': 'tableauag'}].concat(contents));
+  replaceBBCode("tableauah", contents => ['div', {'class': 'tableauah'}].concat(contents));
+  replaceBBCode("tableauai", contents => ['div', {'class': 'tableauai'}].concat(contents));
+  replaceBBCode("tableauaj", contents => ['div', {'class': 'tableauaj'}].concat(contents));
+  replaceBBCode("tableauak", contents => ['div', {'class': 'tableauak'}].concat(contents));
+  
 
   ["left", "center", "right", "justify"].forEach(direction => {
     replaceBBCode(direction, contents => ['div', {'style': "text-align:" + direction}].concat(contents));
