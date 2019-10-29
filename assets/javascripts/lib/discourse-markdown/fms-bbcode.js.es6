@@ -114,7 +114,7 @@ function setupMarkdownIt(md) {
   
   md.block.bbcode.ruler.push('coltabtest', {
     tag: 'coltabtest',
-    wrap: 'div.coltabtest'
+    wrap: 'div#coltabtest'
   });
 
   md.block.bbcode.ruler.push('coltabc', {
