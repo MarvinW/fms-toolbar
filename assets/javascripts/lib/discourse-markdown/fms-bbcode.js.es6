@@ -114,7 +114,7 @@ function setupMarkdownIt(md) {
   
   md.block.bbcode.ruler.push('coltabtest', {
     tag: 'coltabtest',
-    wrap: 'div#coltabtest'
+    wrap: wrap("div", "id", () => "coltabtest")
   });
 
   md.block.bbcode.ruler.push('coltabc', {
@@ -455,6 +455,10 @@ export function setup(helper) {
 
       if (tag === 'div' && name === 'style') {
         return /^text-align:(center|left|right)$/.exec(value);
+      }
+      
+      if (tag === 'div' && name === 'id') {
+        return /^coltabtest$/.exec(value);
       }
     }
   });
