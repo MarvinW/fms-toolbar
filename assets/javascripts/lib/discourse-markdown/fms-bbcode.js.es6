@@ -111,11 +111,6 @@ function setupMarkdownIt(md) {
     tag: 'coltabb',
     wrap: 'div.coltabb'
   });
-  
-  md.block.bbcode.ruler.push('coltabtest', {
-    tag: 'coltabtest',
-    wrap: wrap("div", "id", () => "coltabtest")
-  });
 
   md.block.bbcode.ruler.push('coltabc', {
     tag: 'coltabc',
@@ -455,12 +450,6 @@ export function setup(helper) {
       if (tag === 'div' && name === 'style') {
         return /^text-align:(center|left|right)$/.exec(value);
       }
-      
-      if (tag === "div" && name === "id") {
-        return /^(coltabtest$/.exec(
-          value
-        );
-      }
     }
   });
 
@@ -530,7 +519,6 @@ export function setup(helper) {
   replaceBBCode("tableauai", contents => ['div', {'class': 'tableauai'}].concat(contents));
   replaceBBCode("tableauaj", contents => ['div', {'class': 'tableauaj'}].concat(contents));
   replaceBBCode("tableauak", contents => ['div', {'class': 'tableauak'}].concat(contents));
-  replaceBBCode("coltabtest", contents => ['div', {'id': 'coltabtest'}].concat(contents));  
 
   ["left", "center", "right", "justify"].forEach(direction => {
     replaceBBCode(direction, contents => ['div', {'style': "text-align:" + direction}].concat(contents));
