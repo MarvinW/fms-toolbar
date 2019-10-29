@@ -437,7 +437,7 @@ export function setup(helper) {
     'div.tableauag',
     'div.tableauah',
     'div.tableauai',
-    'div.coltabtest',
+    'div#coltabtest',
     'div.tableauaj',
     'div.tableauak',
     'font[color=*]',
