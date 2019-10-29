@@ -437,7 +437,6 @@ export function setup(helper) {
     'div.tableauag',
     'div.tableauah',
     'div.tableauai',
-    'div#coltabtest',
     'div.tableauaj',
     'div.tableauak',
     'font[color=*]',
@@ -457,8 +456,10 @@ export function setup(helper) {
         return /^text-align:(center|left|right)$/.exec(value);
       }
       
-      if (tag === 'div' && name === 'id') {
-        return /^coltabtest$/.exec(value);
+      if (tag === "div" && name === "id") {
+        return /^(coltabtest$/.exec(
+          value
+        );
       }
     }
   });
@@ -529,8 +530,7 @@ export function setup(helper) {
   replaceBBCode("tableauai", contents => ['div', {'class': 'tableauai'}].concat(contents));
   replaceBBCode("tableauaj", contents => ['div', {'class': 'tableauaj'}].concat(contents));
   replaceBBCode("tableauak", contents => ['div', {'class': 'tableauak'}].concat(contents));
-  replaceBBCode("coltabtest", contents => ['div', {'id': 'coltabtest'}].concat(contents));
-  
+  replaceBBCode("coltabtest", contents => ['div', {'id': 'coltabtest'}].concat(contents));  
 
   ["left", "center", "right", "justify"].forEach(direction => {
     replaceBBCode(direction, contents => ['div', {'style': "text-align:" + direction}].concat(contents));
