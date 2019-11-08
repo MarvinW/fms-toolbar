@@ -371,6 +371,86 @@ function setupMarkdownIt(md) {
     tag: 'tableauak',
     wrap: 'div.tableauak'
   });
+  
+  md.block.bbcode.ruler.push('bronze', {
+    tag: 'bronze',
+    wrap: 'div.bronze'
+  });
+
+  md.block.bbcode.ruler.push('bronze_progress', {
+    tag: 'bronze_progress',
+    wrap: 'div.bronze_progress'
+  });
+
+md.block.bbcode.ruler.push('bronze_striped', {
+    tag: 'bronze_striped',
+    wrap: 'div.bronze_striped'
+  });
+
+md.block.bbcode.ruler.push('bronze_bar', {
+    tag: 'bronze_bar',
+    wrap: 'div.bronze_bar'
+  });
+
+md.block.bbcode.ruler.push('silver', {
+      tag: 'silver',
+      wrap: 'div.silver'
+    });
+  
+md.block.bbcode.ruler.push('silver_progress', {
+      tag: 'silver_progress',
+      wrap: 'div.silver_progress'
+    });
+  
+md.block.bbcode.ruler.push('silver_striped', {
+      tag: 'silver_striped',
+      wrap: 'div.silver_striped'
+    });
+  
+md.block.bbcode.ruler.push('silver_bar', {
+      tag: 'silver_bar',
+      wrap: 'div.silver_bar'
+    });
+
+md.block.bbcode.ruler.push('gold', {
+          tag: 'gold',
+          wrap: 'div.gold'
+        });
+      
+md.block.bbcode.ruler.push('gold_progress', {
+          tag: 'gold_progress',
+          wrap: 'div.gold_progress'
+        });
+      
+md.block.bbcode.ruler.push('gold_striped', {
+          tag: 'gold_striped',
+          wrap: 'div.gold_striped'
+        });
+      
+md.block.bbcode.ruler.push('gold_bar', {
+          tag: 'gold_bar',
+          wrap: 'div.gold_bar'
+        });
+
+md.block.bbcode.ruler.push('diamond', {
+          tag: 'diamond',
+          wrap: 'div.diamond'
+        });
+      
+md.block.bbcode.ruler.push('diamond_progress', {
+          tag: 'diamond_progress',
+          wrap: 'div.diamond_progress'
+        });
+      
+md.block.bbcode.ruler.push('diamond_striped', {
+          tag: 'diamond_striped',
+          wrap: 'div.diamond_striped'
+        });
+      
+md.block.bbcode.ruler.push('diamond_bar', {
+          tag: 'diamond_bar',
+          wrap: 'div.diamond_bar'
+        });
 }
 
 export function setup(helper) {
@@ -434,6 +514,22 @@ export function setup(helper) {
     'div.tableauai',
     'div.tableauaj',
     'div.tableauak',
+    'div.bronze',
+    'div.bronze_progress',
+    'div.bronze_striped',
+    'div.bronze_bar',
+    'div.silver',
+    'div.silver_progress',
+    'div.silver_striped',
+    'div.silver_bar',
+    'div.gold',
+    'div.gold_progress',
+    'div.gold_striped',
+    'div.gold_bar',
+    'div.diamond',
+    'div.diamond_progress',
+    'div.diamond_striped',
+    'div.diamond_bar',
     'font[color=*]',
     'font[size=*]',
     'font[face=*]'
@@ -519,6 +615,22 @@ export function setup(helper) {
   replaceBBCode("tableauai", contents => ['div', {'class': 'tableauai'}].concat(contents));
   replaceBBCode("tableauaj", contents => ['div', {'class': 'tableauaj'}].concat(contents));
   replaceBBCode("tableauak", contents => ['div', {'class': 'tableauak'}].concat(contents));
+  replaceBBCode("bronze", contents => ['div', {'class': 'bronze'}].concat(contents));
+  replaceBBCode("bronze_progress", contents => ['div', {'class': 'bronze_progress'}].concat(contents));
+  replaceBBCode("bronze_striped", contents => ['div', {'class': 'bronze_striped'}].concat(contents));
+  replaceBBCode("bronze_bar", contents => ['div', {'class': 'bronze_bar'}].concat(contents));
+  replaceBBCode("silver", contents => ['div', {'class': 'silver'}].concat(contents));
+  replaceBBCode("silver_progress", contents => ['div', {'class': 'silver_progress'}].concat(contents));
+  replaceBBCode("silver_striped", contents => ['div', {'class': 'silver_striped'}].concat(contents));
+  replaceBBCode("silver_bar", contents => ['div', {'class': 'silver_bar'}].concat(contents));
+  replaceBBCode("gold", contents => ['div', {'class': 'gold'}].concat(contents));
+  replaceBBCode("gold_progress", contents => ['div', {'class': 'gold_progress'}].concat(contents));
+  replaceBBCode("gold_striped", contents => ['div', {'class': 'gold_striped'}].concat(contents));
+  replaceBBCode("gold_bar", contents => ['div', {'class': 'goldgold_bar'}].concat(contents));
+  replaceBBCode("diamond", contents => ['div', {'class': 'diamond'}].concat(contents));
+  replaceBBCode("diamond_progress", contents => ['div', {'class': 'diamond_progress'}].concat(contents));
+  replaceBBCode("diamond_striped", contents => ['div', {'class': 'diamond_striped'}].concat(contents));
+  replaceBBCode("diamond_bar", contents => ['div', {'class': 'diamond_bar'}].concat(contents));
 
   ["left", "center", "right", "justify"].forEach(direction => {
     replaceBBCode(direction, contents => ['div', {'style': "text-align:" + direction}].concat(contents));
