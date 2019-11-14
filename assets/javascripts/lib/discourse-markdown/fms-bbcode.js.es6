@@ -451,12 +451,12 @@ md.block.bbcode.ruler.push('diamond_bar', {
           tag: 'diamond_bar',
           wrap: 'div.diamond_bar'
         });
-}
+  
 md.block.bbcode.ruler.push('download_tab', {
           tag: 'download_tab',
           wrap: 'div.download_tab'
         });
-}
+  
 md.block.bbcode.ruler.push('download_button', {
           tag: 'download_button',
           wrap: 'div.download_button'
