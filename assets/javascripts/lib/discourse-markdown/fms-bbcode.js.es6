@@ -452,9 +452,9 @@ md.block.bbcode.ruler.push('diamond_bar', {
           wrap: 'div.diamond_bar'
         });
 }
-md.block.bbcode.ruler.push('download', {
-          tag: 'download',
-          wrap: 'div.download'
+md.block.bbcode.ruler.push('download_tab', {
+          tag: 'download_tab',
+          wrap: 'div.download_tab'
         });
 }
 md.block.bbcode.ruler.push('download_button', {
@@ -540,7 +540,7 @@ export function setup(helper) {
     'div.diamond_progress',
     'div.diamond_striped',
     'div.diamond_bar',
-    'div.download',
+    'div.download_tab',
     'div.download_button',
     'font[color=*]',
     'font[size=*]',
@@ -643,7 +643,7 @@ export function setup(helper) {
   replaceBBCode("diamond_progress", contents => ['div', {'class': 'diamond_progress'}].concat(contents));
   replaceBBCode("diamond_striped", contents => ['div', {'class': 'diamond_striped'}].concat(contents));
   replaceBBCode("diamond_bar", contents => ['div', {'class': 'diamond_bar'}].concat(contents));
-  replaceBBCode("download", contents => ['div', {'class': 'download'}].concat(contents));
+  replaceBBCode("download_tab", contents => ['div', {'class': 'download_tab'}].concat(contents));
   replaceBBCode("download_button", contents => ['div', {'class': 'download_button'}].concat(contents));
 
   ["left", "center", "right", "justify"].forEach(direction => {
