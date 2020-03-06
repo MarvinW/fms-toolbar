@@ -461,6 +461,36 @@ md.block.bbcode.ruler.push('download_button', {
           tag: 'download_button',
           wrap: 'div.download_button'
         });
+  
+ md.block.bbcode.ruler.push('tableaual', {
+    tag: 'tableaual',
+    wrap: 'div.tableaual'
+  });
+ 
+ md.block.bbcode.ruler.push('tableauam', {
+    tag: 'tableauam',
+    wrap: 'div.tableauam'
+  });
+  
+ md.block.bbcode.ruler.push('tableauan', {
+    tag: 'tableauan',
+    wrap: 'div.tableauakn'
+  });
+  
+ md.block.bbcode.ruler.push('tableauap', {
+    tag: 'tableauap',
+    wrap: 'div.tableauap'
+  });
+  
+ md.block.bbcode.ruler.push('tableauaq', {
+    tag: 'tableauaq',
+    wrap: 'div.tableauaq'
+  });
+  
+ md.block.bbcode.ruler.push('colmacouille', {
+    tag: 'colmacouille',
+    wrap: 'div.colmacouille'
+  });
 }
 
 export function setup(helper) {
@@ -524,6 +554,12 @@ export function setup(helper) {
     'div.tableauai',
     'div.tableauaj',
     'div.tableauak',
+    'div.tableaual',
+    'div.tableauam',
+    'div.tableauan',
+    'div.tableauap',
+    'div.tableauaq',
+    'div.colmacouille',
     'div.bronze',
     'div.bronze_progress',
     'div.bronze_striped',
@@ -627,6 +663,12 @@ export function setup(helper) {
   replaceBBCode("tableauai", contents => ['div', {'class': 'tableauai'}].concat(contents));
   replaceBBCode("tableauaj", contents => ['div', {'class': 'tableauaj'}].concat(contents));
   replaceBBCode("tableauak", contents => ['div', {'class': 'tableauak'}].concat(contents));
+  replaceBBCode("tableaual", contents => ['div', {'class': 'tableaual'}].concat(contents));
+  replaceBBCode("tableauam", contents => ['div', {'class': 'tableauam'}].concat(contents));
+  replaceBBCode("tableauan", contents => ['div', {'class': 'tableauan'}].concat(contents));
+  replaceBBCode("tableauap", contents => ['div', {'class': 'tableauap'}].concat(contents));
+  replaceBBCode("tableauaq", contents => ['div', {'class': 'tableauaq'}].concat(contents));
+  replaceBBCode("colmacouille", contents => ['div', {'class': 'colmacouille'}].concat(contents));
   replaceBBCode("bronze", contents => ['div', {'class': 'bronze'}].concat(contents));
   replaceBBCode("bronze_progress", contents => ['div', {'class': 'bronze_progress'}].concat(contents));
   replaceBBCode("bronze_striped", contents => ['div', {'class': 'bronze_striped'}].concat(contents));
