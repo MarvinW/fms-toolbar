@@ -91,7 +91,7 @@ function initializePlugin(api)
         toolbar.addButton({
           id: "retourligne_ui_button",
           group: "extras",
-          icon: "fa-level-down",
+          icon: "level-down-alt",
           perform: e => e.addText('<br>', 'retourligne_ui_default_text')
         });
       });
