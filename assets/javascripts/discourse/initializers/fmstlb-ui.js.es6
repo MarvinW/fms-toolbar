@@ -19,7 +19,7 @@ function initializePlugin(api)
         toolbar.addButton({
           id: "addimg_ui_button",
           group: "extras",
-          icon: "picture-o",
+          icon: "far-image",
           perform: e => e.applySurround('[img]', '[/img]', 'addimg_ui_default_text')
         });
       });
@@ -28,7 +28,7 @@ function initializePlugin(api)
         toolbar.addButton({
           id: "titlenews_ui_button",
           group: "extras",
-          icon: "newspaper-o",
+          icon: "far-newspapers",
           perform: e => e.applySurround('[t]', '[/t]<hr>', 'titlenews_ui_default_text')
         });
       });
@@ -91,7 +91,7 @@ function initializePlugin(api)
         toolbar.addButton({
           id: "retourligne_ui_button",
           group: "extras",
-          icon: "level-down",
+          icon: "far-level-down",
           perform: e => e.addText('<br>', 'retourligne_ui_default_text')
         });
       });
