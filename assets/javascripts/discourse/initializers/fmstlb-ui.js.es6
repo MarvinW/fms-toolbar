@@ -28,7 +28,7 @@ function initializePlugin(api)
         toolbar.addButton({
           id: "titlenews_ui_button",
           group: "extras",
-          icon: "far-newspapers",
+          icon: "far-newspaper",
           perform: e => e.applySurround('[t]', '[/t]<hr>', 'titlenews_ui_default_text')
         });
       });
@@ -91,7 +91,7 @@ function initializePlugin(api)
         toolbar.addButton({
           id: "retourligne_ui_button",
           group: "extras",
-          icon: "far-level-down",
+          icon: "fa-level-down",
           perform: e => e.addText('<br>', 'retourligne_ui_default_text')
         });
       });
