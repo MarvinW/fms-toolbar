@@ -491,6 +491,61 @@ md.block.bbcode.ruler.push('download_button', {
     tag: 'colmacouille',
     wrap: 'div.colmacouille'
   });
+  
+  md.block.bbcode.ruler.push('tabsaopaulo', {
+    tag: 'tabsaopaulo',
+    wrap: 'div.tabsaopaulo'
+  });
+  
+  md.block.bbcode.ruler.push('colortaba', {
+    tag: 'colortaba',
+    wrap: 'div.colortaba'
+  });
+  
+  md.block.bbcode.ruler.push('colortabb', {
+    tag: 'colortabb',
+    wrap: 'div.colortabb'
+  });
+  
+  md.block.bbcode.ruler.push('colortabc', {
+    tag: 'colortabc',
+    wrap: 'div.colortabc'
+  });
+  
+  md.block.bbcode.ruler.push('colortabd', {
+    tag: 'colortabd',
+    wrap: 'div.colortabd'
+  });
+  
+  md.block.bbcode.ruler.push('colortabe', {
+    tag: 'colortabe',
+    wrap: 'div.colortabe'
+  });
+  
+  md.block.bbcode.ruler.push('colortabf', {
+    tag: 'colortabf',
+    wrap: 'div.colortabf'
+  });
+  
+  md.block.bbcode.ruler.push('colortabg', {
+    tag: 'colortabg',
+    wrap: 'div.colortabg'
+  });
+  
+  md.block.bbcode.ruler.push('colortabh', {
+    tag: 'colortabh',
+    wrap: 'div.colortabh'
+  });
+  
+  md.block.bbcode.ruler.push('colortabi', {
+    tag: 'colortabi',
+    wrap: 'div.colortabi'
+  });
+  
+  md.block.bbcode.ruler.push('colortabj', {
+    tag: 'colortabj',
+    wrap: 'div.colortabj'
+  });
 }
 
 export function setup(helper) {
@@ -559,6 +614,17 @@ export function setup(helper) {
     'div.tableauan',
     'div.tableauap',
     'div.tableauaq',
+    'div.colortaba',
+    'div.colortabb',
+    'div.colortabc',
+    'div.colortabd',
+    'div.colortabe',
+    'div.colortabf',
+    'div.colortabg',
+    'div.colortabh',
+    'div.colortabi',
+    'div.colortabj',
+    'div.tabsaopaulo',
     'div.colmacouille',
     'div.bronze',
     'div.bronze_progress',
@@ -669,6 +735,17 @@ export function setup(helper) {
   replaceBBCode("tableauap", contents => ['div', {'class': 'tableauap'}].concat(contents));
   replaceBBCode("tableauaq", contents => ['div', {'class': 'tableauaq'}].concat(contents));
   replaceBBCode("colmacouille", contents => ['div', {'class': 'colmacouille'}].concat(contents));
+  replaceBBCode("colortaba", contents => ['div', {'class': 'colortaba'}].concat(contents));
+  replaceBBCode("colortabb", contents => ['div', {'class': 'colortabb'}].concat(contents));
+  replaceBBCode("colortabc", contents => ['div', {'class': 'colortabc'}].concat(contents));
+  replaceBBCode("colortabd", contents => ['div', {'class': 'colortabd'}].concat(contents));
+  replaceBBCode("colortabe", contents => ['div', {'class': 'colortabe'}].concat(contents));
+  replaceBBCode("colortabf", contents => ['div', {'class': 'colortabf'}].concat(contents));
+  replaceBBCode("colortabg", contents => ['div', {'class': 'colortabg'}].concat(contents));
+  replaceBBCode("colortabh", contents => ['div', {'class': 'colortabh'}].concat(contents));
+  replaceBBCode("colortabi", contents => ['div', {'class': 'colortabi'}].concat(contents));
+  replaceBBCode("colortabj", contents => ['div', {'class': 'colortabj'}].concat(contents));
+  replaceBBCode("tabsaopaulo", contents => ['div', {'class': 'tabsaopaulo'}].concat(contents));
   replaceBBCode("bronze", contents => ['div', {'class': 'bronze'}].concat(contents));
   replaceBBCode("bronze_progress", contents => ['div', {'class': 'bronze_progress'}].concat(contents));
   replaceBBCode("bronze_striped", contents => ['div', {'class': 'bronze_striped'}].concat(contents));
