@@ -546,6 +546,11 @@ md.block.bbcode.ruler.push('download_button', {
     tag: 'colortabj',
     wrap: 'div.colortabj'
   });
+  
+  md.block.bbcode.ruler.push('tabfm21', {
+    tag: 'tabfm21',
+    wrap: 'div.tabfm21'
+  });
 }
 
 export function setup(helper) {
@@ -624,6 +629,7 @@ export function setup(helper) {
     'div.colortabh',
     'div.colortabi',
     'div.colortabj',
+    'div.tabfm21',
     'div.tabsaopaulo',
     'div.colmacouille',
     'div.bronze',
@@ -745,6 +751,7 @@ export function setup(helper) {
   replaceBBCode("colortabh", contents => ['div', {'class': 'colortabh'}].concat(contents));
   replaceBBCode("colortabi", contents => ['div', {'class': 'colortabi'}].concat(contents));
   replaceBBCode("colortabj", contents => ['div', {'class': 'colortabj'}].concat(contents));
+  replaceBBCode("tabfm21", contents => ['div', {'class': 'tabfm21'}].concat(contents));
   replaceBBCode("tabsaopaulo", contents => ['div', {'class': 'tabsaopaulo'}].concat(contents));
   replaceBBCode("bronze", contents => ['div', {'class': 'bronze'}].concat(contents));
   replaceBBCode("bronze_progress", contents => ['div', {'class': 'bronze_progress'}].concat(contents));
