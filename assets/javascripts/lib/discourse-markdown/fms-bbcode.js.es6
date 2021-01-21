@@ -551,6 +551,66 @@ md.block.bbcode.ruler.push('download_button', {
     tag: 'tabfm21',
     wrap: 'div.tabfm21'
   });
+  
+  md.block.bbcode.ruler.push('bundesliga', {
+    tag: 'bundesliga',
+    wrap: 'div.bundesliga'
+  });
+
+md.block.bbcode.ruler.push('ligue1uber', {
+    tag: 'ligue1uber',
+    wrap: 'div.ligue1uber'
+  });
+
+md.block.bbcode.ruler.push('ligasantander', {
+    tag: 'ligasantander',
+    wrap: 'div.ligasantander'
+  });
+
+md.block.bbcode.ruler.push('serieaitalia', {
+    tag: 'serieaitalia',
+    wrap: 'div.serieaitalia'
+  });
+
+md.block.bbcode.ruler.push('premierleague', {
+    tag: 'premierleague',
+    wrap: 'div.premierleague'
+  });
+
+md.block.bbcode.ruler.push('championsleague', {
+    tag: 'championsleague',
+    wrap: 'div.championsleague'
+  });
+
+md.block.bbcode.ruler.push('europaleague', {
+    tag: 'europaleague',
+    wrap: 'div.europaleague'
+  });
+
+md.block.bbcode.ruler.push('conferenceleague', {
+    tag: 'conferenceleague',
+    wrap: 'div.conferenceleague'
+  });
+
+md.block.bbcode.ruler.push('ligaprofesional', {
+    tag: 'ligaprofesional',
+    wrap: 'div.ligaprofesional'
+  });
+
+md.block.bbcode.ruler.push('classement', {
+    tag: 'classement',
+    wrap: 'div.classement'
+  });
+
+md.block.bbcode.ruler.push('news', {
+    tag: 'news',
+    wrap: 'div.news'
+  });
+
+md.block.bbcode.ruler.push('groupe', {
+    tag: 'groupe',
+    wrap: 'div.groupe'
+  });
 }
 
 export function setup(helper) {
@@ -629,6 +689,18 @@ export function setup(helper) {
     'div.colortabh',
     'div.colortabi',
     'div.colortabj',
+    'div.bundesliga',
+    'div.ligue1uber',
+    'div.ligasantander',
+    'div.serieaitalia',
+    'div.premierleague',
+    'div.championsleague',
+    'div.europaleague',
+    'div.conferenceleague',
+    'div.ligaprofesional',
+    'div.classement',
+    'div.news',
+    'div.groupe',
     'div.tabfm21',
     'div.tabsaopaulo',
     'div.colmacouille',
@@ -751,6 +823,18 @@ export function setup(helper) {
   replaceBBCode("colortabh", contents => ['div', {'class': 'colortabh'}].concat(contents));
   replaceBBCode("colortabi", contents => ['div', {'class': 'colortabi'}].concat(contents));
   replaceBBCode("colortabj", contents => ['div', {'class': 'colortabj'}].concat(contents));
+  replaceBBCode("bundesliga", contents => ['div', {'class': 'bundesliga'}].concat(contents));
+  replaceBBCode("ligue1uber", contents => ['div', {'class': 'ligue1uber'}].concat(contents));
+  replaceBBCode("ligasantander", contents => ['div', {'class': 'ligasantander'}].concat(contents));
+  replaceBBCode("serieaitalia", contents => ['div', {'class': 'serieaitalia'}].concat(contents));
+  replaceBBCode("premierleague", contents => ['div', {'class': 'premierleague'}].concat(contents));
+  replaceBBCode("championsleague", contents => ['div', {'class': 'championsleague'}].concat(contents));
+  replaceBBCode("europaleague", contents => ['div', {'class': 'europaleague'}].concat(contents));
+  replaceBBCode("conferenceleague", contents => ['div', {'class': 'conferenceleague'}].concat(contents));
+  replaceBBCode("ligaprofesional", contents => ['div', {'class': 'ligaprofesional'}].concat(contents));
+  replaceBBCode("classement", contents => ['div', {'class': 'classement'}].concat(contents));
+  replaceBBCode("news", contents => ['div', {'class': 'news'}].concat(contents));
+  replaceBBCode("groupe", contents => ['div', {'class': 'groupe'}].concat(contents));
   replaceBBCode("tabfm21", contents => ['div', {'class': 'tabfm21'}].concat(contents));
   replaceBBCode("tabsaopaulo", contents => ['div', {'class': 'tabsaopaulo'}].concat(contents));
   replaceBBCode("bronze", contents => ['div', {'class': 'bronze'}].concat(contents));
