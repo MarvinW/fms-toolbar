@@ -612,29 +612,29 @@ md.block.bbcode.ruler.push('groupe', {
     wrap: 'div.groupe'
   });
   
-md.block.bbcode.ruler.push('saison1', {
-    tag: 'saison1',
-    wrap: 'div.saison1'
+md.block.bbcode.ruler.push('saisona', {
+    tag: 'saisona',
+    wrap: 'div.saisona'
   });
   
-md.block.bbcode.ruler.push('saison2', {
-    tag: 'saison2',
-    wrap: 'div.saison2'
+md.block.bbcode.ruler.push('saisonb', {
+    tag: 'saisonb',
+    wrap: 'div.saisonb'
   });
   
-md.block.bbcode.ruler.push('saison3', {
-    tag: 'saison3',
-    wrap: 'div.saison3'
+md.block.bbcode.ruler.push('saisonc', {
+    tag: 'saisonc',
+    wrap: 'div.saisonc'
   });
   
-md.block.bbcode.ruler.push('saison4', {
-    tag: 'saison4',
-    wrap: 'div.saison4'
+md.block.bbcode.ruler.push('saisond', {
+    tag: 'saisond',
+    wrap: 'div.saisond'
   });  
   
-md.block.bbcode.ruler.push('saison5', {
-    tag: 'saison5',
-    wrap: 'div.saison5'
+md.block.bbcode.ruler.push('saisone', {
+    tag: 'saisone',
+    wrap: 'div.saisone'
   });
 }
 
@@ -726,11 +726,11 @@ export function setup(helper) {
     'div.classement',
     'div.news',
     'div.groupe',
-    'div.saison1',
-    'div.saison2',
-    'div.saison3',
-    'div.saison4',
-    'div.saison5',
+    'div.saisona',
+    'div.saisonb',
+    'div.saisonc',
+    'div.saisond',
+    'div.saisone',
     'div.tabfm21',
     'div.tabsaopaulo',
     'div.colmacouille',
@@ -865,11 +865,11 @@ export function setup(helper) {
   replaceBBCode("classement", contents => ['div', {'class': 'classement'}].concat(contents));
   replaceBBCode("news", contents => ['div', {'class': 'news'}].concat(contents));
   replaceBBCode("groupe", contents => ['div', {'class': 'groupe'}].concat(contents));
-  replaceBBCode("saison1", contents => ['div', {'class': 'saison1'}].concat(contents));
-  replaceBBCode("saison2", contents => ['div', {'class': 'saison2'}].concat(contents));
-  replaceBBCode("saison3", contents => ['div', {'class': 'saison3'}].concat(contents));
-  replaceBBCode("saison4", contents => ['div', {'class': 'saison4'}].concat(contents));
-  replaceBBCode("saison5", contents => ['div', {'class': 'saison5'}].concat(contents));
+  replaceBBCode("saisona", contents => ['div', {'class': 'saisona'}].concat(contents));
+  replaceBBCode("saisonb", contents => ['div', {'class': 'saisonb'}].concat(contents));
+  replaceBBCode("saisonc", contents => ['div', {'class': 'saisonc'}].concat(contents));
+  replaceBBCode("saisond", contents => ['div', {'class': 'saisond'}].concat(contents));
+  replaceBBCode("saisone", contents => ['div', {'class': 'saisone'}].concat(contents));
   replaceBBCode("tabfm21", contents => ['div', {'class': 'tabfm21'}].concat(contents));
   replaceBBCode("tabsaopaulo", contents => ['div', {'class': 'tabsaopaulo'}].concat(contents));
   replaceBBCode("bronze", contents => ['div', {'class': 'bronze'}].concat(contents));
