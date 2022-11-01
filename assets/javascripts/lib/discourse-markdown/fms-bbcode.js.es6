@@ -547,6 +547,82 @@ md.block.bbcode.ruler.push('download_button', {
     wrap: 'div.colortabj'
   });
   
+  md.block.bbcode.ruler.push('colortabk', {
+    tag: 'colortabk',
+    wrap: 'div.colortabk'
+  });
+  
+  md.block.bbcode.ruler.push('colortabl', {
+    tag: 'colortabl',
+    wrap: 'div.colortabl'
+  });
+  
+  md.block.bbcode.ruler.push('colortabm', {
+    tag: 'colortabm',
+    wrap: 'div.colortabm'
+  });
+  
+  md.block.bbcode.ruler.push('colortabn', {
+    tag: 'colortabn',
+    wrap: 'div.colortabn'
+  });
+  
+  md.block.bbcode.ruler.push('colortabo', {
+    tag: 'colortabo',
+    wrap: 'div.colortabo'
+  });
+  
+  md.block.bbcode.ruler.push('colortabp', {
+    tag: 'colortabp',
+    wrap: 'div.colortabp'
+  });
+  
+  md.block.bbcode.ruler.push('colortabq', {
+    tag: 'colortabq',
+    wrap: 'div.colortabq'
+  });
+  
+  md.block.bbcode.ruler.push('colortabr', {
+    tag: 'colortabr',
+    wrap: 'div.colortabr'
+  });
+  
+  md.block.bbcode.ruler.push('colortabs', {
+    tag: 'colortabs',
+    wrap: 'div.colortabs'
+  });
+  
+  md.block.bbcode.ruler.push('colortabt', {
+    tag: 'colortabt',
+    wrap: 'div.colortabt'
+  });
+  
+  md.block.bbcode.ruler.push('colortabu', {
+    tag: 'colortabu',
+    wrap: 'div.colortabu'
+  });
+  
+  md.block.bbcode.ruler.push('colortabv', {
+    tag: 'colortabv',
+    wrap: 'div.colortabv'
+  });
+  
+  md.block.bbcode.ruler.push('colortabw', {
+    tag: 'colortabw',
+    wrap: 'div.colortabw'
+  });
+  
+  md.block.bbcode.ruler.push('colortabx', {
+    tag: 'colortabx',
+    wrap: 'div.colortabx'
+  });
+  
+  md.block.bbcode.ruler.push('colortaby', {
+    tag: 'colortaby',
+    wrap: 'div.colortaby'
+  });
+  
+  
   md.block.bbcode.ruler.push('tabfm21', {
     tag: 'tabfm21',
     wrap: 'div.tabfm21'
@@ -636,6 +712,10 @@ md.block.bbcode.ruler.push('saisone', {
     tag: 'saisone',
     wrap: 'div.saisone'
   });
+md.block.bbcode.ruler.push('malakai', {
+    tag: 'malakai',
+    wrap: 'div.malakai'
+  });
 }
 
 export function setup(helper) {
@@ -713,7 +793,21 @@ export function setup(helper) {
     'div.colortabg',
     'div.colortabh',
     'div.colortabi',
-    'div.colortabj',
+    'div.colortabk',
+    'div.colortabl',
+    'div.colortabm',
+    'div.colortabn',
+    'div.colortabo',
+    'div.colortabp',
+    'div.colortabq',
+    'div.colortabr',
+    'div.colortabs',
+    'div.colortabt',
+    'div.colortabu',
+    'div.colortabv',
+    'div.colortabw',
+    'div.colortabx',
+    'div.colortaby',
     'div.bundesliga',
     'div.ligue1uber',
     'div.ligasantander',
@@ -752,6 +846,7 @@ export function setup(helper) {
     'div.diamond_bar',
     'div.download_tab',
     'div.download_button',
+    'div.malakai',
     'font[color=*]',
     'font[size=*]',
     'font[face=*]'
@@ -853,6 +948,21 @@ export function setup(helper) {
   replaceBBCode("colortabh", contents => ['div', {'class': 'colortabh'}].concat(contents));
   replaceBBCode("colortabi", contents => ['div', {'class': 'colortabi'}].concat(contents));
   replaceBBCode("colortabj", contents => ['div', {'class': 'colortabj'}].concat(contents));
+  replaceBBCode("colortabk", contents => ['div', {'class': 'colortabk'}].concat(contents));
+  replaceBBCode("colortabl", contents => ['div', {'class': 'colortabl'}].concat(contents));
+  replaceBBCode("colortabm", contents => ['div', {'class': 'colortabm'}].concat(contents));
+  replaceBBCode("colortabn", contents => ['div', {'class': 'colortabn'}].concat(contents));
+  replaceBBCode("colortabo", contents => ['div', {'class': 'colortabo'}].concat(contents));
+  replaceBBCode("colortabp", contents => ['div', {'class': 'colortabp'}].concat(contents));
+  replaceBBCode("colortabq", contents => ['div', {'class': 'colortabq'}].concat(contents));
+  replaceBBCode("colortabr", contents => ['div', {'class': 'colortabr'}].concat(contents));
+  replaceBBCode("colortabs", contents => ['div', {'class': 'colortabs'}].concat(contents));
+  replaceBBCode("colortabt", contents => ['div', {'class': 'colortabt'}].concat(contents));
+  replaceBBCode("colortabu", contents => ['div', {'class': 'colortabu'}].concat(contents));
+  replaceBBCode("colortabv", contents => ['div', {'class': 'colortabv'}].concat(contents));
+  replaceBBCode("colortabw", contents => ['div', {'class': 'colortabw'}].concat(contents));
+  replaceBBCode("colortabx", contents => ['div', {'class': 'colortabx'}].concat(contents));
+  replaceBBCode("colortaby", contents => ['div', {'class': 'colortaby'}].concat(contents));
   replaceBBCode("bundesliga", contents => ['div', {'class': 'bundesliga'}].concat(contents));
   replaceBBCode("ligue1uber", contents => ['div', {'class': 'ligue1uber'}].concat(contents));
   replaceBBCode("ligasantander", contents => ['div', {'class': 'ligasantander'}].concat(contents));
@@ -870,6 +980,7 @@ export function setup(helper) {
   replaceBBCode("saisonc", contents => ['div', {'class': 'saisonc'}].concat(contents));
   replaceBBCode("saisond", contents => ['div', {'class': 'saisond'}].concat(contents));
   replaceBBCode("saisone", contents => ['div', {'class': 'saisone'}].concat(contents));
+  replaceBBCode("malakai", contents => ['div', {'class': 'malakai'}].concat(contents));
   replaceBBCode("tabfm21", contents => ['div', {'class': 'tabfm21'}].concat(contents));
   replaceBBCode("tabsaopaulo", contents => ['div', {'class': 'tabsaopaulo'}].concat(contents));
   replaceBBCode("bronze", contents => ['div', {'class': 'bronze'}].concat(contents));
