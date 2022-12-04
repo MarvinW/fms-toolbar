@@ -716,6 +716,10 @@ md.block.bbcode.ruler.push('malakai', {
     tag: 'malakai',
     wrap: 'div.malakai'
   });
+md.block.bbcode.ruler.push('opensans', {
+    tag: 'opensans',
+    wrap: 'div.opensans'
+  });
 }
 
 export function setup(helper) {
@@ -847,6 +851,7 @@ export function setup(helper) {
     'div.download_tab',
     'div.download_button',
     'div.malakai',
+    'div.opensans',
     'font[color=*]',
     'font[size=*]',
     'font[face=*]'
@@ -981,6 +986,7 @@ export function setup(helper) {
   replaceBBCode("saisond", contents => ['div', {'class': 'saisond'}].concat(contents));
   replaceBBCode("saisone", contents => ['div', {'class': 'saisone'}].concat(contents));
   replaceBBCode("malakai", contents => ['div', {'class': 'malakai'}].concat(contents));
+  replaceBBCode("opensans", contents => ['div', {'class': 'opensans'}].concat(contents));
   replaceBBCode("tabfm21", contents => ['div', {'class': 'tabfm21'}].concat(contents));
   replaceBBCode("tabsaopaulo", contents => ['div', {'class': 'tabsaopaulo'}].concat(contents));
   replaceBBCode("bronze", contents => ['div', {'class': 'bronze'}].concat(contents));
