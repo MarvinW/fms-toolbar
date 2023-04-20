@@ -727,6 +727,12 @@ md.block.bbcode.ruler.push('malakai', {
     tag: 'malakai',
     wrap: 'div.malakai'
   });
+  
+  md.block.bbcode.ruler.push('aparecidense', {
+    tag: 'aparecidense',
+    wrap: 'div.aparecidense'
+  });
+  
 md.block.bbcode.ruler.push('opensans', {
     tag: 'opensans',
     wrap: 'div.opensans'
@@ -864,6 +870,7 @@ export function setup(helper) {
     'div.malakai',
     'div.goias',
     'div.uruguay',
+    'div.aparecidense',
     'div.opensans',
     'font[color=*]',
     'font[size=*]',
@@ -999,6 +1006,7 @@ export function setup(helper) {
   replaceBBCode("saisond", contents => ['div', {'class': 'saisond'}].concat(contents));
   replaceBBCode("saisone", contents => ['div', {'class': 'saisone'}].concat(contents));
   replaceBBCode("goias", contents => ['div', {'class': 'goias'}].concat(contents));
+  replaceBBCode("aparecidense", contents => ['div', {'class': 'aparecidense'}].concat(contents));
   replaceBBCode("uruguay", contents => ['div', {'class': 'uruguay'}].concat(contents));
   replaceBBCode("malakai", contents => ['div', {'class': 'malakai'}].concat(contents));
   replaceBBCode("opensans", contents => ['div', {'class': 'opensans'}].concat(contents));
