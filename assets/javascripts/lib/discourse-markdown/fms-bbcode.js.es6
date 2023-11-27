@@ -341,6 +341,11 @@ function setupMarkdownIt(md) {
     tag: 'tableauae',
     wrap: 'div.tableauae'
   });
+
+md.block.bbcode.ruler.push('electricpanther', {
+    tag: 'electricpanther',
+    wrap: 'div.electricpanther'
+  });
   
   md.block.bbcode.ruler.push('tableauaf', {
     tag: 'tableauaf',
@@ -849,6 +854,7 @@ export function setup(helper) {
     'div.conferenceleague',
     'div.ligaprofesional',
     'div.classement',
+    'div.electricpanther',
     'div.news',
     'div.groupe',
     'div.saisona',
@@ -942,6 +948,7 @@ export function setup(helper) {
   replaceBBCode("coltaby", contents => ['div', {'class': 'coltaby'}].concat(contents));
   replaceBBCode("coltabz", contents => ['div', {'class': 'coltabz'}].concat(contents));
   replaceBBCode("coltabface", contents => ['div', {'class': 'coltabface'}].concat(contents));
+  replaceBBCode("electricpanther", contents => ['div', {'class': 'electricpanther'}].concat(contents));
   replaceBBCode("coltablogo", contents => ['div', {'class': 'coltablogo'}].concat(contents));
   replaceBBCode("tabstadereims", contents => ['div', {'class': 'tabstadereims'}].concat(contents));
   replaceBBCode("tabmonaco", contents => ['div', {'class': 'tabmonaco'}].concat(contents));
