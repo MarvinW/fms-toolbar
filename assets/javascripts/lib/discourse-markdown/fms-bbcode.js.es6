@@ -747,6 +747,21 @@ md.block.bbcode.ruler.push('malakai', {
     tag: 'goiasgardien',
     wrap: 'div.goiasgardien'
   });
+
+  md.block.bbcode.ruler.push('grootrecopa', {
+    tag: 'grootrecopa',
+    wrap: 'div.grootrecopa'
+  });
+
+  md.block.bbcode.ruler.push('grootliberta', {
+    tag: 'grootliberta',
+    wrap: 'div.grootliberta'
+  });
+
+  md.block.bbcode.ruler.push('grootsudamericana', {
+    tag: 'grootsudamericana',
+    wrap: 'div.grootsudamericana'
+  });
   
 md.block.bbcode.ruler.push('opensans', {
     tag: 'opensans',
@@ -855,6 +870,9 @@ export function setup(helper) {
     'div.ligaprofesional',
     'div.classement',
     'div.electricpanther',
+    'div.grootrecopa',
+    'div.grootliberta',
+    'div.grootsudamericana',
     'div.news',
     'div.groupe',
     'div.saisona',
@@ -1051,6 +1069,9 @@ export function setup(helper) {
   replaceBBCode("diamond_bar", contents => ['div', {'class': 'diamond_bar'}].concat(contents));
   replaceBBCode("download_tab", contents => ['div', {'class': 'download_tab'}].concat(contents));
   replaceBBCode("download_button", contents => ['div', {'class': 'download_button'}].concat(contents));
+  replaceBBCode("grootrecopa", contents => ['div', {'class': 'grootrecopa'}].concat(contents));
+  replaceBBCode("grootliberta", contents => ['div', {'class': 'grootliberta'}].concat(contents));
+  replaceBBCode("grootsudamericana", contents => ['div', {'class': 'grootsudamericana'}].concat(contents));
 
   ["left", "center", "right", "justify"].forEach(direction => {
     replaceBBCode(direction, contents => ['div', {'style': "text-align:" + direction}].concat(contents));
