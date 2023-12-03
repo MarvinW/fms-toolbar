@@ -763,44 +763,44 @@ md.block.bbcode.ruler.push('malakai', {
     wrap: 'div.grootsudamericana'
   });
 
-  md.block.bbcode.ruler.push('electric_blue', {
-    tag: 'electric_blue',
-    wrap: 'div.electric_blue'
+  md.block.bbcode.ruler.push('electricblue', {
+    tag: 'electricblue',
+    wrap: 'div.electricblue'
   });
 
-  md.block.bbcode.ruler.push('electric_red', {
-    tag: 'electric_red',
-    wrap: 'div.electric_red'
+  md.block.bbcode.ruler.push('electricred', {
+    tag: 'electricred',
+    wrap: 'div.electricred'
   });
 
-  md.block.bbcode.ruler.push('electric_yellow', {
-    tag: 'electric_yellow',
-    wrap: 'div.electric_yellow'
+  md.block.bbcode.ruler.push('electricyellow', {
+    tag: 'electricyellow',
+    wrap: 'div.electricyellow'
   });
 
-  md.block.bbcode.ruler.push('electric_green', {
-    tag: 'electric_green',
-    wrap: 'div.electric_green'
+  md.block.bbcode.ruler.push('electricgreen', {
+    tag: 'electricgreen',
+    wrap: 'div.electricgreen'
   });
 
-  md.block.bbcode.ruler.push('electric_orange', {
-    tag: 'electric_orange',
-    wrap: 'div.electric_orange'
+  md.block.bbcode.ruler.push('electricorange', {
+    tag: 'electricorange',
+    wrap: 'div.electricorange'
   });
 
-  md.block.bbcode.ruler.push('electric_violet', {
-    tag: 'electric_violet',
-    wrap: 'div.electric_violet'
+  md.block.bbcode.ruler.push('electricviolet', {
+    tag: 'electricviolet',
+    wrap: 'div.electricviolet'
   });
 
-  md.block.bbcode.ruler.push('electric_cyan', {
-    tag: 'electric_cyan',
-    wrap: 'div.electric_cyan'
+  md.block.bbcode.ruler.push('electriccyan', {
+    tag: 'electriccyan',
+    wrap: 'div.electriccyan'
   });
 
-  md.block.bbcode.ruler.push('electric_pink', {
-    tag: 'electric_pink',
-    wrap: 'div.electric_pink'
+  md.block.bbcode.ruler.push('electricpink', {
+    tag: 'electricpink',
+    wrap: 'div.electricpink'
   });
   
 md.block.bbcode.ruler.push('opensans', {
@@ -947,14 +947,14 @@ export function setup(helper) {
     'div.montevideo',
     'div.goiasgardien',
     'div.aparecidense',
-    'div.electric_blue',
-    'div.electric_red',
-    'div.electric_green',
-    'div.electric_yellow',
-    'div.electric_orange',
-    'div.electric_violet',
-    'div.electric_pink',
-    'div.electric_cyan',
+    'div.electricblue',
+    'div.electricred',
+    'div.electricgreen',
+    'div.electricyellow',
+    'div.electricorange',
+    'div.electricviolet',
+    'div.electricpink',
+    'div.electriccyan',
     'div.opensans',
     'font[color=*]',
     'font[size=*]',
@@ -1119,14 +1119,14 @@ export function setup(helper) {
   replaceBBCode("download_button", contents => ['div', {'class': 'download_button'}].concat(contents));
   replaceBBCode("grootrecopa", contents => ['div', {'class': 'grootrecopa'}].concat(contents));
   replaceBBCode("grootliberta", contents => ['div', {'class': 'grootliberta'}].concat(contents));
-  replaceBBCode("electric_blue", contents => ['div', {'class': 'electric_blue'}].concat(contents));
-  replaceBBCode("electric_red", contents => ['div', {'class': 'electric_red'}].concat(contents));
-  replaceBBCode("electric_green", contents => ['div', {'class': 'electric_green'}].concat(contents));
-  replaceBBCode("electric_yellow", contents => ['div', {'class': 'electric_yellow'}].concat(contents));
-  replaceBBCode("electric_orange", contents => ['div', {'class': 'electric_orange'}].concat(contents));
-  replaceBBCode("electric_violet", contents => ['div', {'class': 'electric_violet'}].concat(contents));
-  replaceBBCode("electric_pink", contents => ['div', {'class': 'electric_pink'}].concat(contents));
-  replaceBBCode("electric_cyan", contents => ['div', {'class': 'electric_cyan'}].concat(contents));
+  replaceBBCode("electricblue", contents => ['div', {'class': 'electricblue'}].concat(contents));
+  replaceBBCode("electricred", contents => ['div', {'class': 'electricred'}].concat(contents));
+  replaceBBCode("electricgreen", contents => ['div', {'class': 'electricgreen'}].concat(contents));
+  replaceBBCode("electricyellow", contents => ['div', {'class': 'electricyellow'}].concat(contents));
+  replaceBBCode("electricorange", contents => ['div', {'class': 'electricorange'}].concat(contents));
+  replaceBBCode("electricviolet", contents => ['div', {'class': 'electricviolet'}].concat(contents));
+  replaceBBCode("electricpink", contents => ['div', {'class': 'electricpink'}].concat(contents));
+  replaceBBCode("electriccyan", contents => ['div', {'class': 'electriccyan'}].concat(contents));
   replaceBBCode("grootsudamericana", contents => ['div', {'class': 'grootsudamericana'}].concat(contents));
 
   ["left", "center", "right", "justify"].forEach(direction => {
