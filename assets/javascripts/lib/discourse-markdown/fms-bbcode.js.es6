@@ -778,6 +778,11 @@ md.block.bbcode.ruler.push('malakai', {
     wrap: 'div.electricyellow'
   });
 
+  md.block.bbcode.ruler.push('electricmenu', {
+      tag: 'electricmenu',
+      wrap: 'div.electricmenu'
+    });
+
 md.block.bbcode.ruler.push('electricgrey', {
     tag: 'electricgrey',
     wrap: 'div.electricgrey'
@@ -961,6 +966,7 @@ export function setup(helper) {
     'div.electricpink',
     'div.electriccyan',
     'div.electricgrey',
+    'div.electricmenu',
     'div.opensans',
     'font[color=*]',
     'font[size=*]',
@@ -1134,6 +1140,7 @@ export function setup(helper) {
   replaceBBCode("electricpink", contents => ['div', {'class': 'electricpink'}].concat(contents));
   replaceBBCode("electriccyan", contents => ['div', {'class': 'electriccyan'}].concat(contents));
   replaceBBCode("electricgrey", contents => ['div', {'class': 'electricgrey'}].concat(contents));
+  replaceBBCode("electricmenu", contents => ['div', {'class': 'electricmenu'}].concat(contents));
   replaceBBCode("grootsudamericana", contents => ['div', {'class': 'grootsudamericana'}].concat(contents));
 
   ["left", "center", "right", "justify"].forEach(direction => {
