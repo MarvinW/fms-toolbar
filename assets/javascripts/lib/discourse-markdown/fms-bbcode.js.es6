@@ -812,6 +812,11 @@ md.block.bbcode.ruler.push('electricgrey', {
     tag: 'electricpink',
     wrap: 'div.electricpink'
   });
+
+  md.block.bbcode.ruler.push('electricgold', {
+    tag: 'electricgold',
+    wrap: 'div.electricgold'
+  });
   
 md.block.bbcode.ruler.push('opensans', {
     tag: 'opensans',
@@ -966,6 +971,7 @@ export function setup(helper) {
     'div.electricpink',
     'div.electriccyan',
     'div.electricgrey',
+    'div.electricgold',
     'div.electricmenu',
     'div.opensans',
     'font[color=*]',
@@ -1141,6 +1147,7 @@ export function setup(helper) {
   replaceBBCode("electriccyan", contents => ['div', {'class': 'electriccyan'}].concat(contents));
   replaceBBCode("electricgrey", contents => ['div', {'class': 'electricgrey'}].concat(contents));
   replaceBBCode("electricmenu", contents => ['div', {'class': 'electricmenu'}].concat(contents));
+  replaceBBCode("electricgold", contents => ['div', {'class': 'electricgold'}].concat(contents));
   replaceBBCode("grootsudamericana", contents => ['div', {'class': 'grootsudamericana'}].concat(contents));
 
   ["left", "center", "right", "justify"].forEach(direction => {
