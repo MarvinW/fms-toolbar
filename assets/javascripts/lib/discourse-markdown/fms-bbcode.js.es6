@@ -822,6 +822,173 @@ md.block.bbcode.ruler.push('opensans', {
     tag: 'opensans',
     wrap: 'div.opensans'
   });
+
+md.block.bbcode.ruler.push('goal', {
+    tag: 'goal',
+    wrap: 'div.goal'
+  });
+
+md.block.bbcode.ruler.push('goala', {
+    tag: 'goala',
+    wrap: 'div.goala'
+  });
+
+md.block.bbcode.ruler.push('goalb', {
+    tag: 'goalb',
+    wrap: 'div.goalb'
+  });
+
+
+md.block.bbcode.ruler.push('central_defender', {
+    tag: 'central_defender',
+    wrap: 'div.central_defender'
+  });
+
+md.block.bbcode.ruler.push('central_defendera', {
+    tag: 'central_defendera',
+    wrap: 'div.central_defendera'
+  });
+
+md.block.bbcode.ruler.push('central_defenderb', {
+    tag: 'central_defenderb',
+    wrap: 'div.central_defenderb'
+  });
+
+md.block.bbcode.ruler.push('central_defenderc', {
+    tag: 'central_defenderc',
+    wrap: 'div.central_defenderc'
+  });
+
+md.block.bbcode.ruler.push('central_defenderd', {
+    tag: 'central_defenderd',
+    wrap: 'div.central_defenderd'
+  });
+
+md.block.bbcode.ruler.push('central_defendere', {
+    tag: 'central_defendere',
+    wrap: 'div.central_defendere'
+  });
+
+md.block.bbcode.ruler.push('lateral_defender', {
+    tag: 'lateral_defender',
+    wrap: 'div.lateral_defender'
+  });
+
+md.block.bbcode.ruler.push('lateral_defendera', {
+    tag: 'lateral_defendera',
+    wrap: 'div.lateral_defendera'
+  });
+
+md.block.bbcode.ruler.push('lateral_defenderb', {
+    tag: 'lateral_defenderb',
+    wrap: 'div.lateral_defenderb'
+  });
+
+md.block.bbcode.ruler.push('lateral_defenderc', {
+    tag: 'lateral_defenderc',
+    wrap: 'div.lateral_defenderc'
+  });
+
+md.block.bbcode.ruler.push('lateral_defenderd', {
+    tag: 'lateral_defenderd',
+    wrap: 'div.lateral_defenderd'
+  });
+
+md.block.bbcode.ruler.push('lateral_defendere', {
+    tag: 'lateral_defendere',
+    wrap: 'div.lateral_defendere'
+  });
+
+
+md.block.bbcode.ruler.push('central_midfielder', {
+    tag: 'central_midfielder',
+    wrap: 'div.central_midfielder'
+  });
+
+md.block.bbcode.ruler.push('central_midfieldera', {
+    tag: 'central_midfieldera',
+    wrap: 'div.central_midfieldera'
+  });
+
+md.block.bbcode.ruler.push('central_midfielderb', {
+    tag: 'central_midfielderb',
+    wrap: 'div.central_midfielderb'
+  });
+
+md.block.bbcode.ruler.push('central_midfielderc', {
+    tag: 'central_midfielderc',
+    wrap: 'div.central_midfielderc'
+  });
+
+md.block.bbcode.ruler.push('central_midfielderd', {
+    tag: 'central_midfielderd',
+    wrap: 'div.central_midfielderd'
+  });
+
+md.block.bbcode.ruler.push('central_midfieldere', {
+    tag: 'central_midfieldere',
+    wrap: 'div.central_midfieldere'
+  });
+
+md.block.bbcode.ruler.push('lateral_midfielder', {
+    tag: 'lateral_midfielder',
+    wrap: 'div.lateral_midfielder'
+  });
+
+md.block.bbcode.ruler.push('lateral_midfieldera', {
+    tag: 'lateral_midfieldera',
+    wrap: 'div.lateral_midfieldera'
+  });
+
+md.block.bbcode.ruler.push('lateral_midfielderb', {
+    tag: 'lateral_midfielderb',
+    wrap: 'div.lateral_midfielderb'
+  });
+
+md.block.bbcode.ruler.push('lateral_midfielderc', {
+    tag: 'lateral_midfielderc',
+    wrap: 'div.lateral_midfielderc'
+  });
+
+md.block.bbcode.ruler.push('lateral_midfielderd', {
+    tag: 'lateral_midfielderd',
+    wrap: 'div.lateral_midfielderd'
+  });
+
+md.block.bbcode.ruler.push('lateral_midfieldere', {
+    tag: 'lateral_midfieldere',
+    wrap: 'div.lateral_midfieldere'
+  });
+
+md.block.bbcode.ruler.push('striker', {
+    tag: 'striker',
+    wrap: 'div.striker'
+  });
+
+md.block.bbcode.ruler.push('strikera', {
+    tag: 'strikera',
+    wrap: 'div.strikera'
+  });
+
+md.block.bbcode.ruler.push('strikerb', {
+    tag: 'strikerb',
+    wrap: 'div.strikerb'
+  });
+
+md.block.bbcode.ruler.push('strikerc', {
+    tag: 'strikerc',
+    wrap: 'div.strikerc'
+  });
+
+md.block.bbcode.ruler.push('strikerd', {
+    tag: 'strikerd',
+    wrap: 'div.strikerd'
+  });
+
+md.block.bbcode.ruler.push('strikere', {
+    tag: 'strikere',
+    wrap: 'div.strikere'
+  });
 }
 
 export function setup(helper) {
@@ -973,6 +1140,39 @@ export function setup(helper) {
     'div.electricgrey',
     'div.electricgold',
     'div.electricmenu',
+    'div.goal',
+    'div.goala',
+    'div.goalb',
+    'div.central_defender',
+    'div.central_defendera',
+    'div.central_defenderb',
+    'div.central_defenderc',
+    'div.central_defenderd',
+    'div.central_defendere',
+    'div.lateral_defender',
+    'div.lateral_defendera',
+    'div.lateral_defenderb',
+    'div.lateral_defenderc',
+    'div.lateral_defenderd',
+    'div.lateral_defendere',
+    'div.central_midfielder',
+    'div.central_midfieldera',
+    'div.central_midfielderb',
+    'div.central_midfielderc',
+    'div.central_midfielderd',
+    'div.central_midfieldere',
+    'div.lateral_midfielder',
+    'div.lateral_midfieldera',
+    'div.lateral_midfielderb',
+    'div.lateral_midfielderc',
+    'div.lateral_midfielderd',
+    'div.lateral_midfieldere',
+    'div.striker',
+    'div.strikera',
+    'div.strikerb',
+    'div.strikerc',
+    'div.strikerd',
+    'div.strikere',
     'div.opensans',
     'font[color=*]',
     'font[size=*]',
@@ -1148,6 +1348,39 @@ export function setup(helper) {
   replaceBBCode("electricgrey", contents => ['div', {'class': 'electricgrey'}].concat(contents));
   replaceBBCode("electricmenu", contents => ['div', {'class': 'electricmenu'}].concat(contents));
   replaceBBCode("electricgold", contents => ['div', {'class': 'electricgold'}].concat(contents));
+  replaceBBCode("goal", contents => ['div', {'class': 'goal'}].concat(contents));
+  replaceBBCode("goala", contents => ['div', {'class': 'goala'}].concat(contents));
+  replaceBBCode("goalb", contents => ['div', {'class': 'goalb'}].concat(contents));
+  replaceBBCode("central_defender", contents => ['div', {'class': 'central_defender'}].concat(contents));
+  replaceBBCode("central_defendera", contents => ['div', {'class': 'central_defendera'}].concat(contents));
+  replaceBBCode("central_defenderb", contents => ['div', {'class': 'central_defenderb'}].concat(contents));
+  replaceBBCode("central_defenderc", contents => ['div', {'class': 'central_defenderc'}].concat(contents));
+  replaceBBCode("central_defenderd", contents => ['div', {'class': 'central_defenderd'}].concat(contents));
+  replaceBBCode("central_defendere", contents => ['div', {'class': 'central_defendere'}].concat(contents));
+  replaceBBCode("lateral_defender", contents => ['div', {'class': 'lateral_defender'}].concat(contents));
+  replaceBBCode("lateral_defendera", contents => ['div', {'class': 'lateral_defendera'}].concat(contents));
+  replaceBBCode("lateral_defenderb", contents => ['div', {'class': 'lateral_defenderb'}].concat(contents));
+  replaceBBCode("lateral_defenderc", contents => ['div', {'class': 'lateral_defenderc'}].concat(contents));
+  replaceBBCode("lateral_defenderd", contents => ['div', {'class': 'lateral_defenderd'}].concat(contents));
+  replaceBBCode("lateral_defendere", contents => ['div', {'class': 'lateral_defendere'}].concat(contents));
+  replaceBBCode("central_midfielder", contents => ['div', {'class': 'central_midfielder'}].concat(contents));
+  replaceBBCode("central_midfieldera", contents => ['div', {'class': 'central_midfieldera'}].concat(contents));
+  replaceBBCode("central_midfielderb", contents => ['div', {'class': 'central_midfielderb'}].concat(contents));
+  replaceBBCode("central_midfielderc", contents => ['div', {'class': 'central_midfielderc'}].concat(contents));
+  replaceBBCode("central_midfielderd", contents => ['div', {'class': 'central_midfielderd'}].concat(contents));
+  replaceBBCode("central_midfieldere", contents => ['div', {'class': 'central_midfieldere'}].concat(contents));
+  replaceBBCode("lateral_midfielder", contents => ['div', {'class': 'lateral_midfielder'}].concat(contents));
+  replaceBBCode("lateral_midfieldera", contents => ['div', {'class': 'lateral_midfieldera'}].concat(contents));
+  replaceBBCode("lateral_midfielderb", contents => ['div', {'class': 'lateral_midfielderb'}].concat(contents));
+  replaceBBCode("lateral_midfielderc", contents => ['div', {'class': 'lateral_midfielderc'}].concat(contents));
+  replaceBBCode("lateral_midfielderd", contents => ['div', {'class': 'lateral_midfielderd'}].concat(contents));
+  replaceBBCode("lateral_midfieldere", contents => ['div', {'class': 'lateral_midfieldere'}].concat(contents));
+  replaceBBCode("striker", contents => ['div', {'class': 'striker'}].concat(contents));
+  replaceBBCode("strikera", contents => ['div', {'class': 'strikera'}].concat(contents));
+  replaceBBCode("strikerb", contents => ['div', {'class': 'strikerb'}].concat(contents));
+  replaceBBCode("strikerc", contents => ['div', {'class': 'strikerc'}].concat(contents));
+  replaceBBCode("strikerd", contents => ['div', {'class': 'strikerd'}].concat(contents));
+  replaceBBCode("strikere", contents => ['div', {'class': 'strikere'}].concat(contents));
   replaceBBCode("grootsudamericana", contents => ['div', {'class': 'grootsudamericana'}].concat(contents));
 
   ["left", "center", "right", "justify"].forEach(direction => {
