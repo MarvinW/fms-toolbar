@@ -72,6 +72,16 @@ function setupMarkdownIt(md) {
     wrap: wrap('span', 'style', ()=>'font-size:x-small')
   });
 
+  ruler.push('hover-card',{
+    tag: 'hover-card',
+    wrap: wrap('span', 'class', ()=>'hover-card')
+  });
+
+  ruler.push('hover-text',{
+    tag: 'hover-text',
+    wrap: wrap('a', 'class', ()=>'hover-text')
+  });
+
   ruler.push('floatl', {
     tag: 'floatl',
     wrap: wrap('div', 'class', ()=>'floatl')
@@ -1176,7 +1186,9 @@ export function setup(helper) {
     'div.opensans',
     'font[color=*]',
     'font[size=*]',
-    'font[face=*]'
+    'font[face=*]',
+    'span.hover-card',
+    'a.hover-text'
   ]);
 
 
@@ -1202,6 +1214,8 @@ export function setup(helper) {
   const { register, replaceBBCode, rawBBCode, replaceBBCodeParamsRaw } = builders(helper);
 
   replaceBBCode("small", contents => ['span', {'style': 'font-size:x-small'}].concat(contents));
+  replaceBBCode("hover-card", contents => ['span', {'class': 'hover-card'}].concat(contents));
+  replaceBBCode("hover-text", contents => ['a', {'class': 'hover-text'}].concat(contents));
   replaceBBCode("floatl", contents => ['div', {'class': 'floatl'}].concat(contents));
   replaceBBCode("floatr", contents => ['div', {'class': 'floatr'}].concat(contents));
   replaceBBCode("t", contents => ['div', {'class': 'titrenews'}].concat(contents));
