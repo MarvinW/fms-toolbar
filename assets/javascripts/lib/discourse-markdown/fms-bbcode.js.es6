@@ -82,6 +82,11 @@ function setupMarkdownIt(md) {
     wrap: wrap('a', 'class', ()=>'hover-text')
   });
 
+  ruler.push('hover-image',{
+    tag: 'hover-card',
+    wrap: wrap('span', 'class', ()=>'hover-image')
+  });
+
   ruler.push('floatl', {
     tag: 'floatl',
     wrap: wrap('div', 'class', ()=>'floatl')
@@ -110,6 +115,16 @@ function setupMarkdownIt(md) {
   ruler.push('justify', {
     tag: 'justify',
     wrap: wrap('div', 'style', ()=>'text-align:justify')
+  });
+
+  md.block.bbcode.ruler.push('image', {
+    tag: 'image',
+    wrap: 'div.image'
+  });
+
+  md.block.bbcode.ruler.push('image-hover', {
+    tag: 'image-hover',
+    wrap: 'div.image-hover'
   });
 
   md.block.bbcode.ruler.push('coltaba', {
@@ -1183,11 +1198,14 @@ export function setup(helper) {
     'div.strikerc',
     'div.strikerd',
     'div.strikere',
+    'div.image',
+    'div.image-hover',
     'div.opensans',
     'font[color=*]',
     'font[size=*]',
     'font[face=*]',
     'span.hover-card',
+    'span.hover-image',
     'a.hover-text'
   ]);
 
@@ -1215,10 +1233,13 @@ export function setup(helper) {
 
   replaceBBCode("small", contents => ['span', {'style': 'font-size:x-small'}].concat(contents));
   replaceBBCode("hover-card", contents => ['span', {'class': 'hover-card'}].concat(contents));
+  replaceBBCode("hover-image", contents => ['span', {'class': 'hover-image'}].concat(contents));
   replaceBBCode("hover-text", contents => ['a', {'class': 'hover-text'}].concat(contents));
   replaceBBCode("floatl", contents => ['div', {'class': 'floatl'}].concat(contents));
   replaceBBCode("floatr", contents => ['div', {'class': 'floatr'}].concat(contents));
   replaceBBCode("t", contents => ['div', {'class': 'titrenews'}].concat(contents));
+  replaceBBCode("image", contents => ['div', {'class': 'image'}].concat(contents));
+  replaceBBCode("image-hover", contents => ['div', {'class': 'image-hover'}].concat(contents));
   replaceBBCode("coltaba", contents => ['div', {'class': 'coltaba'}].concat(contents));
   replaceBBCode("coltabb", contents => ['div', {'class': 'coltabb'}].concat(contents));
   replaceBBCode("coltabc", contents => ['div', {'class': 'coltabc'}].concat(contents));
