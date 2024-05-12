@@ -828,6 +828,11 @@ md.block.bbcode.ruler.push('electricgrey', {
     wrap: 'div.electricviolet'
   });
 
+  md.block.bbcode.ruler.push('electricfluog', {
+      tag: 'electricfluog',
+      wrap: 'div.electricfluog'
+    });
+
   md.block.bbcode.ruler.push('electriccyan', {
     tag: 'electriccyan',
     wrap: 'div.electriccyan'
@@ -1160,6 +1165,7 @@ export function setup(helper) {
     'div.electricyellow',
     'div.electricorange',
     'div.electricviolet',
+    'div.electricfluog',
     'div.electricpink',
     'div.electriccyan',
     'div.electricgrey',
@@ -1378,6 +1384,7 @@ export function setup(helper) {
   replaceBBCode("electricyellow", contents => ['div', {'class': 'electricyellow'}].concat(contents));
   replaceBBCode("electricorange", contents => ['div', {'class': 'electricorange'}].concat(contents));
   replaceBBCode("electricviolet", contents => ['div', {'class': 'electricviolet'}].concat(contents));
+  replaceBBCode("electricfluog", contents => ['div', {'class': 'electricfluog'}].concat(contents));
   replaceBBCode("electricpink", contents => ['div', {'class': 'electricpink'}].concat(contents));
   replaceBBCode("electriccyan", contents => ['div', {'class': 'electriccyan'}].concat(contents));
   replaceBBCode("electricgrey", contents => ['div', {'class': 'electricgrey'}].concat(contents));
