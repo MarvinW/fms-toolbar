@@ -87,63 +87,6 @@ function setupMarkdownIt(md) {
     wrap: wrap('span', 'class', ()=>'hover-image')
   });
 
-ruler.push('radiotab_first',{
-    tag: 'radiotab_first',
-    wrap: wrap('input', 'class', ()=>'radiotab')
-  });
-
-ruler.push('radiotab_first',{
-    tag: 'radiotab_first',
-    wrap: wrap('input', 'id', ()=>'tabone')
-  });
-
-ruler.push('radiotab_second',{
-    tag: 'radiotab_second',
-    wrap: wrap('input', 'class', ()=>'radiotab'),
-    wrap: wrap('input', 'name', ()=>'tabs'),
-    wrap: wrap('input', 'tabindex', ()=>'1'),
-    wrap: wrap('input', 'type', ()=>'radio'),
-    wrap: wrap('input', 'id', ()=>'tabtwo')
-  });
-
-ruler.push('radiotab_third',{
-    tag: 'radiotab_third',
-    wrap: wrap('input', 'class', ()=>'radiotab'),
-    wrap: wrap('input', 'name', ()=>'tabs'),
-    wrap: wrap('input', 'tabindex', ()=>'1'),
-    wrap: wrap('input', 'type', ()=>'radio'),
-    wrap: wrap('input', 'id', ()=>'tabthree')
-  });
-
-ruler.push('tabs', {
-    tag: 'tabs',
-    wrap: wrap('div', 'class', ()=>'tabs')
-  });
-
-ruler.push('labelf',{
-    tag: 'labelf',
-    wrap: wrap('label', 'class', ()=>'label'),
-    wrap: wrap('label', 'for', ()=>'tabone')
-  });
-
-  ruler.push('labels',{
-      tag: 'labels',
-      wrap: wrap('label', 'class', ()=>'label'),
-      wrap: wrap('label', 'for', ()=>'tabtwo')
-    });
-
-    ruler.push('labelt',{
-        tag: 'labelt',
-        wrap: wrap('label', 'class', ()=>'label'),
-        wrap: wrap('label', 'for', ()=>'tabthree')
-      });
-
-      ruler.push('panel',{
-          tag: 'panel',
-          wrap: wrap('div', 'class', ()=>'panel'),
-          wrap: wrap('div', 'tabindex', ()=>'1')
-        });
-
   ruler.push('floatl', {
     tag: 'floatl',
     wrap: wrap('div', 'class', ()=>'floatl')
@@ -182,6 +125,21 @@ ruler.push('labelf',{
   md.block.bbcode.ruler.push('image-hover', {
     tag: 'image-hover',
     wrap: 'div.image-hover'
+  });
+
+  md.block.bbcode.ruler.push('player_a', {
+    tag: 'player_a',
+    wrap: 'div.player_a'
+  });
+
+  md.block.bbcode.ruler.push('player_b', {
+    tag: 'player_b',
+    wrap: 'div.player_b'
+  });
+
+  md.block.bbcode.ruler.push('player_c', {
+    tag: 'player_c',
+    wrap: 'div.player_d'
   });
 
   md.block.bbcode.ruler.push('coltaba', {
@@ -1270,14 +1228,9 @@ export function setup(helper) {
     'span.hover-card',
     'span.hover-image',
     'a.hover-text',
-    'input.radiotab_first',
-    'input.radiotab_second',
-    'input.radiotab_third',
-    'div.tabs',
-    'label.labelf',
-    'label.labels',
-    'label.labelt',
-    'div.panel',
+    'div.player_a',
+    'div.player_b',
+    'div.player_c',
   ]);
 
 
@@ -1306,14 +1259,9 @@ export function setup(helper) {
   replaceBBCode("hover-card", contents => ['span', {'class': 'hover-card'}].concat(contents));
   replaceBBCode("hover-image", contents => ['span', {'class': 'hover-image'}].concat(contents));
   replaceBBCode("hover-text", contents => ['a', {'class': 'hover-text'}].concat(contents));
-  replaceBBCode("radiotab_first", contents => ['input', {'class': 'radiotab_first'}].concat(contents));
-  replaceBBCode("radiotab_second", contents => ['input', {'class': 'radiotab_second'}].concat(contents));
-  replaceBBCode("radiotab_third", contents => ['input', {'class': 'radiotab_third'}].concat(contents));
-  replaceBBCode("tabs", contents => ['div', {'class': 'tabs'}].concat(contents));
-  replaceBBCode("labelf", contents => ['label', {'class': 'labelf'}].concat(contents));
-  replaceBBCode("labels", contents => ['label', {'class': 'labels'}].concat(contents));
-  replaceBBCode("labelt", contents => ['label', {'class': 'labelt'}].concat(contents));
-  replaceBBCode("panel", contents => ['div', {'class': 'panel'}].concat(contents));
+  replaceBBCode("player_a", contents => ['div', {'class': 'player_a'}].concat(contents));
+  replaceBBCode("player_b", contents => ['div', {'class': 'player_b'}].concat(contents));
+  replaceBBCode("player_c", contents => ['div', {'class': 'player_c'}].concat(contents));
   replaceBBCode("floatl", contents => ['div', {'class': 'floatl'}].concat(contents));
   replaceBBCode("floatr", contents => ['div', {'class': 'floatr'}].concat(contents));
   replaceBBCode("t", contents => ['div', {'class': 'titrenews'}].concat(contents));
