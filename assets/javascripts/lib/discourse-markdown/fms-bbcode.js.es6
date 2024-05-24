@@ -127,14 +127,14 @@ function setupMarkdownIt(md) {
     wrap: 'div.image-hover'
   });
 
-  md.block.bbcode.ruler.push('player_a', {
-    tag: 'player_a',
-    wrap: 'div.player_a'
+  md.block.bbcode.ruler.push('playera', {
+    tag: 'playera',
+    wrap: 'div.playera'
   });
 
-  md.block.bbcode.ruler.push('player_b', {
-    tag: 'player_b',
-    wrap: 'div.player_b'
+  md.block.bbcode.ruler.push('playerb', {
+    tag: 'playerb',
+    wrap: 'div.playerb'
   });
 
   md.block.bbcode.ruler.push('player_c', {
@@ -1228,9 +1228,9 @@ export function setup(helper) {
     'span.hover-card',
     'span.hover-image',
     'a.hover-text',
-    'div.player_a',
-    'div.player_b',
-    'div.player_c',
+    'div.playera',
+    'div.playerb',
+    'div.playerc'
   ]);
 
 
@@ -1259,9 +1259,9 @@ export function setup(helper) {
   replaceBBCode("hover-card", contents => ['span', {'class': 'hover-card'}].concat(contents));
   replaceBBCode("hover-image", contents => ['span', {'class': 'hover-image'}].concat(contents));
   replaceBBCode("hover-text", contents => ['a', {'class': 'hover-text'}].concat(contents));
-  replaceBBCode("player_a", contents => ['div', {'class': 'player_a'}].concat(contents));
-  replaceBBCode("player_b", contents => ['div', {'class': 'player_b'}].concat(contents));
-  replaceBBCode("player_c", contents => ['div', {'class': 'player_c'}].concat(contents));
+  replaceBBCode("playera", contents => ['div', {'class': 'playera'}].concat(contents));
+  replaceBBCode("playerb", contents => ['div', {'class': 'playerb'}].concat(contents));
+  replaceBBCode("playerc", contents => ['div', {'class': 'playerc'}].concat(contents));
   replaceBBCode("floatl", contents => ['div', {'class': 'floatl'}].concat(contents));
   replaceBBCode("floatr", contents => ['div', {'class': 'floatr'}].concat(contents));
   replaceBBCode("t", contents => ['div', {'class': 'titrenews'}].concat(contents));
