@@ -87,6 +87,65 @@ function setupMarkdownIt(md) {
     wrap: wrap('span', 'class', ()=>'hover-image')
   });
 
+ruler.push('radiotab_first',{
+    tag: 'radiotab_first',
+    wrap: wrap('input', 'class', ()=>'radiotab'),
+    wrap: wrap('input', 'name', ()=>'tabs'),
+    wrap: wrap('input', 'tabindex', ()=>'1'),
+    wrap: wrap('input', 'type', ()=>'radio'),
+    wrap: wrap('input', 'id', ()=>'tabone'),
+    wrap: wrap('input', 'checked', ()=>'checked')
+  });
+
+ruler.push('radiotab_second',{
+    tag: 'radiotab_second',
+    wrap: wrap('input', 'class', ()=>'radiotab'),
+    wrap: wrap('input', 'name', ()=>'tabs'),
+    wrap: wrap('input', 'tabindex', ()=>'1'),
+    wrap: wrap('input', 'type', ()=>'radio'),
+    wrap: wrap('input', 'id', ()=>'tabtwo'),
+    wrap: wrap('input', 'checked', ()=>'checked')
+  });
+
+ruler.push('radiotab_third',{
+    tag: 'radiotab_third',
+    wrap: wrap('input', 'class', ()=>'radiotab'),
+    wrap: wrap('input', 'name', ()=>'tabs'),
+    wrap: wrap('input', 'tabindex', ()=>'1'),
+    wrap: wrap('input', 'type', ()=>'radio'),
+    wrap: wrap('input', 'id', ()=>'tabthree'),
+    wrap: wrap('input', 'checked', ()=>'checked')
+  });
+
+ruler.push('tabs', {
+    tag: 'tabs',
+    wrap: wrap('div', 'class', ()=>'tabs')
+  });
+
+ruler.push('labelf',{
+    tag: 'labelf',
+    wrap: wrap('label', 'class', ()=>'label'),
+    wrap: wrap('label', 'for', ()=>'tabone')
+  });
+
+  ruler.push('labels',{
+      tag: 'labels',
+      wrap: wrap('label', 'class', ()=>'label'),
+      wrap: wrap('label', 'for', ()=>'tabtwo')
+    });
+
+    ruler.push('labelt',{
+        tag: 'labelt',
+        wrap: wrap('label', 'class', ()=>'label'),
+        wrap: wrap('label', 'for', ()=>'tabthree')
+      });
+
+      ruler.push('panel',{
+          tag: 'panel',
+          wrap: wrap('div', 'class', ()=>'panel'),
+          wrap: wrap('div', 'tabindex', ()=>'1')
+        });
+
   ruler.push('floatl', {
     tag: 'floatl',
     wrap: wrap('div', 'class', ()=>'floatl')
@@ -1212,7 +1271,15 @@ export function setup(helper) {
     'font[face=*]',
     'span.hover-card',
     'span.hover-image',
-    'a.hover-text'
+    'a.hover-text',
+    'input.radiotab_first',
+    'input.radiotab_second',
+    'input.radiotab_third',
+    'div.tabs',
+    'label.labelf',
+    'label.labels',
+    'label.labelt',
+    'div.panel',
   ]);
 
 
@@ -1241,6 +1308,14 @@ export function setup(helper) {
   replaceBBCode("hover-card", contents => ['span', {'class': 'hover-card'}].concat(contents));
   replaceBBCode("hover-image", contents => ['span', {'class': 'hover-image'}].concat(contents));
   replaceBBCode("hover-text", contents => ['a', {'class': 'hover-text'}].concat(contents));
+  replaceBBCode("radiotab_first", contents => ['input', {'class': 'radiotab_first'}].concat(contents));
+  replaceBBCode("radiotab_second", contents => ['input', {'class': 'radiotab_second'}].concat(contents));
+  replaceBBCode("radiotab_third", contents => ['input', {'class': 'radiotab_third'}].concat(contents));
+  replaceBBCode("tabs", contents => ['div', {'class': 'tabs'}].concat(contents));
+  replaceBBCode("labelf", contents => ['label', {'class': 'labelf'}].concat(contents));
+  replaceBBCode("labels", contents => ['label', {'class': 'labels'}].concat(contents));
+  replaceBBCode("labelt", contents => ['label', {'class': 'labelt'}].concat(contents));
+  replaceBBCode("panel", contents => ['div', {'class': 'panel'}].concat(contents));
   replaceBBCode("floatl", contents => ['div', {'class': 'floatl'}].concat(contents));
   replaceBBCode("floatr", contents => ['div', {'class': 'floatr'}].concat(contents));
   replaceBBCode("t", contents => ['div', {'class': 'titrenews'}].concat(contents));
