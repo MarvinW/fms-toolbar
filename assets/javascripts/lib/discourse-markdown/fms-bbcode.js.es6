@@ -89,12 +89,12 @@ function setupMarkdownIt(md) {
 
 ruler.push('radiotab_first',{
     tag: 'radiotab_first',
-    wrap: wrap('input', 'class', ()=>'radiotab'),
-    wrap: wrap('input', 'name', ()=>'tabs'),
-    wrap: wrap('input', 'tabindex', ()=>'1'),
-    wrap: wrap('input', 'type', ()=>'radio'),
-    wrap: wrap('input', 'id', ()=>'tabone'),
-    wrap: wrap('input', 'checked', ()=>'checked')
+    wrap: wrap('input', 'class', ()=>'radiotab')
+  });
+
+ruler.push('radiotab_first',{
+    tag: 'radiotab_first',
+    wrap: wrap('input', 'id', ()=>'tabone')
   });
 
 ruler.push('radiotab_second',{
