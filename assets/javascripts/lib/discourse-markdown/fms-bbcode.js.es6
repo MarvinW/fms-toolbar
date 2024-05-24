@@ -103,8 +103,7 @@ ruler.push('radiotab_second',{
     wrap: wrap('input', 'name', ()=>'tabs'),
     wrap: wrap('input', 'tabindex', ()=>'1'),
     wrap: wrap('input', 'type', ()=>'radio'),
-    wrap: wrap('input', 'id', ()=>'tabtwo'),
-    wrap: wrap('input', 'checked', ()=>'checked')
+    wrap: wrap('input', 'id', ()=>'tabtwo')
   });
 
 ruler.push('radiotab_third',{
@@ -113,8 +112,7 @@ ruler.push('radiotab_third',{
     wrap: wrap('input', 'name', ()=>'tabs'),
     wrap: wrap('input', 'tabindex', ()=>'1'),
     wrap: wrap('input', 'type', ()=>'radio'),
-    wrap: wrap('input', 'id', ()=>'tabthree'),
-    wrap: wrap('input', 'checked', ()=>'checked')
+    wrap: wrap('input', 'id', ()=>'tabthree')
   });
 
 ruler.push('tabs', {
