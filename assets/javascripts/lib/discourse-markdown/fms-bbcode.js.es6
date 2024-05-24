@@ -137,9 +137,9 @@ function setupMarkdownIt(md) {
     wrap: 'div.playerb'
   });
 
-  md.block.bbcode.ruler.push('player_c', {
-    tag: 'player_c',
-    wrap: 'div.player_d'
+  md.block.bbcode.ruler.push('playerc', {
+    tag: 'playerc',
+    wrap: 'div.playerc'
   });
 
   md.block.bbcode.ruler.push('coltaba', {
