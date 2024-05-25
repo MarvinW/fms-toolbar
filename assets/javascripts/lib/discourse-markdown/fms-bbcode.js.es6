@@ -237,11 +237,6 @@ function setupMarkdownIt(md) {
     wrap: 'img.playerv'
   });
   
-  md.block.bbcode.ruler.push('playerw', {
-    tag: 'playerw',
-    wrap: 'img.playerw'
-  });
-  
   md.block.bbcode.ruler.push('playerx', {
     tag: 'playerx',
     wrap: 'img.playerx'
@@ -1575,7 +1570,6 @@ export function setup(helper) {
     'img.playert',
     'img.playeru',
     'img.playerv,
-    'img.playerw',
     'img.playerx',
     'img.playery',
     'img.playerz',
@@ -1671,7 +1665,6 @@ export function setup(helper) {
   replaceBBCode("playert", contents => ['img', {'class': 'playert'}].concat(contents));
   replaceBBCode("playeru", contents => ['img', {'class': 'playeru'}].concat(contents));
   replaceBBCode("playerv", contents => ['img', {'class': 'playerv'}].concat(contents));
-  replaceBBCode("playerw", contents => ['img', {'class': 'playerw'}].concat(contents));
   replaceBBCode("playerx", contents => ['img', {'class': 'playerx'}].concat(contents));
   replaceBBCode("playery", contents => ['img', {'class': 'playery'}].concat(contents));
   replaceBBCode("playerz", contents => ['img', {'class': 'playerz'}].concat(contents));
