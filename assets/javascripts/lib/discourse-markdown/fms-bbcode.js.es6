@@ -299,172 +299,172 @@ function setupMarkdownIt(md) {
 
   md.block.bbcode.ruler.push('infoa', {
     tag: 'infoa',
-    wrap: 'img.infoa'
+    wrap: 'div.infoa'
   });
 
   md.block.bbcode.ruler.push('infob', {
     tag: 'infob',
-    wrap: 'img.infob'
+    wrap: 'div.infob'
   });
 
   md.block.bbcode.ruler.push('infoc', {
     tag: 'infoc',
-    wrap: 'img.infoc'
+    wrap: 'div.infoc'
   });
 
 md.block.bbcode.ruler.push('infod', {
   tag: 'infod',
-  wrap: 'img.infod'
+  wrap: 'div.infod'
 });
 
 md.block.bbcode.ruler.push('infoe', {
   tag: 'infoe',
-  wrap: 'img.infoe'
+  wrap: 'div.infoe'
 });
 
 md.block.bbcode.ruler.push('infof', {
   tag: 'infof',
-  wrap: 'img.infof'
+  wrap: 'div.infof'
 });
 
 md.block.bbcode.ruler.push('infog', {
   tag: 'infog',
-  wrap: 'img.infog'
+  wrap: 'div.infog'
 });
 
 md.block.bbcode.ruler.push('infoh', {
   tag: 'infoh',
-  wrap: 'img.infoh'
+  wrap: 'div.infoh'
 });
 
 md.block.bbcode.ruler.push('infoi', {
   tag: 'infoi',
-  wrap: 'img.infoi'
+  wrap: 'div.infoi'
 });
 
 md.block.bbcode.ruler.push('infoj', {
   tag: 'infoj',
-  wrap: 'img.infoj'
+  wrap: 'div.infoj'
 });
 
 md.block.bbcode.ruler.push('infok', {
   tag: 'infok',
-  wrap: 'img.infok'
+  wrap: 'div.infok'
 });
 
 md.block.bbcode.ruler.push('infol', {
   tag: 'infol',
-  wrap: 'img.infol'
+  wrap: 'div.infol'
 });
 
 md.block.bbcode.ruler.push('infom', {
   tag: 'infom',
-  wrap: 'img.infom'
+  wrap: 'div.infom'
 });
 
 md.block.bbcode.ruler.push('infon', {
   tag: 'infon',
-  wrap: 'img.infon'
+  wrap: 'div.infon'
 });
 
 md.block.bbcode.ruler.push('infoo', {
   tag: 'infoo',
-  wrap: 'img.infoo'
+  wrap: 'div.infoo'
 });
 
 md.block.bbcode.ruler.push('infop', {
   tag: 'infop',
-  wrap: 'img.infop'
+  wrap: 'div.infop'
 });
 
 md.block.bbcode.ruler.push('infoq', {
   tag: 'infoq',
-  wrap: 'img.infoq'
+  wrap: 'div.infoq'
 });
 
 md.block.bbcode.ruler.push('infor', {
   tag: 'infor',
-  wrap: 'img.infor'
+  wrap: 'div.infor'
 });
 
 md.block.bbcode.ruler.push('infos', {
   tag: 'infos',
-  wrap: 'img.infos'
+  wrap: 'div.infos'
 });
 
 md.block.bbcode.ruler.push('infot', {
     tag: 'infot',
-    wrap: 'img.infot'
+    wrap: 'div.infot'
   });
 
 md.block.bbcode.ruler.push('infou', {
   tag: 'infou',
-  wrap: 'img.infou'
+  wrap: 'div.infou'
 });
 
 md.block.bbcode.ruler.push('infov', {
   tag: 'infov',
-  wrap: 'img.infov'
+  wrap: 'div.infov'
 });
 
 md.block.bbcode.ruler.push('infow', {
   tag: 'infow',
-  wrap: 'img.infow'
+  wrap: 'div.infow'
 });
 
 md.block.bbcode.ruler.push('infox', {
   tag: 'infox',
-  wrap: 'img.infox'
+  wrap: 'div.infox'
 });
 
 md.block.bbcode.ruler.push('infoy', {
   tag: 'infoy',
-  wrap: 'img.infoy'
+  wrap: 'div.infoy'
 });
 
 md.block.bbcode.ruler.push('infoz', {
   tag: 'infoz',
-  wrap: 'img.infoz'
+  wrap: 'div.infoz'
 });
 
 md.block.bbcode.ruler.push('infoaa', {
   tag: 'infoaa',
-  wrap: 'img.infoaa'
+  wrap: 'div.infoaa'
 });
 
 md.block.bbcode.ruler.push('infoab', {
   tag: 'infoab',
-  wrap: 'img.infoab'
+  wrap: 'div.infoab'
 });
 
 md.block.bbcode.ruler.push('infoac', {
   tag: 'infoac',
-  wrap: 'img.infoac'
+  wrap: 'div.infoac'
 });
 
 md.block.bbcode.ruler.push('infoad', {
   tag: 'infoad',
-  wrap: 'img.infoad'
+  wrap: 'div.infoad'
 });
 
 md.block.bbcode.ruler.push('infoae', {
   tag: 'infoae',
-  wrap: 'img.infoae'
+  wrap: 'div.infoae'
 });
 
 md.block.bbcode.ruler.push('infoaf', {
   tag: 'infoaf',
-  wrap: 'img.infoaf'
+  wrap: 'div.infoaf'
 });
 
 md.block.bbcode.ruler.push('infoag', {
   tag: 'infoag',
-  wrap: 'img.infoag'
+  wrap: 'div.infoag'
 });
 
 md.block.bbcode.ruler.push('infoah', {
   tag: 'infoah',
-  wrap: 'img.infoah'
+  wrap: 'div.infoah'
 });
 
   md.block.bbcode.ruler.push('coltaba', {
@@ -1587,40 +1587,40 @@ export function setup(helper) {
     'img.playeraf',
     'img.playerag',
     'img.playerah',
-    'img.infoa',
-    'img.infob',
-    'img.infoc',
-    'img.infod',
-    'img.infoe',
-    'img.infof',
-    'img.infog',
-    'img.infoh',
-    'img.infoi',
-    'img.infoj',
-    'img.infok',
-    'img.infol',
-    'img.infom',
-    'img.infon',
-    'img.infoo',
-    'img.infop',
-    'img.infoq',
-    'img.infor',
-    'img.infos',
-    'img.infot',
-    'img.infou',
-    'img.infov,
-    'img.infow',
-    'img.infox',
-    'img.infoy',
-    'img.infoz',
-    'img.infoaa',
-    'img.infoab',
-    'img.infoac',
-    'img.infoad',
-    'img.infoae',
-    'img.infoaf',
-    'img.infoag',
-    'img.infoah'
+    'div.infoa',
+    'div.infob',
+    'div.infoc',
+    'div.infod',
+    'div.infoe',
+    'div.infof',
+    'div.infog',
+    'div.infoh',
+    'div.infoi',
+    'div.infoj',
+    'div.infok',
+    'div.infol',
+    'div.infom',
+    'div.infon',
+    'div.infoo',
+    'div.infop',
+    'div.infoq',
+    'div.infor',
+    'div.infos',
+    'div.infot',
+    'div.infou',
+    'div.infov,
+    'div.infow',
+    'div.infox',
+    'div.infoy',
+    'div.infoz',
+    'div.infoaa',
+    'div.infoab',
+    'div.infoac',
+    'div.infoad',
+    'div.infoae',
+    'div.infoaf',
+    'div.infoag',
+    'div.infoah'
   ]);
 
 
@@ -1683,39 +1683,39 @@ export function setup(helper) {
   replaceBBCode("playeraf", contents => ['img', {'class': 'playeraf'}].concat(contents));
   replaceBBCode("playerag", contents => ['img', {'class': 'playerag'}].concat(contents));
   replaceBBCode("playerah", contents => ['img', {'class': 'playerah'}].concat(contents));
-  replaceBBCode("infoa", contents => ['img', {'class': 'infoa'}].concat(contents));
-  replaceBBCode("infob", contents => ['img', {'class': 'infob'}].concat(contents));
-  replaceBBCode("infoc", contents => ['img', {'class': 'infoc'}].concat(contents));
-  replaceBBCode("infod", contents => ['img', {'class': 'infod'}].concat(contents));
-  replaceBBCode("infoe", contents => ['img', {'class': 'infoe'}].concat(contents));
-  replaceBBCode("infof", contents => ['img', {'class': 'infof'}].concat(contents));
-  replaceBBCode("infog", contents => ['img', {'class': 'infog'}].concat(contents));
-  replaceBBCode("infoh", contents => ['img', {'class': 'infoh'}].concat(contents));
-  replaceBBCode("infoi", contents => ['img', {'class': 'infoi'}].concat(contents));
-  replaceBBCode("infoj", contents => ['img', {'class': 'infoj'}].concat(contents));
-  replaceBBCode("infok", contents => ['img', {'class': 'infok'}].concat(contents));
-  replaceBBCode("infol", contents => ['img', {'class': 'infol'}].concat(contents));
-  replaceBBCode("infom", contents => ['img', {'class': 'infom'}].concat(contents));
-  replaceBBCode("infon", contents => ['img', {'class': 'infon'}].concat(contents));
-  replaceBBCode("infoo", contents => ['img', {'class': 'infoo'}].concat(contents));
-  replaceBBCode("infop", contents => ['img', {'class': 'infop'}].concat(contents));
-  replaceBBCode("infoq", contents => ['img', {'class': 'infoq'}].concat(contents));
-  replaceBBCode("infor", contents => ['img', {'class': 'infor'}].concat(contents));
-  replaceBBCode("infos", contents => ['img', {'class': 'infos'}].concat(contents));
-  replaceBBCode("infot", contents => ['img', {'class': 'infot'}].concat(contents));
-  replaceBBCode("infou", contents => ['img', {'class': 'infou'}].concat(contents));
-  replaceBBCode("infov", contents => ['img', {'class': 'infov'}].concat(contents));
-  replaceBBCode("infow", contents => ['img', {'class': 'infow'}].concat(contents));
-  replaceBBCode("infox", contents => ['img', {'class': 'infox'}].concat(contents));
-  replaceBBCode("infoy", contents => ['img', {'class': 'infoy'}].concat(contents));
-  replaceBBCode("infoz", contents => ['img', {'class': 'infoz'}].concat(contents));
-  replaceBBCode("infoaa", contents => ['img', {'class': 'infoaa'}].concat(contents));
-  replaceBBCode("infoab", contents => ['img', {'class': 'infoab'}].concat(contents));
-  replaceBBCode("infoac", contents => ['img', {'class': 'infoac'}].concat(contents));
-  replaceBBCode("infoad", contents => ['img', {'class': 'infoad'}].concat(contents));
-  replaceBBCode("infoae", contents => ['img', {'class': 'infoae'}].concat(contents));
-  replaceBBCode("infoaf", contents => ['img', {'class': 'infoaf'}].concat(contents));
-  replaceBBCode("infoag", contents => ['img', {'class': 'infoag'}].concat(contents));
+  replaceBBCode("infoa", contents => ['div', {'class': 'infoa'}].concat(contents));
+  replaceBBCode("infob", contents => ['div', {'class': 'infob'}].concat(contents));
+  replaceBBCode("infoc", contents => ['div', {'class': 'infoc'}].concat(contents));
+  replaceBBCode("infod", contents => ['div', {'class': 'infod'}].concat(contents));
+  replaceBBCode("infoe", contents => ['div', {'class': 'infoe'}].concat(contents));
+  replaceBBCode("infof", contents => ['div', {'class': 'infof'}].concat(contents));
+  replaceBBCode("infog", contents => ['div', {'class': 'infog'}].concat(contents));
+  replaceBBCode("infoh", contents => ['div', {'class': 'infoh'}].concat(contents));
+  replaceBBCode("infoi", contents => ['div', {'class': 'infoi'}].concat(contents));
+  replaceBBCode("infoj", contents => ['div', {'class': 'infoj'}].concat(contents));
+  replaceBBCode("infok", contents => ['div', {'class': 'infok'}].concat(contents));
+  replaceBBCode("infol", contents => ['div', {'class': 'infol'}].concat(contents));
+  replaceBBCode("infom", contents => ['div', {'class': 'infom'}].concat(contents));
+  replaceBBCode("infon", contents => ['div', {'class': 'infon'}].concat(contents));
+  replaceBBCode("infoo", contents => ['div', {'class': 'infoo'}].concat(contents));
+  replaceBBCode("infop", contents => ['div', {'class': 'infop'}].concat(contents));
+  replaceBBCode("infoq", contents => ['div', {'class': 'infoq'}].concat(contents));
+  replaceBBCode("infor", contents => ['div', {'class': 'infor'}].concat(contents));
+  replaceBBCode("infos", contents => ['div', {'class': 'infos'}].concat(contents));
+  replaceBBCode("infot", contents => ['div', {'class': 'infot'}].concat(contents));
+  replaceBBCode("infou", contents => ['div', {'class': 'infou'}].concat(contents));
+  replaceBBCode("infov", contents => ['div', {'class': 'infov'}].concat(contents));
+  replaceBBCode("infow", contents => ['div', {'class': 'infow'}].concat(contents));
+  replaceBBCode("infox", contents => ['div', {'class': 'infox'}].concat(contents));
+  replaceBBCode("infoy", contents => ['div', {'class': 'infoy'}].concat(contents));
+  replaceBBCode("infoz", contents => ['div', {'class': 'infoz'}].concat(contents));
+  replaceBBCode("infoaa", contents => ['div', {'class': 'infoaa'}].concat(contents));
+  replaceBBCode("infoab", contents => ['div', {'class': 'infoab'}].concat(contents));
+  replaceBBCode("infoac", contents => ['div', {'class': 'infoac'}].concat(contents));
+  replaceBBCode("infoad", contents => ['div', {'class': 'infoad'}].concat(contents));
+  replaceBBCode("infoae", contents => ['div', {'class': 'infoae'}].concat(contents));
+  replaceBBCode("infoaf", contents => ['div', {'class': 'infoaf'}].concat(contents));
+  replaceBBCode("infoag", contents => ['div', {'class': 'infoag'}].concat(contents));
   replaceBBCode("infoah", contents => ['img', {'class': 'infoah'}].concat(contents));
   replaceBBCode("floatl", contents => ['div', {'class': 'floatl'}].concat(contents));
   replaceBBCode("floatr", contents => ['div', {'class': 'floatr'}].concat(contents));
