@@ -1608,7 +1608,7 @@ export function setup(helper) {
     'div.infos',
     'div.infot',
     'div.infou',
-    'div.infov,
+    'div.infov',
     'div.infow',
     'div.infox',
     'div.infoy',
