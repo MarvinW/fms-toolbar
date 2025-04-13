@@ -1187,6 +1187,11 @@ md.block.bbcode.ruler.push('electricgrey', {
     tag: 'electricgold',
     wrap: 'div.electricgold'
   });
+
+md.block.bbcode.ruler.push('electricdarkblue', {
+    tag: 'electricdarkblue',
+    wrap: 'div.electricdarkblue'
+  });
   
 md.block.bbcode.ruler.push('opensans', {
     tag: 'opensans',
@@ -1510,6 +1515,7 @@ export function setup(helper) {
     'div.electriccyan',
     'div.electricgrey',
     'div.electricgold',
+    'div.electricdarkblue',
     'div.electricmenu',
     'div.goal',
     'div.goala',
@@ -1866,6 +1872,7 @@ export function setup(helper) {
   replaceBBCode("electricgrey", contents => ['div', {'class': 'electricgrey'}].concat(contents));
   replaceBBCode("electricmenu", contents => ['div', {'class': 'electricmenu'}].concat(contents));
   replaceBBCode("electricgold", contents => ['div', {'class': 'electricgold'}].concat(contents));
+  replaceBBCode("electricdarkblue", contents => ['div', {'class': 'electricdarkblue'}].concat(contents));
   replaceBBCode("goal", contents => ['div', {'class': 'goal'}].concat(contents));
   replaceBBCode("goala", contents => ['div', {'class': 'goala'}].concat(contents));
   replaceBBCode("goalb", contents => ['div', {'class': 'goalb'}].concat(contents));
