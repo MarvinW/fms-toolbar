@@ -856,6 +856,11 @@ md.block.bbcode.ruler.push('download_button', {
     tag: 'tableauaq',
     wrap: 'div.tableauaq'
   });
+
+  md.block.bbcode.ruler.push('rounded', {
+    tag: 'rounded',
+    wrap: 'div.rounded'
+  });
   
  md.block.bbcode.ruler.push('colmacouille', {
     tag: 'colmacouille',
@@ -1423,6 +1428,7 @@ export function setup(helper) {
     'div.tableauae',
     'div.tableauaf',
     'div.tableauag',
+    'div.rounded',
     'div.tableauah',
     'div.tableauai',
     'div.tableauaj',
@@ -1710,6 +1716,7 @@ export function setup(helper) {
   replaceBBCode("infos", contents => ['div', {'class': 'infos'}].concat(contents));
   replaceBBCode("infot", contents => ['div', {'class': 'infot'}].concat(contents));
   replaceBBCode("infou", contents => ['div', {'class': 'infou'}].concat(contents));
+  replaceBBCode("rounded", contents => ['div', {'class': 'rounded'}].concat(contents));
   replaceBBCode("infov", contents => ['div', {'class': 'infov'}].concat(contents));
   replaceBBCode("infow", contents => ['div', {'class': 'infow'}].concat(contents));
   replaceBBCode("infox", contents => ['div', {'class': 'infox'}].concat(contents));
