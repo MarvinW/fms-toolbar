@@ -1445,12 +1445,17 @@ md.block.bbcode.ruler.push('menu_conference', {
 
 md.block.bbcode.ruler.push('menu_salmon', {
     tag: 'menu_salmon',
-    wrap: 'div.menusalmon'
+    wrap: 'div.menu_salmon'
   });
 
 md.block.bbcode.ruler.push('menu_sapin', {
     tag: 'menu_sapin',
     wrap: 'div.menu_sapin'
+  });
+
+md.block.bbcode.ruler.push('menu_liberta', {
+    tag: 'menu_liberta',
+    wrap: 'div.menu_liberta'
   });
 
 }
@@ -1733,7 +1738,8 @@ export function setup(helper) {
     'div.menu_champions',
     'div.menu_conference',
     'div.menu_salmon',
-    'div.menu_sapin'
+    'div.menu_sapin',
+    'div.menu_liberta',
   ]);
 
 
@@ -2032,6 +2038,7 @@ export function setup(helper) {
   replaceBBCode("menu_conference", contents => ['div', {'class': 'menu_conference'}].concat(contents));
   replaceBBCode("menu_salmon", contents => ['div', {'class': 'menu_salmon'}].concat(contents));
   replaceBBCode("menu_sapin", contents => ['div', {'class': 'menu_sapin'}].concat(contents));
+  replaceBBCode("menu_liberta", contents => ['div', {'class': 'menu_liberta'}].concat(contents));
 
   ["left", "center", "right", "justify"].forEach(direction => {
     replaceBBCode(direction, contents => ['div', {'style': "text-align:" + direction}].concat(contents));
