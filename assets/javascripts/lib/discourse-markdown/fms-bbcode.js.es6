@@ -1369,6 +1369,90 @@ md.block.bbcode.ruler.push('strikere', {
     tag: 'strikere',
     wrap: 'div.strikere'
   });
+
+/* bbcode Menu hover */
+
+md.block.bbcode.ruler.push('menu_orange', {
+    tag: 'menu_orange',
+    wrap: 'div.menu_orange'
+  });
+
+md.block.bbcode.ruler.push('menu_bleu', {
+    tag: 'menu_bleu',
+    wrap: 'div.menu_bleu'
+  });
+
+md.block.bbcode.ruler.push('menu_jaune', {
+    tag: 'menu_jaune',
+    wrap: 'div.menu_jaune'
+  });
+
+md.block.bbcode.ruler.push('menu_violet', {
+    tag: 'menu_violet',
+    wrap: 'div.menu_violet'
+  });
+
+md.block.bbcode.ruler.push('menu_vert', {
+    tag: 'menu_vert',
+    wrap: 'div.menu_vert'
+  });
+
+md.block.bbcode.ruler.push('menu_rouge', {
+    tag: 'menu_rouge',
+    wrap: 'div.menu_rouge'
+  });
+
+
+md.block.bbcode.ruler.push('menu_cyan', {
+    tag: 'menu_cyan',
+    wrap: 'div.menu_cyan'
+  });
+
+md.block.bbcode.ruler.push('menu_rose', {
+    tag: 'menu_rose',
+    wrap: 'div.menu_rose'
+  });
+
+md.block.bbcode.ruler.push('menu_parme', {
+    tag: 'menu_parme',
+    wrap: 'div.menu_parme'
+  });
+
+md.block.bbcode.ruler.push('menu_gris', {
+    tag: 'menu_gris',
+    wrap: 'div.menu_gris'
+  });
+
+md.block.bbcode.ruler.push('menu_vertfluo', {
+    tag: 'menu_vertfluo',
+    wrap: 'div.menu_vertfluo'
+  });
+
+md.block.bbcode.ruler.push('menu_rosepale', {
+    tag: 'menu_rosepale',
+    wrap: 'div.menu_rosepale'
+  });
+
+md.block.bbcode.ruler.push('menu_champions', {
+    tag: 'menu_champions',
+    wrap: 'div.menu_champions'
+  });
+
+md.block.bbcode.ruler.push('menu_conference', {
+    tag: 'menu_conference',
+    wrap: 'div.menu_conference'
+  });
+
+md.block.bbcode.ruler.push('menu_salmon', {
+    tag: 'menu_salmon',
+    wrap: 'div.menusalmon'
+  });
+
+md.block.bbcode.ruler.push('menu_sapin', {
+    tag: 'menu_sapin',
+    wrap: 'div.menu_sapin'
+  });
+
 }
 
 export function setup(helper) {
@@ -1632,7 +1716,24 @@ export function setup(helper) {
     'div.infoae',
     'div.infoaf',
     'div.infoag',
-    'div.infoah'
+    'div.infoah',
+    'div.menu_orange',
+    'div.menu_orange',
+    'div.menu_bleu',
+    'div.menu_jaune',
+    'div.menu_violet',
+    'div.menu_vert',
+    'div.menu_rouge',
+    'div.menu_cyan',
+    'div.menu_rose',
+    'div.menu_parme',
+    'div.menu_gris',
+    'div.menu_vertfluo',
+    'div.menu_rosepale',
+    'div.menu_champions',
+    'div.menu_conference',
+    'div.menu_salmon',
+    'div.menu_sapin'
   ]);
 
 
@@ -1914,6 +2015,23 @@ export function setup(helper) {
   replaceBBCode("strikerd", contents => ['div', {'class': 'strikerd'}].concat(contents));
   replaceBBCode("strikere", contents => ['div', {'class': 'strikere'}].concat(contents));
   replaceBBCode("grootsudamericana", contents => ['div', {'class': 'grootsudamericana'}].concat(contents));
+  replaceBBCode("menu_orange", contents => ['div', {'class': 'menu_orange'}].concat(contents));
+  replaceBBCode("menu_orange", contents => ['div', {'class': 'menu_orange'}].concat(contents));
+  replaceBBCode("menu_bleu", contents => ['div', {'class': 'menu_bleu'}].concat(contents));
+  replaceBBCode("menu_jaune", contents => ['div', {'class': 'menu_jaune'}].concat(contents));
+  replaceBBCode("menu_violet", contents => ['div', {'class': 'menu_violet'}].concat(contents));
+  replaceBBCode("menu_vert", contents => ['div', {'class': 'menu_vert'}].concat(contents));
+  replaceBBCode("menu_rouge", contents => ['div', {'class': 'menu_rouge'}].concat(contents));
+  replaceBBCode("menu_cyan", contents => ['div', {'class': 'menu_cyan'}].concat(contents));
+  replaceBBCode("menu_rose", contents => ['div', {'class': 'menu_rose'}].concat(contents));
+  replaceBBCode("menu_parme", contents => ['div', {'class': 'menu_parme'}].concat(contents));
+  replaceBBCode("menu_gris", contents => ['div', {'class': 'menu_gris'}].concat(contents));
+  replaceBBCode("menu_vertfluo", contents => ['div', {'class': 'menu_vertfluo'}].concat(contents));
+  replaceBBCode("menu_rosepale", contents => ['div', {'class': 'menu_rosepale'}].concat(contents));
+  replaceBBCode("menu_champions", contents => ['div', {'class': 'menu_champions'}].concat(contents));
+  replaceBBCode("menu_conference", contents => ['div', {'class': 'menu_conference'}].concat(contents));
+  replaceBBCode("menu_salmon", contents => ['div', {'class': 'menu_salmon'}].concat(contents));
+  replaceBBCode("menu_sapin", contents => ['div', {'class': 'menu_sapin'}].concat(contents));
 
   ["left", "center", "right", "justify"].forEach(direction => {
     replaceBBCode(direction, contents => ['div', {'style': "text-align:" + direction}].concat(contents));
