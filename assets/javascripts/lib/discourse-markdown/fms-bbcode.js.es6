@@ -1458,6 +1458,217 @@ md.block.bbcode.ruler.push('menu_liberta', {
     wrap: 'div.menu_liberta'
   });
 
+md.block.bbcode.ruler.push('menu_orangepastel', {
+    tag: 'menu_orangepastel',
+    wrap: 'div.menu_orangepastel'
+  });
+  
+md.block.bbcode.ruler.push('menu_jaunepastel', {
+    tag: 'menu_jaunepastel',
+    wrap: 'div.menu_jaunepastel'
+  });
+
+md.block.bbcode.ruler.push('menu_jaunefluo', {
+    tag: 'menu_jaunefluo',
+    wrap: 'div.menu_jaunefluo'
+  });
+
+md.block.bbcode.ruler.push('menu_or', {
+    tag: 'menu_or',
+    wrap: 'div.menu_or'
+  });
+
+md.block.bbcode.ruler.push('menu_orpastel', {
+    tag: 'menu_orpastel',
+    wrap: 'div.menu_orpastel'
+  });
+
+md.block.bbcode.ruler.push('menu_bordeaux', {
+    tag: 'menu_bordeaux',
+    wrap: 'div.menu_bordeaux'
+  });
+
+md.block.bbcode.ruler.push('menu_burgundy', {
+    tag: 'menu_burgundy',
+    wrap: 'div.menu_burgundy'
+  });
+
+md.block.bbcode.ruler.push('menu_rosefluo', {
+    tag: 'menu_rosefluo',
+    wrap: 'div.menu_rosefluo'
+  });
+
+md.block.bbcode.ruler.push('menu_marron', {
+    tag: 'menu_marron',
+    wrap: 'div.menu_marron'
+  });
+
+md.block.bbcode.ruler.push('menu_terracotta', {
+    tag: 'menu_terracotta',
+    wrap: 'div.menu_terracotta'
+  });
+md.block.bbcode.ruler.push('menu_noir', {
+    tag: 'menu_noir',
+    wrap: 'div.menu_noir'
+  });
+  
+md.block.bbcode.ruler.push('menu_blanc', {
+    tag: 'menu_blanc',
+    wrap: 'div.menu_blanc'
+  });
+
+md.block.bbcode.ruler.push('jelly_orange', {
+    tag: 'jelly_orange',
+    wrap: 'div.jelly_orange'
+  });
+
+md.block.bbcode.ruler.push('jelly_orangepastel', {
+    tag: 'jelly_orangepastel',
+    wrap: 'div.jelly_orangepastel'
+  });
+
+md.block.bbcode.ruler.push('jelly_bleu', {
+    tag: 'jelly_bleu',
+    wrap: 'div.jelly_bleu'
+  });
+
+md.block.bbcode.ruler.push('jelly_cyan', {
+    tag: 'jelly_cyan',
+    wrap: 'div.jelly_cyan'
+  });
+
+md.block.bbcode.ruler.push('jelly_liberta', {
+    tag: 'jelly_liberta',
+    wrap: 'div.jelly_liberta'
+  });
+
+md.block.bbcode.ruler.push('jelly_jaunepastel', {
+    tag: 'jelly_jaunepastel',
+    wrap: 'div.jelly_jaunepastel'
+  });
+
+md.block.bbcode.ruler.push('jelly_jaune', {
+    tag: 'jelly_jaune',
+    wrap: 'div.jelly_jaune'
+  });
+
+md.block.bbcode.ruler.push('jelly_jaunefluo', {
+    tag: 'jelly_jaunefluo',
+    wrap: 'div.jelly_jaunefluo'
+  });
+md.block.bbcode.ruler.push('jelly_or', {
+    tag: 'jelly_or',
+    wrap: 'div.jelly_or'
+  });
+  
+md.block.bbcode.ruler.push('jelly_orpastel', {
+    tag: 'jelly_orpastel',
+    wrap: 'div.jelly_orpastel'
+  });
+
+md.block.bbcode.ruler.push('jelly_violet', {
+    tag: 'jelly_violet',
+    wrap: 'div.jelly_violet'
+  });
+
+md.block.bbcode.ruler.push('jelly_parme', {
+    tag: 'jelly_parme',
+    wrap: 'div.jelly_parme'
+  });
+
+md.block.bbcode.ruler.push('jelly_vert', {
+    tag: 'jelly_vert',
+    wrap: 'div.jelly_vert'
+  });
+
+md.block.bbcode.ruler.push('menu_liberta', {
+    tag: 'menu_liberta',
+    wrap: 'div.menu_liberta'
+  });
+
+md.block.bbcode.ruler.push('jelly_vertfluo', {
+    tag: 'jelly_vertfluo',
+    wrap: 'div.jelly_vertfluo'
+  });
+
+md.block.bbcode.ruler.push('jelly_sapin', {
+    tag: 'jelly_sapin',
+    wrap: 'div.jelly_sapin'
+  });
+
+md.block.bbcode.ruler.push('jelly_rouge', {
+    tag: 'jelly_rouge',
+    wrap: 'div.jelly_rouge'
+  });
+
+md.block.bbcode.ruler.push('jelly_bordeaux', {
+    tag: 'jelly_bordeaux',
+    wrap: 'div.jelly_bordeaux'
+  });
+md.block.bbcode.ruler.push('jelly_burgundy', {
+    tag: 'jelly_burgundy',
+    wrap: 'div.jelly_burgundy'
+  });
+  
+md.block.bbcode.ruler.push('jelly_rose', {
+    tag: 'jelly_rose',
+    wrap: 'div.jelly_rose'
+  });
+
+md.block.bbcode.ruler.push('jelly_rosepastel', {
+    tag: 'jelly_rosepastel',
+    wrap: 'div.jelly_rosepastel'
+  });
+
+md.block.bbcode.ruler.push('jelly_salmon', {
+    tag: 'jelly_salmon',
+    wrap: 'div.jelly_salmon'
+  });
+
+md.block.bbcode.ruler.push('jelly_rosefluo', {
+    tag: 'jelly_rosefluo',
+    wrap: 'div.jelly_rosefluo'
+  });
+
+md.block.bbcode.ruler.push('jelly_gris', {
+    tag: 'jelly_gris',
+    wrap: 'div.jelly_gris'
+  });
+
+md.block.bbcode.ruler.push('jelly_marron', {
+    tag: 'jelly_marron',
+    wrap: 'div.jelly_marron'
+  });
+
+md.block.bbcode.ruler.push('jelly_terracotta', {
+    tag: 'jelly_terracotta',
+    wrap: 'div.jelly_terracotta'
+  });
+
+md.block.bbcode.ruler.push('jelly_noir', {
+    tag: 'jelly_noir',
+    wrap: 'div.jelly_noir'
+  });
+
+md.block.bbcode.ruler.push('jelly_blanc', {
+    tag: 'jelly_blanc',
+    wrap: 'div.jelly_blanc'
+  });
+md.block.bbcode.ruler.push('jelly_champions', {
+    tag: 'jelly_champions',
+    wrap: 'div.jelly_champions'
+  });
+
+md.block.bbcode.ruler.push('jelly_conference', {
+    tag: 'jelly_conference',
+    wrap: 'div.jelly_conference'
+  });
+
+md.block.bbcode.ruler.push('jelly_europa', {
+    tag: 'jelly_europa',
+    wrap: 'div.jelly_europa'
+  });
+
 }
 
 export function setup(helper) {
@@ -1740,6 +1951,48 @@ export function setup(helper) {
     'div.menu_salmon',
     'div.menu_sapin',
     'div.menu_liberta',
+    'div.menu_orangepastel',
+    'div.menu_jaunepastel',
+    'div.menu_jaunefluo',
+    'div.menu_or',
+    'div.menu_orpastel',
+    'div.menu_bordeaux',
+    'div.menu_burgundy',
+    'div.menu_rosefluo',
+    'div.menu_marron',
+    'div.menu_terracotta',
+    'div.menu_noir',
+    'div.menu_blanc',
+    'div.jelly_orange',
+    'div.jelly_orangepastel',
+    'div.jelly_bleu',
+    'div.jelly_cyan', 
+    'div.jelly_liberta', 
+    'div.jelly_jaune',
+    'div.jelly_jaunepastel',
+    'div.jelly_jaunefluo',
+    'div.jelly_or',
+    'div.jelly_orpastel',
+    'div.jelly_violet',
+    'div.jelly_parme',
+    'div.jelly_vert',
+    'div.jelly_vertfluo',
+    'div.jelly_sapin',
+    'div.jelly_rouge',
+    'div.jelly_bordeaux',
+    'div.jelly_burgundy',
+    'div.jelly_rose',
+    'div.jelly_rosepastel',
+    'div.jelly_salmon',
+    'div.jelly_rosefluo',
+    'div.jelly_gris',
+    'div.jelly_marron',
+    'div.jelly_terracotta',
+    'div.jelly_noir',
+    'div.jelly_blanc',
+    'div.jelly_champions',
+    'div.jelly_conference',
+    'div.jelly_europa'
   ]);
 
 
@@ -2039,6 +2292,48 @@ export function setup(helper) {
   replaceBBCode("menu_salmon", contents => ['div', {'class': 'menu_salmon'}].concat(contents));
   replaceBBCode("menu_sapin", contents => ['div', {'class': 'menu_sapin'}].concat(contents));
   replaceBBCode("menu_liberta", contents => ['div', {'class': 'menu_liberta'}].concat(contents));
+  replaceBBCode("menu_orangepastel", contents => ['div', {'class': 'menu_orangepastel'}].concat(contents));
+  replaceBBCode("menu_jaunepastel", contents => ['div', {'class': 'menu_jaunepastel'}].concat(contents));
+  replaceBBCode("menu_jaunefluo", contents => ['div', {'class': 'menu_jaunefluo'}].concat(contents));
+  replaceBBCode("menu_or", contents => ['div', {'class': 'menu_or'}].concat(contents));
+  replaceBBCode("menu_orpastel", contents => ['div', {'class': 'menu_orpastel'}].concat(contents));
+  replaceBBCode("menu_bordeaux", contents => ['div', {'class': 'menu_bordeaux'}].concat(contents));
+  replaceBBCode("menu_burgundy", contents => ['div', {'class': 'menu_burgundy'}].concat(contents));
+  replaceBBCode("menu_rosefluo", contents => ['div', {'class': 'menu_rosefluo'}].concat(contents));
+  replaceBBCode("menu_marron", contents => ['div', {'class': 'menu_marron'}].concat(contents));
+  replaceBBCode("menu_terracotta", contents => ['div', {'class': 'menu_terracotta'}].concat(contents));
+  replaceBBCode("menu_noir", contents => ['div', {'class': 'menu_noir'}].concat(contents));
+  replaceBBCode("menu_blanc", contents => ['div', {'class': 'menu_blanc'}].concat(contents));
+  replaceBBCode("jelly_orange", contents => ['div', {'class': 'jelly_orange'}].concat(contents));
+  replaceBBCode("jelly_orangepastel", contents => ['div', {'class': 'jelly_orangepastel'}].concat(contents));
+  replaceBBCode("jelly_bleu", contents => ['div', {'class': 'jelly_bleu'}].concat(contents));
+  replaceBBCode("jelly_cyan", contents => ['div', {'class': 'jelly_cyan'}].concat(contents));
+  replaceBBCode("jelly_liberta", contents => ['div', {'class': 'jelly_liberta'}].concat(contents));
+  replaceBBCode("jelly_jaune", contents => ['div', {'class': 'jelly_jaune'}].concat(contents));
+  replaceBBCode("jelly_jaunepastel", contents => ['div', {'class': 'jelly_jaunepastel'}].concat(contents));
+  replaceBBCode("jelly_jaunefluo", contents => ['div', {'class': 'jelly_jaunefluo'}].concat(contents));
+  replaceBBCode("jelly_or", contents => ['div', {'class': 'jelly_or'}].concat(contents));
+  replaceBBCode("jelly_orpastel", contents => ['div', {'class': 'jelly_orpastel'}].concat(contents));
+  replaceBBCode("jelly_violet", contents => ['div', {'class': 'jelly_violet'}].concat(contents));
+  replaceBBCode("jelly_parme", contents => ['div', {'class': 'jelly_parme'}].concat(contents));
+  replaceBBCode("jelly_vert", contents => ['div', {'class': 'jelly_vert'}].concat(contents));
+  replaceBBCode("jelly_vertfluo", contents => ['div', {'class': 'jelly_vertfluo'}].concat(contents));
+  replaceBBCode("jelly_sapin", contents => ['div', {'class': 'jelly_sapin'}].concat(contents));
+  replaceBBCode("jelly_rouge", contents => ['div', {'class': 'jelly_rouge'}].concat(contents));
+  replaceBBCode("jelly_bordeaux", contents => ['div', {'class': 'jelly_bordeaux'}].concat(contents));
+  replaceBBCode("jelly_burgundy", contents => ['div', {'class': 'jelly_burgundy'}].concat(contents));
+  replaceBBCode("jelly_rose", contents => ['div', {'class': 'jelly_rose'}].concat(contents));
+  replaceBBCode("jelly_rosepastel", contents => ['div', {'class': 'jelly_rosepastel'}].concat(contents));
+  replaceBBCode("jelly_salmon", contents => ['div', {'class': 'jelly_salmon'}].concat(contents));
+  replaceBBCode("jelly_rosefluo", contents => ['div', {'class': 'jelly_rosefluo'}].concat(contents));
+  replaceBBCode("jelly_gris", contents => ['div', {'class': 'jelly_gris'}].concat(contents));
+  replaceBBCode("jelly_marron", contents => ['div', {'class': 'jelly_marron'}].concat(contents));
+  replaceBBCode("jelly_terracotta", contents => ['div', {'class': 'jelly_terracotta'}].concat(contents));
+  replaceBBCode("jelly_noir", contents => ['div', {'class': 'jelly_noir'}].concat(contents));
+  replaceBBCode("jelly_blanc", contents => ['div', {'class': 'jelly_blanc'}].concat(contents));
+  replaceBBCode("jelly_champions", contents => ['div', {'class': 'jelly_champions'}].concat(contents));
+  replaceBBCode("jelly_conference", contents => ['div', {'class': 'jelly_conference'}].concat(contents));
+  replaceBBCode("jelly_europa", contents => ['div', {'class': 'jelly_europa'}].concat(contents));
 
   ["left", "center", "right", "justify"].forEach(direction => {
     replaceBBCode(direction, contents => ['div', {'style': "text-align:" + direction}].concat(contents));
