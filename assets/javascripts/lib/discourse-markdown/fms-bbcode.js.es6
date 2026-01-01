@@ -1428,9 +1428,9 @@ md.block.bbcode.ruler.push('menu_vertfluo', {
     wrap: 'div.menu_vertfluo'
   });
 
-md.block.bbcode.ruler.push('menu_rosepale', {
-    tag: 'menu_rosepale',
-    wrap: 'div.menu_rosepale'
+md.block.bbcode.ruler.push('menu_rosepastel', {
+    tag: 'menu_rosepastel',
+    wrap: 'div.menu_rosepastel'
   });
 
 md.block.bbcode.ruler.push('menu_champions', {
@@ -1945,7 +1945,7 @@ export function setup(helper) {
     'div.menu_parme',
     'div.menu_gris',
     'div.menu_vertfluo',
-    'div.menu_rosepale',
+    'div.menu_rosepastel',
     'div.menu_champions',
     'div.menu_conference',
     'div.menu_salmon',
@@ -2286,7 +2286,7 @@ export function setup(helper) {
   replaceBBCode("menu_parme", contents => ['div', {'class': 'menu_parme'}].concat(contents));
   replaceBBCode("menu_gris", contents => ['div', {'class': 'menu_gris'}].concat(contents));
   replaceBBCode("menu_vertfluo", contents => ['div', {'class': 'menu_vertfluo'}].concat(contents));
-  replaceBBCode("menu_rosepale", contents => ['div', {'class': 'menu_rosepale'}].concat(contents));
+  replaceBBCode("menu_rosepastel", contents => ['div', {'class': 'menu_rosepastel'}].concat(contents));
   replaceBBCode("menu_champions", contents => ['div', {'class': 'menu_champions'}].concat(contents));
   replaceBBCode("menu_conference", contents => ['div', {'class': 'menu_conference'}].concat(contents));
   replaceBBCode("menu_salmon", contents => ['div', {'class': 'menu_salmon'}].concat(contents));
