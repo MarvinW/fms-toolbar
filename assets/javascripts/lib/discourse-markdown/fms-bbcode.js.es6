@@ -821,6 +821,26 @@ md.block.bbcode.ruler.push('diamond_bar', {
           tag: 'diamond_bar',
           wrap: 'div.diamond_bar'
         });
+
+md.block.bbcode.ruler.push('fmslife', {
+          tag: 'fmslife',
+          wrap: 'div.fmslife'
+        });
+      
+md.block.bbcode.ruler.push('fmslife_progress', {
+          tag: 'fmslife_progress',
+          wrap: 'div.fmslife_progress'
+        });
+      
+md.block.bbcode.ruler.push('fmslife_striped', {
+          tag: 'fmslife_striped',
+          wrap: 'div.fmslife_striped'
+        });
+      
+md.block.bbcode.ruler.push('fsmlife_bar', {
+          tag: 'fsmlife_bar',
+          wrap: 'div.fsmlife_bar'
+        });
   
 md.block.bbcode.ruler.push('download_tab', {
           tag: 'download_tab',
@@ -1802,6 +1822,10 @@ export function setup(helper) {
     'div.diamond_progress',
     'div.diamond_striped',
     'div.diamond_bar',
+    'div.fmslife',
+    'div.fmslife_progress',
+    'div.fmslife_striped',
+    'div.fmslife_bar',
     'div.download_tab',
     'div.download_button',
     'div.malakai',
@@ -2223,6 +2247,10 @@ export function setup(helper) {
   replaceBBCode("diamond_progress", contents => ['div', {'class': 'diamond_progress'}].concat(contents));
   replaceBBCode("diamond_striped", contents => ['div', {'class': 'diamond_striped'}].concat(contents));
   replaceBBCode("diamond_bar", contents => ['div', {'class': 'diamond_bar'}].concat(contents));
+  replaceBBCode("fmslife", contents => ['div', {'class': 'fmslife'}].concat(contents));
+  replaceBBCode("fmslife_progress", contents => ['div', {'class': 'fmslife_progress'}].concat(contents));
+  replaceBBCode("fmslife_striped", contents => ['div', {'class': 'fmslife_striped'}].concat(contents));
+  replaceBBCode("fmslife_bar", contents => ['div', {'class': 'fmslife_bar'}].concat(contents));
   replaceBBCode("download_tab", contents => ['div', {'class': 'download_tab'}].concat(contents));
   replaceBBCode("download_button", contents => ['div', {'class': 'download_button'}].concat(contents));
   replaceBBCode("grootrecopa", contents => ['div', {'class': 'grootrecopa'}].concat(contents));
