@@ -3,7 +3,7 @@ import { onToolbarCreate } from 'discourse/components/d-editor';
 
 function initializePlugin(api)
 {
-  const siteSettings = api.container.lookup('site-settings:main');
+  const siteSettings = api.container.lookup("service:site-settings");
 
   if (siteSettings.fmstlb_ui_enabled) {
     api.onToolbarCreate(toolbar => {
