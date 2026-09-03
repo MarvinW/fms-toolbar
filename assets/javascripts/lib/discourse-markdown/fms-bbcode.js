@@ -1,7 +1,3 @@
-import { registerOption } from 'pretty-text/pretty-text';
-
-registerOption((siteSettings, opts) => opts.features["fms-bbcode"] = true);
-
 function replaceFontColor (text) {
   while (text !== (text = text.replace(/\[color=([^\]]+)\]((?:(?!\[color=[^\]]+\]|\[\/color\])[\S\s])*)\[\/color\]/ig, function (match, p1, p2) {
     return `<font color='${p1}'>${p2}</font>`;
@@ -12,13 +8,6 @@ function replaceFontColor (text) {
 function replaceFontSize (text) {
   while (text !== (text = text.replace(/\[size=([^\]]+)\]((?:(?!\[size=[^\]]+\]|\[\/size\])[\S\s])*)\[\/size\]/ig, function (match, p1, p2) {
     return `<font size='${p1}'>${p2}</font>`;
-  })));
-  return text;
-}
-
-function replaceFontFace (text) {
-  while (text !== (text = text.replace(/\[font=([^\]]+)\]((?:(?!\[font=[^\]]+\]|\[\/font\])[\S\s])*)\[\/font\]/ig, function (match, p1, p2) {
-    return `<font face='${p1}'>${p2}</font>`;
   })));
   return text;
 }
@@ -58,7 +47,6 @@ function setupMarkdownIt(md) {
 
   ruler.push('bgcolor', {
     tag: 'bgcolor',
-
     wrap: wrap('span', 'style', tagInfo => 'background-color:' + tagInfo.attrs._default.trim())
   });
 
@@ -117,1574 +105,1573 @@ function setupMarkdownIt(md) {
     wrap: wrap('div', 'style', ()=>'text-align:justify')
   });
 
-  md.block.bbcode.ruler.push('image', {
+  ruler.push('image', {
     tag: 'image',
     wrap: 'div.image'
   });
 
-  md.block.bbcode.ruler.push('image-hover', {
+  ruler.push('image-hover', {
     tag: 'image-hover',
     wrap: 'div.image-hover'
   });
 
-  md.block.bbcode.ruler.push('playera', {
+  ruler.push('playera', {
     tag: 'playera',
     wrap: 'img.playera'
   });
 
-  md.block.bbcode.ruler.push('playerb', {
+  ruler.push('playerb', {
     tag: 'playerb',
     wrap: 'img.playerb'
   });
 
-  md.block.bbcode.ruler.push('playerc', {
+  ruler.push('playerc', {
     tag: 'playerc',
     wrap: 'img.playerc'
   });
 
-  md.block.bbcode.ruler.push('playerd', {
+  ruler.push('playerd', {
     tag: 'playerd',
     wrap: 'img.playerd'
   });
   
-  md.block.bbcode.ruler.push('playere', {
+  ruler.push('playere', {
     tag: 'playere',
     wrap: 'img.playere'
   });
   
-  md.block.bbcode.ruler.push('playerf', {
+  ruler.push('playerf', {
     tag: 'playerf',
     wrap: 'img.playerf'
   });
   
-  md.block.bbcode.ruler.push('playerg', {
+  ruler.push('playerg', {
     tag: 'playerg',
     wrap: 'img.playerg'
   });
   
-  md.block.bbcode.ruler.push('playerh', {
+  ruler.push('playerh', {
     tag: 'playerh',
     wrap: 'img.playerh'
   });
   
-  md.block.bbcode.ruler.push('playeri', {
+  ruler.push('playeri', {
     tag: 'playeri',
     wrap: 'img.playeri'
   });
   
-  md.block.bbcode.ruler.push('playerj', {
+  ruler.push('playerj', {
     tag: 'playerj',
     wrap: 'img.playerj'
   });
   
-  md.block.bbcode.ruler.push('playerk', {
+  ruler.push('playerk', {
     tag: 'playerk',
     wrap: 'img.playerk'
   });
   
-  md.block.bbcode.ruler.push('playerl', {
+  ruler.push('playerl', {
     tag: 'playerl',
     wrap: 'img.playerl'
   });
   
-  md.block.bbcode.ruler.push('playerm', {
+  ruler.push('playerm', {
     tag: 'playerm',
     wrap: 'img.playerm'
   });
   
-  md.block.bbcode.ruler.push('playern', {
+  ruler.push('playern', {
     tag: 'playern',
     wrap: 'img.playern'
   });
   
-  md.block.bbcode.ruler.push('playero', {
+  ruler.push('playero', {
     tag: 'playero',
     wrap: 'img.playero'
   });
   
-  md.block.bbcode.ruler.push('playerp', {
+  ruler.push('playerp', {
     tag: 'playerp',
     wrap: 'img.playerp'
   });
   
-  md.block.bbcode.ruler.push('playerq', {
+  ruler.push('playerq', {
     tag: 'playerq',
     wrap: 'img.playerq'
   });
   
-  md.block.bbcode.ruler.push('playerr', {
+  ruler.push('playerr', {
     tag: 'playerr',
     wrap: 'img.playerr'
   });
   
-  md.block.bbcode.ruler.push('players', {
+  ruler.push('players', {
     tag: 'players',
     wrap: 'img.players'
   });
   
-  md.block.bbcode.ruler.push('playert', {
+  ruler.push('playert', {
       tag: 'playert',
       wrap: 'img.playert'
     });
   
-  md.block.bbcode.ruler.push('playeru', {
+  ruler.push('playeru', {
     tag: 'playeru',
     wrap: 'img.playeru'
   });
   
-  md.block.bbcode.ruler.push('playerv', {
+  ruler.push('playerv', {
     tag: 'playerv',
     wrap: 'img.playerv'
   });
 
-  md.block.bbcode.ruler.push('playerw', {
+  ruler.push('playerw', {
     tag: 'playerw',
     wrap: 'img.playerw'
   });
   
-  md.block.bbcode.ruler.push('playerx', {
+  ruler.push('playerx', {
     tag: 'playerx',
     wrap: 'img.playerx'
   });
   
-  md.block.bbcode.ruler.push('playery', {
+  ruler.push('playery', {
     tag: 'playery',
     wrap: 'img.playery'
   });
   
-  md.block.bbcode.ruler.push('playerz', {
+  ruler.push('playerz', {
     tag: 'playerz',
     wrap: 'img.playerz'
   });
   
-  md.block.bbcode.ruler.push('playeraa', {
+  ruler.push('playeraa', {
     tag: 'playeraa',
     wrap: 'img.playeraa'
   });
   
-  md.block.bbcode.ruler.push('playerab', {
+  ruler.push('playerab', {
     tag: 'playerab',
     wrap: 'img.playerab'
   });
   
-  md.block.bbcode.ruler.push('playerac', {
+  ruler.push('playerac', {
     tag: 'playerac',
     wrap: 'img.playerac'
   });
   
-  md.block.bbcode.ruler.push('playerad', {
+  ruler.push('playerad', {
     tag: 'playerad',
     wrap: 'img.playerad'
   });
   
-  md.block.bbcode.ruler.push('playerae', {
+  ruler.push('playerae', {
     tag: 'playerae',
     wrap: 'img.playerae'
   });
   
-  md.block.bbcode.ruler.push('playeraf', {
+  ruler.push('playeraf', {
     tag: 'playeraf',
     wrap: 'img.playeraf'
   });
   
-  md.block.bbcode.ruler.push('playerag', {
+  ruler.push('playerag', {
     tag: 'playerag',
     wrap: 'img.playerag'
   });
   
-  md.block.bbcode.ruler.push('playerah', {
+  ruler.push('playerah', {
     tag: 'playerah',
     wrap: 'img.playerah'
   });
 
-  md.block.bbcode.ruler.push('infoa', {
+  ruler.push('infoa', {
     tag: 'infoa',
     wrap: 'div.infoa'
   });
 
-  md.block.bbcode.ruler.push('infob', {
+  ruler.push('infob', {
     tag: 'infob',
     wrap: 'div.infob'
   });
 
-  md.block.bbcode.ruler.push('infoc', {
+  ruler.push('infoc', {
     tag: 'infoc',
     wrap: 'div.infoc'
   });
 
-md.block.bbcode.ruler.push('infod', {
+  ruler.push('infod', {
   tag: 'infod',
   wrap: 'div.infod'
 });
 
-md.block.bbcode.ruler.push('infoe', {
+  ruler.push('infoe', {
   tag: 'infoe',
   wrap: 'div.infoe'
 });
 
-md.block.bbcode.ruler.push('infof', {
+  ruler.push('infof', {
   tag: 'infof',
   wrap: 'div.infof'
 });
 
-md.block.bbcode.ruler.push('infog', {
+  ruler.push('infog', {
   tag: 'infog',
   wrap: 'div.infog'
 });
 
-md.block.bbcode.ruler.push('infoh', {
+  ruler.push('infoh', {
   tag: 'infoh',
   wrap: 'div.infoh'
 });
 
-md.block.bbcode.ruler.push('infoi', {
+  ruler.push('infoi', {
   tag: 'infoi',
   wrap: 'div.infoi'
 });
 
-md.block.bbcode.ruler.push('infoj', {
+  ruler.push('infoj', {
   tag: 'infoj',
   wrap: 'div.infoj'
 });
 
-md.block.bbcode.ruler.push('infok', {
+  ruler.push('infok', {
   tag: 'infok',
   wrap: 'div.infok'
 });
 
-md.block.bbcode.ruler.push('infol', {
+  ruler.push('infol', {
   tag: 'infol',
   wrap: 'div.infol'
 });
 
-md.block.bbcode.ruler.push('infom', {
+  ruler.push('infom', {
   tag: 'infom',
   wrap: 'div.infom'
 });
 
-md.block.bbcode.ruler.push('infon', {
+  ruler.push('infon', {
   tag: 'infon',
   wrap: 'div.infon'
 });
 
-md.block.bbcode.ruler.push('infoo', {
+  ruler.push('infoo', {
   tag: 'infoo',
   wrap: 'div.infoo'
 });
 
-md.block.bbcode.ruler.push('infop', {
+  ruler.push('infop', {
   tag: 'infop',
   wrap: 'div.infop'
 });
 
-md.block.bbcode.ruler.push('infoq', {
+  ruler.push('infoq', {
   tag: 'infoq',
   wrap: 'div.infoq'
 });
 
-md.block.bbcode.ruler.push('infor', {
+  ruler.push('infor', {
   tag: 'infor',
   wrap: 'div.infor'
 });
 
-md.block.bbcode.ruler.push('infos', {
+  ruler.push('infos', {
   tag: 'infos',
   wrap: 'div.infos'
 });
 
-md.block.bbcode.ruler.push('infot', {
+  ruler.push('infot', {
     tag: 'infot',
     wrap: 'div.infot'
   });
 
-md.block.bbcode.ruler.push('infou', {
+  ruler.push('infou', {
   tag: 'infou',
   wrap: 'div.infou'
 });
 
-md.block.bbcode.ruler.push('infov', {
+  ruler.push('infov', {
   tag: 'infov',
   wrap: 'div.infov'
 });
 
-md.block.bbcode.ruler.push('infow', {
+  ruler.push('infow', {
   tag: 'infow',
   wrap: 'div.infow'
 });
 
-md.block.bbcode.ruler.push('infox', {
+  ruler.push('infox', {
   tag: 'infox',
   wrap: 'div.infox'
 });
 
-md.block.bbcode.ruler.push('infoy', {
+  ruler.push('infoy', {
   tag: 'infoy',
   wrap: 'div.infoy'
 });
 
-md.block.bbcode.ruler.push('infoz', {
+  ruler.push('infoz', {
   tag: 'infoz',
   wrap: 'div.infoz'
 });
 
-md.block.bbcode.ruler.push('infoaa', {
+  ruler.push('infoaa', {
   tag: 'infoaa',
   wrap: 'div.infoaa'
 });
 
-md.block.bbcode.ruler.push('infoab', {
+  ruler.push('infoab', {
   tag: 'infoab',
   wrap: 'div.infoab'
 });
 
-md.block.bbcode.ruler.push('infoac', {
+  ruler.push('infoac', {
   tag: 'infoac',
   wrap: 'div.infoac'
 });
 
-md.block.bbcode.ruler.push('infoad', {
+  ruler.push('infoad', {
   tag: 'infoad',
   wrap: 'div.infoad'
 });
 
-md.block.bbcode.ruler.push('infoae', {
+  ruler.push('infoae', {
   tag: 'infoae',
   wrap: 'div.infoae'
 });
 
-md.block.bbcode.ruler.push('infoaf', {
+  ruler.push('infoaf', {
   tag: 'infoaf',
   wrap: 'div.infoaf'
 });
 
-md.block.bbcode.ruler.push('infoag', {
+  ruler.push('infoag', {
   tag: 'infoag',
   wrap: 'div.infoag'
 });
 
-md.block.bbcode.ruler.push('infoah', {
+  ruler.push('infoah', {
   tag: 'infoah',
   wrap: 'div.infoah'
 });
 
-  md.block.bbcode.ruler.push('coltaba', {
+  ruler.push('coltaba', {
     tag: 'coltaba',
     wrap: 'div.coltaba'
   });
 
-  md.block.bbcode.ruler.push('coltabb', {
+  ruler.push('coltabb', {
     tag: 'coltabb',
     wrap: 'div.coltabb'
   });
 
-  md.block.bbcode.ruler.push('coltabc', {
+  ruler.push('coltabc', {
     tag: 'coltabc',
     wrap: 'div.coltabc'
   });
 
-  md.block.bbcode.ruler.push('coltabd', {
+  ruler.push('coltabd', {
     tag: 'coltabd',
     wrap: 'div.coltabd'
   });
 
-  md.block.bbcode.ruler.push('coltabe', {
+  ruler.push('coltabe', {
     tag: 'coltabe',
     wrap: 'div.coltabe'
   });
 
-  md.block.bbcode.ruler.push('coltabf', {
+  ruler.push('coltabf', {
     tag: 'coltabf',
     wrap: 'div.coltabf'
   });
 
-  md.block.bbcode.ruler.push('coltabg', {
+  ruler.push('coltabg', {
     tag: 'coltabg',
     wrap: 'div.coltabg'
   });
 
-  md.block.bbcode.ruler.push('coltabh', {
+  ruler.push('coltabh', {
     tag: 'coltabh',
     wrap: 'div.coltabh'
   });
 
-  md.block.bbcode.ruler.push('coltabi', {
+  ruler.push('coltabi', {
     tag: 'coltabi',
     wrap: 'div.coltabi'
   });
 
-  md.block.bbcode.ruler.push('coltabj', {
+  ruler.push('coltabj', {
     tag: 'coltabj',
     wrap: 'div.coltabj'
   });
 
-  md.block.bbcode.ruler.push('coltabk', {
+  ruler.push('coltabk', {
     tag: 'coltabk',
     wrap: 'div.coltabk'
   });
 
-  md.block.bbcode.ruler.push('coltabl', {
+  ruler.push('coltabl', {
     tag: 'coltabl',
     wrap: 'div.coltabl'
   });
 
-  md.block.bbcode.ruler.push('coltabm', {
+  ruler.push('coltabm', {
     tag: 'coltabm',
     wrap: 'div.coltabm'
   });
 
-  md.block.bbcode.ruler.push('coltabn', {
+  ruler.push('coltabn', {
     tag: 'coltabn',
     wrap: 'div.coltabn'
   });
 
-  md.block.bbcode.ruler.push('coltabo', {
+  ruler.push('coltabo', {
     tag: 'coltabo',
     wrap: 'div.coltabo'
   });
 
-  md.block.bbcode.ruler.push('coltabp', {
+  ruler.push('coltabp', {
     tag: 'coltabp',
     wrap: 'div.coltabp'
   });
 
-  md.block.bbcode.ruler.push('coltabq', {
+  ruler.push('coltabq', {
     tag: 'coltabq',
     wrap: 'div.coltabq'
   });
 
-  md.block.bbcode.ruler.push('coltabr', {
+  ruler.push('coltabr', {
     tag: 'coltabr',
     wrap: 'div.coltabr'
   });
 
-  md.block.bbcode.ruler.push('coltabt', {
+  ruler.push('coltabt', {
     tag: 'coltabt',
     wrap: 'div.coltabt'
   });
 
-  md.block.bbcode.ruler.push('coltabs', {
+  ruler.push('coltabs', {
     tag: 'coltabs',
     wrap: 'div.coltabs'
   });
 
-  md.block.bbcode.ruler.push('coltabu', {
+  ruler.push('coltabu', {
     tag: 'coltabu',
     wrap: 'div.coltabu'
   });
 
-  md.block.bbcode.ruler.push('coltabv', {
+  ruler.push('coltabv', {
     tag: 'coltabv',
     wrap: 'div.coltabv'
   });
 
-  md.block.bbcode.ruler.push('coltabw', {
+  ruler.push('coltabw', {
     tag: 'coltabw',
     wrap: 'div.coltabw'
   });
 
-  md.block.bbcode.ruler.push('coltabx', {
+  ruler.push('coltabx', {
     tag: 'coltabx',
     wrap: 'div.coltabx'
   });
 
-  md.block.bbcode.ruler.push('coltaby', {
+  ruler.push('coltaby', {
     tag: 'coltaby',
     wrap: 'div.coltaby'
   });
 
-  md.block.bbcode.ruler.push('coltabz', {
+  ruler.push('coltabz', {
     tag: 'coltabz',
     wrap: 'div.coltabz'
   });
 
-  md.block.bbcode.ruler.push('coltabface', {
+  ruler.push('coltabface', {
     tag: 'coltabface',
     wrap: 'div.coltabface'
   });
 
-  md.block.bbcode.ruler.push('coltablogo', {
+  ruler.push('coltablogo', {
     tag: 'coltablogo',
     wrap: 'div.coltablogo'
   });
   
-  md.block.bbcode.ruler.push('tabstadereims', {
+  ruler.push('tabstadereims', {
     tag: 'tabstadereims',
     wrap: 'div.tabstadereims'
   });
   
-  md.block.bbcode.ruler.push('tabmonaco', {
+  ruler.push('tabmonaco', {
     tag: 'tabmonaco',
     wrap: 'div.tabmonaco'
   });
   
-  md.block.bbcode.ruler.push('tabparis', {
+  ruler.push('tabparis', {
     tag: 'tabparis',
     wrap: 'div.tabparis'
   });
   
-  md.block.bbcode.ruler.push('tabnantes', {
+  ruler.push('tabnantes', {
     tag: 'tabnantes',
     wrap: 'div.tabnantes'
   });
   
-  md.block.bbcode.ruler.push('tabmontpellier', {
+  ruler.push('tabmontpellier', {
     tag: 'tabmontpellier',
     wrap: 'div.tabmontpellier'
   });
   
-  md.block.bbcode.ruler.push('tabbordeaux', {
+  ruler.push('tabbordeaux', {
     tag: 'tabbordeaux',
     wrap: 'div.tabbordeaux'
   });
   
-  md.block.bbcode.ruler.push('tabmetz', {
+  ruler.push('tabmetz', {
     tag: 'tabmetz',
     wrap: 'div.tabmetz'
   });
   
-  md.block.bbcode.ruler.push('tabsainte', {
+  ruler.push('tabsainte', {
     tag: 'tabsainte',
     wrap: 'div.tabsainte'
   });
   
-  md.block.bbcode.ruler.push('tabmarseille', {
+  ruler.push('tabmarseille', {
     tag: 'tabmarseille',
     wrap: 'div.tabmarseille'
   });
   
-  md.block.bbcode.ruler.push('tablosc', {
+  ruler.push('tablosc', {
     tag: 'tablosc',
     wrap: 'div.tablosc'
   });
   
-  md.block.bbcode.ruler.push('tabrennes', {
+  ruler.push('tabrennes', {
     tag: 'tabrennes',
     wrap: 'div.tabrennes'
   });
   
-  md.block.bbcode.ruler.push('tabangers', {
+  ruler.push('tabangers', {
     tag: 'tabangers',
     wrap: 'div.tabangers'
   });
 
-  md.block.bbcode.ruler.push('tabtoulouse', {
+  ruler.push('tabtoulouse', {
     tag: 'tabtoulouse',
     wrap: 'div.tabtoulouse'
   });
   
-  md.block.bbcode.ruler.push('tabligue', {
+  ruler.push('tabligue', {
     tag: 'tabligue',
     wrap: 'div.tabligue'
   });
   
-  md.block.bbcode.ruler.push('tabcobresal', {
+  ruler.push('tabcobresal', {
     tag: 'tabcobresal',
     wrap: 'div.tabcobresal'
   });
   
-  md.block.bbcode.ruler.push('tableauaa', {
+  ruler.push('tableauaa', {
     tag: 'tableauaa',
     wrap: 'div.tableauaa'
   });
   
-  md.block.bbcode.ruler.push('tableauab', {
+  ruler.push('tableauab', {
     tag: 'tableauab',
     wrap: 'div.tableauab'
   });
   
-  md.block.bbcode.ruler.push('tableauac', {
+  ruler.push('tableauac', {
     tag: 'tableauac',
     wrap: 'div.tableauac'
   });
   
-  md.block.bbcode.ruler.push('tableauad', {
+  ruler.push('tableauad', {
     tag: 'tableauad',
     wrap: 'div.tableauad'
   });
   
-  md.block.bbcode.ruler.push('tableauae', {
+  ruler.push('tableauae', {
     tag: 'tableauae',
     wrap: 'div.tableauae'
   });
 
-md.block.bbcode.ruler.push('electricpanther', {
+  ruler.push('electricpanther', {
     tag: 'electricpanther',
     wrap: 'div.electricpanther'
   });
   
-  md.block.bbcode.ruler.push('tableauaf', {
+  ruler.push('tableauaf', {
     tag: 'tableauaf',
     wrap: 'div.tableauaf'
   });
   
-  md.block.bbcode.ruler.push('tableauag', {
+  ruler.push('tableauag', {
     tag: 'tableauag',
     wrap: 'div.tableauag'
   });
   
-  md.block.bbcode.ruler.push('tableauah', {
+  ruler.push('tableauah', {
     tag: 'tableauah',
     wrap: 'div.tableauah'
   });
   
-  md.block.bbcode.ruler.push('tableauai', {
+  ruler.push('tableauai', {
     tag: 'tableauai',
     wrap: 'div.tableauai'
   });
   
-  md.block.bbcode.ruler.push('tableauaj', {
+  ruler.push('tableauaj', {
     tag: 'tableauaj',
     wrap: 'div.tableauaj'
   });
   
-  md.block.bbcode.ruler.push('tableauak', {
+  ruler.push('tableauak', {
     tag: 'tableauak',
     wrap: 'div.tableauak'
   });
   
-  md.block.bbcode.ruler.push('bronze', {
+  ruler.push('bronze', {
     tag: 'bronze',
     wrap: 'div.bronze'
   });
 
-  md.block.bbcode.ruler.push('bronze_progress', {
+  ruler.push('bronze_progress', {
     tag: 'bronze_progress',
     wrap: 'div.bronze_progress'
   });
 
-md.block.bbcode.ruler.push('bronze_striped', {
+  ruler.push('bronze_striped', {
     tag: 'bronze_striped',
     wrap: 'div.bronze_striped'
   });
 
-md.block.bbcode.ruler.push('bronze_bar', {
+  ruler.push('bronze_bar', {
     tag: 'bronze_bar',
     wrap: 'div.bronze_bar'
   });
 
-md.block.bbcode.ruler.push('silver', {
+  ruler.push('silver', {
       tag: 'silver',
       wrap: 'div.silver'
     });
   
-md.block.bbcode.ruler.push('silver_progress', {
+  ruler.push('silver_progress', {
       tag: 'silver_progress',
       wrap: 'div.silver_progress'
     });
   
-md.block.bbcode.ruler.push('silver_striped', {
+  ruler.push('silver_striped', {
       tag: 'silver_striped',
       wrap: 'div.silver_striped'
     });
   
-md.block.bbcode.ruler.push('silver_bar', {
+  ruler.push('silver_bar', {
       tag: 'silver_bar',
       wrap: 'div.silver_bar'
     });
 
-md.block.bbcode.ruler.push('gold', {
+  ruler.push('gold', {
           tag: 'gold',
           wrap: 'div.gold'
         });
       
-md.block.bbcode.ruler.push('gold_progress', {
+  ruler.push('gold_progress', {
           tag: 'gold_progress',
           wrap: 'div.gold_progress'
         });
       
-md.block.bbcode.ruler.push('gold_striped', {
+  ruler.push('gold_striped', {
           tag: 'gold_striped',
           wrap: 'div.gold_striped'
         });
       
-md.block.bbcode.ruler.push('gold_bar', {
+  ruler.push('gold_bar', {
           tag: 'gold_bar',
           wrap: 'div.gold_bar'
         });
 
-md.block.bbcode.ruler.push('diamond', {
+  ruler.push('diamond', {
           tag: 'diamond',
           wrap: 'div.diamond'
         });
       
-md.block.bbcode.ruler.push('diamond_progress', {
+  ruler.push('diamond_progress', {
           tag: 'diamond_progress',
           wrap: 'div.diamond_progress'
         });
       
-md.block.bbcode.ruler.push('diamond_striped', {
+  ruler.push('diamond_striped', {
           tag: 'diamond_striped',
           wrap: 'div.diamond_striped'
         });
       
-md.block.bbcode.ruler.push('diamond_bar', {
+  ruler.push('diamond_bar', {
           tag: 'diamond_bar',
           wrap: 'div.diamond_bar'
         });
 
-md.block.bbcode.ruler.push('fmslife', {
+  ruler.push('fmslife', {
           tag: 'fmslife',
           wrap: 'div.fmslife'
         });
       
-md.block.bbcode.ruler.push('fmslife_progress', {
+  ruler.push('fmslife_progress', {
           tag: 'fmslife_progress',
           wrap: 'div.fmslife_progress'
         });
       
-md.block.bbcode.ruler.push('fmslife_striped', {
+  ruler.push('fmslife_striped', {
           tag: 'fmslife_striped',
           wrap: 'div.fmslife_striped'
         });
       
-md.block.bbcode.ruler.push('fsmlife_bar', {
+  ruler.push('fsmlife_bar', {
           tag: 'fsmlife_bar',
           wrap: 'div.fsmlife_bar'
         });
   
-md.block.bbcode.ruler.push('download_tab', {
+  ruler.push('download_tab', {
           tag: 'download_tab',
           wrap: 'div.download_tab'
         });
   
-md.block.bbcode.ruler.push('download_button', {
+  ruler.push('download_button', {
           tag: 'download_button',
           wrap: 'div.download_button'
         });
   
- md.block.bbcode.ruler.push('tableaual', {
+   ruler.push('tableaual', {
     tag: 'tableaual',
     wrap: 'div.tableaual'
   });
  
- md.block.bbcode.ruler.push('tableauam', {
+   ruler.push('tableauam', {
     tag: 'tableauam',
     wrap: 'div.tableauam'
   });
   
- md.block.bbcode.ruler.push('tableauan', {
+   ruler.push('tableauan', {
     tag: 'tableauan',
     wrap: 'div.tableauakn'
   });
   
- md.block.bbcode.ruler.push('tableauap', {
+   ruler.push('tableauap', {
     tag: 'tableauap',
     wrap: 'div.tableauap'
   });
   
- md.block.bbcode.ruler.push('tableauaq', {
+   ruler.push('tableauaq', {
     tag: 'tableauaq',
     wrap: 'div.tableauaq'
   });
 
-  md.block.bbcode.ruler.push('rounded', {
+  ruler.push('rounded', {
     tag: 'rounded',
     wrap: 'div.rounded'
   });
   
- md.block.bbcode.ruler.push('colmacouille', {
+   ruler.push('colmacouille', {
     tag: 'colmacouille',
     wrap: 'div.colmacouille'
   });
   
-  md.block.bbcode.ruler.push('tabsaopaulo', {
+  ruler.push('tabsaopaulo', {
     tag: 'tabsaopaulo',
     wrap: 'div.tabsaopaulo'
   });
   
-  md.block.bbcode.ruler.push('colortaba', {
+  ruler.push('colortaba', {
     tag: 'colortaba',
     wrap: 'div.colortaba'
   });
   
-  md.block.bbcode.ruler.push('colortabb', {
+  ruler.push('colortabb', {
     tag: 'colortabb',
     wrap: 'div.colortabb'
   });
   
-  md.block.bbcode.ruler.push('colortabc', {
+  ruler.push('colortabc', {
     tag: 'colortabc',
     wrap: 'div.colortabc'
   });
   
-  md.block.bbcode.ruler.push('colortabd', {
+  ruler.push('colortabd', {
     tag: 'colortabd',
     wrap: 'div.colortabd'
   });
   
-  md.block.bbcode.ruler.push('colortabe', {
+  ruler.push('colortabe', {
     tag: 'colortabe',
     wrap: 'div.colortabe'
   });
   
-  md.block.bbcode.ruler.push('colortabf', {
+  ruler.push('colortabf', {
     tag: 'colortabf',
     wrap: 'div.colortabf'
   });
   
-  md.block.bbcode.ruler.push('colortabg', {
+  ruler.push('colortabg', {
     tag: 'colortabg',
     wrap: 'div.colortabg'
   });
   
-  md.block.bbcode.ruler.push('colortabh', {
+  ruler.push('colortabh', {
     tag: 'colortabh',
     wrap: 'div.colortabh'
   });
   
-  md.block.bbcode.ruler.push('colortabi', {
+  ruler.push('colortabi', {
     tag: 'colortabi',
     wrap: 'div.colortabi'
   });
   
-  md.block.bbcode.ruler.push('colortabj', {
+  ruler.push('colortabj', {
     tag: 'colortabj',
     wrap: 'div.colortabj'
   });
   
-  md.block.bbcode.ruler.push('colortabk', {
+  ruler.push('colortabk', {
     tag: 'colortabk',
     wrap: 'div.colortabk'
   });
   
-  md.block.bbcode.ruler.push('colortabl', {
+  ruler.push('colortabl', {
     tag: 'colortabl',
     wrap: 'div.colortabl'
   });
   
-  md.block.bbcode.ruler.push('colortabm', {
+  ruler.push('colortabm', {
     tag: 'colortabm',
     wrap: 'div.colortabm'
   });
   
-  md.block.bbcode.ruler.push('colortabn', {
+  ruler.push('colortabn', {
     tag: 'colortabn',
     wrap: 'div.colortabn'
   });
   
-  md.block.bbcode.ruler.push('colortabo', {
+  ruler.push('colortabo', {
     tag: 'colortabo',
     wrap: 'div.colortabo'
   });
   
-  md.block.bbcode.ruler.push('colortabp', {
+  ruler.push('colortabp', {
     tag: 'colortabp',
     wrap: 'div.colortabp'
   });
   
-  md.block.bbcode.ruler.push('colortabq', {
+  ruler.push('colortabq', {
     tag: 'colortabq',
     wrap: 'div.colortabq'
   });
   
-  md.block.bbcode.ruler.push('colortabr', {
+  ruler.push('colortabr', {
     tag: 'colortabr',
     wrap: 'div.colortabr'
   });
   
-  md.block.bbcode.ruler.push('colortabs', {
+  ruler.push('colortabs', {
     tag: 'colortabs',
     wrap: 'div.colortabs'
   });
   
-  md.block.bbcode.ruler.push('colortabt', {
+  ruler.push('colortabt', {
     tag: 'colortabt',
     wrap: 'div.colortabt'
   });
   
-  md.block.bbcode.ruler.push('colortabu', {
+  ruler.push('colortabu', {
     tag: 'colortabu',
     wrap: 'div.colortabu'
   });
   
-  md.block.bbcode.ruler.push('colortabv', {
+  ruler.push('colortabv', {
     tag: 'colortabv',
     wrap: 'div.colortabv'
   });
   
-  md.block.bbcode.ruler.push('colortabw', {
+  ruler.push('colortabw', {
     tag: 'colortabw',
     wrap: 'div.colortabw'
   });
   
-  md.block.bbcode.ruler.push('colortabx', {
+  ruler.push('colortabx', {
     tag: 'colortabx',
     wrap: 'div.colortabx'
   });
   
-  md.block.bbcode.ruler.push('colortaby', {
+  ruler.push('colortaby', {
     tag: 'colortaby',
     wrap: 'div.colortaby'
   });
   
-  
-  md.block.bbcode.ruler.push('tabfm21', {
+  ruler.push('tabfm21', {
     tag: 'tabfm21',
     wrap: 'div.tabfm21'
   });
   
-  md.block.bbcode.ruler.push('bundesliga', {
+  ruler.push('bundesliga', {
     tag: 'bundesliga',
     wrap: 'div.bundesliga'
   });
 
-md.block.bbcode.ruler.push('ligue1uber', {
+  ruler.push('ligue1uber', {
     tag: 'ligue1uber',
     wrap: 'div.ligue1uber'
   });
 
-md.block.bbcode.ruler.push('ligasantander', {
+  ruler.push('ligasantander', {
     tag: 'ligasantander',
     wrap: 'div.ligasantander'
   });
 
-md.block.bbcode.ruler.push('serieaitalia', {
+  ruler.push('serieaitalia', {
     tag: 'serieaitalia',
     wrap: 'div.serieaitalia'
   });
 
-md.block.bbcode.ruler.push('premierleague', {
+  ruler.push('premierleague', {
     tag: 'premierleague',
     wrap: 'div.premierleague'
   });
 
-md.block.bbcode.ruler.push('championsleague', {
+  ruler.push('championsleague', {
     tag: 'championsleague',
     wrap: 'div.championsleague'
   });
 
-md.block.bbcode.ruler.push('europaleague', {
+  ruler.push('europaleague', {
     tag: 'europaleague',
     wrap: 'div.europaleague'
   });
 
-md.block.bbcode.ruler.push('conferenceleague', {
+  ruler.push('conferenceleague', {
     tag: 'conferenceleague',
     wrap: 'div.conferenceleague'
   });
 
-md.block.bbcode.ruler.push('ligaprofesional', {
+  ruler.push('ligaprofesional', {
     tag: 'ligaprofesional',
     wrap: 'div.ligaprofesional'
   });
 
-md.block.bbcode.ruler.push('classement', {
+  ruler.push('classement', {
     tag: 'classement',
     wrap: 'div.classement'
   });
 
-md.block.bbcode.ruler.push('news', {
+  ruler.push('news', {
     tag: 'news',
     wrap: 'div.news'
   });
 
-md.block.bbcode.ruler.push('groupe', {
+  ruler.push('groupe', {
     tag: 'groupe',
     wrap: 'div.groupe'
   });
   
-md.block.bbcode.ruler.push('saisona', {
+  ruler.push('saisona', {
     tag: 'saisona',
     wrap: 'div.saisona'
   });
   
-md.block.bbcode.ruler.push('saisonb', {
+  ruler.push('saisonb', {
     tag: 'saisonb',
     wrap: 'div.saisonb'
   });
   
-md.block.bbcode.ruler.push('saisonc', {
+  ruler.push('saisonc', {
     tag: 'saisonc',
     wrap: 'div.saisonc'
   });
   
-md.block.bbcode.ruler.push('saisond', {
+  ruler.push('saisond', {
     tag: 'saisond',
     wrap: 'div.saisond'
   });  
   
-md.block.bbcode.ruler.push('saisone', {
+  ruler.push('saisone', {
     tag: 'saisone',
     wrap: 'div.saisone'
   });
   
-  md.block.bbcode.ruler.push('goias', {
+  ruler.push('goias', {
     tag: 'goias',
     wrap: 'div.goias'
   });
   
-  md.block.bbcode.ruler.push('uruguay', {
+  ruler.push('uruguay', {
     tag: 'uruguay',
     wrap: 'div.uruguay'
   });
   
-md.block.bbcode.ruler.push('malakai', {
+  ruler.push('malakai', {
     tag: 'malakai',
     wrap: 'div.malakai'
   });
   
-  md.block.bbcode.ruler.push('aparecidense', {
+  ruler.push('aparecidense', {
     tag: 'aparecidense',
     wrap: 'div.aparecidense'
   });
   
-  md.block.bbcode.ruler.push('montevideo', {
+  ruler.push('montevideo', {
     tag: 'montevideo',
     wrap: 'div.montevideo'
   });
   
-  md.block.bbcode.ruler.push('goiasgardien', {
+  ruler.push('goiasgardien', {
     tag: 'goiasgardien',
     wrap: 'div.goiasgardien'
   });
 
-  md.block.bbcode.ruler.push('grootrecopa', {
+  ruler.push('grootrecopa', {
     tag: 'grootrecopa',
     wrap: 'div.grootrecopa'
   });
 
-  md.block.bbcode.ruler.push('grootliberta', {
+  ruler.push('grootliberta', {
     tag: 'grootliberta',
     wrap: 'div.grootliberta'
   });
 
-  md.block.bbcode.ruler.push('grootsudamericana', {
+  ruler.push('grootsudamericana', {
     tag: 'grootsudamericana',
     wrap: 'div.grootsudamericana'
   });
 
-  md.block.bbcode.ruler.push('electricblue', {
+  ruler.push('electricblue', {
     tag: 'electricblue',
     wrap: 'div.electricblue'
   });
 
-  md.block.bbcode.ruler.push('electricred', {
+  ruler.push('electricred', {
     tag: 'electricred',
     wrap: 'div.electricred'
   });
 
-  md.block.bbcode.ruler.push('electricyellow', {
+  ruler.push('electricyellow', {
     tag: 'electricyellow',
     wrap: 'div.electricyellow'
   });
 
-  md.block.bbcode.ruler.push('electricmenu', {
+  ruler.push('electricmenu', {
       tag: 'electricmenu',
       wrap: 'div.electricmenu'
     });
 
-md.block.bbcode.ruler.push('electricgrey', {
+  ruler.push('electricgrey', {
     tag: 'electricgrey',
     wrap: 'div.electricgrey'
   });
 
-  md.block.bbcode.ruler.push('electricgreen', {
+  ruler.push('electricgreen', {
     tag: 'electricgreen',
     wrap: 'div.electricgreen'
   });
 
-  md.block.bbcode.ruler.push('electricorange', {
+  ruler.push('electricorange', {
     tag: 'electricorange',
     wrap: 'div.electricorange'
   });
 
-  md.block.bbcode.ruler.push('electricviolet', {
+  ruler.push('electricviolet', {
     tag: 'electricviolet',
     wrap: 'div.electricviolet'
   });
 
-  md.block.bbcode.ruler.push('electricfluog', {
+  ruler.push('electricfluog', {
       tag: 'electricfluog',
       wrap: 'div.electricfluog'
     });
 
-  md.block.bbcode.ruler.push('electriccyan', {
+  ruler.push('electriccyan', {
     tag: 'electriccyan',
     wrap: 'div.electriccyan'
   });
 
-  md.block.bbcode.ruler.push('electricpink', {
+  ruler.push('electricpink', {
     tag: 'electricpink',
     wrap: 'div.electricpink'
   });
 
-  md.block.bbcode.ruler.push('electricgold', {
+  ruler.push('electricgold', {
     tag: 'electricgold',
     wrap: 'div.electricgold'
   });
 
-md.block.bbcode.ruler.push('electricdarkblue', {
+  ruler.push('electricdarkblue', {
     tag: 'electricdarkblue',
     wrap: 'div.electricdarkblue'
   });
   
-md.block.bbcode.ruler.push('opensans', {
+  ruler.push('opensans', {
     tag: 'opensans',
     wrap: 'div.opensans'
   });
 
-md.block.bbcode.ruler.push('goal', {
+  ruler.push('goal', {
     tag: 'goal',
     wrap: 'div.goal'
   });
 
-md.block.bbcode.ruler.push('goala', {
+  ruler.push('goala', {
     tag: 'goala',
     wrap: 'div.goala'
   });
 
-md.block.bbcode.ruler.push('goalb', {
+  ruler.push('goalb', {
     tag: 'goalb',
     wrap: 'div.goalb'
   });
 
-
-md.block.bbcode.ruler.push('central_defender', {
+  ruler.push('central_defender', {
     tag: 'central_defender',
     wrap: 'div.central_defender'
   });
 
-md.block.bbcode.ruler.push('central_defendera', {
+  ruler.push('central_defendera', {
     tag: 'central_defendera',
     wrap: 'div.central_defendera'
   });
 
-md.block.bbcode.ruler.push('central_defenderb', {
+  ruler.push('central_defenderb', {
     tag: 'central_defenderb',
     wrap: 'div.central_defenderb'
   });
 
-md.block.bbcode.ruler.push('central_defenderc', {
+  ruler.push('central_defenderc', {
     tag: 'central_defenderc',
     wrap: 'div.central_defenderc'
   });
 
-md.block.bbcode.ruler.push('central_defenderd', {
+  ruler.push('central_defenderd', {
     tag: 'central_defenderd',
     wrap: 'div.central_defenderd'
   });
 
-md.block.bbcode.ruler.push('central_defendere', {
+  ruler.push('central_defendere', {
     tag: 'central_defendere',
     wrap: 'div.central_defendere'
   });
 
-md.block.bbcode.ruler.push('lateral_defender', {
+  ruler.push('lateral_defender', {
     tag: 'lateral_defender',
     wrap: 'div.lateral_defender'
   });
 
-md.block.bbcode.ruler.push('lateral_defendera', {
+  ruler.push('lateral_defendera', {
     tag: 'lateral_defendera',
     wrap: 'div.lateral_defendera'
   });
 
-md.block.bbcode.ruler.push('lateral_defenderb', {
+  ruler.push('lateral_defenderb', {
     tag: 'lateral_defenderb',
     wrap: 'div.lateral_defenderb'
   });
 
-md.block.bbcode.ruler.push('lateral_defenderc', {
+  ruler.push('lateral_defenderc', {
     tag: 'lateral_defenderc',
     wrap: 'div.lateral_defenderc'
   });
 
-md.block.bbcode.ruler.push('lateral_defenderd', {
+  ruler.push('lateral_defenderd', {
     tag: 'lateral_defenderd',
     wrap: 'div.lateral_defenderd'
   });
 
-md.block.bbcode.ruler.push('lateral_defendere', {
+  ruler.push('lateral_defendere', {
     tag: 'lateral_defendere',
     wrap: 'div.lateral_defendere'
   });
 
-
-md.block.bbcode.ruler.push('central_midfielder', {
+  ruler.push('central_midfielder', {
     tag: 'central_midfielder',
     wrap: 'div.central_midfielder'
   });
 
-md.block.bbcode.ruler.push('central_midfieldera', {
+  ruler.push('central_midfieldera', {
     tag: 'central_midfieldera',
     wrap: 'div.central_midfieldera'
   });
 
-md.block.bbcode.ruler.push('central_midfielderb', {
+  ruler.push('central_midfielderb', {
     tag: 'central_midfielderb',
     wrap: 'div.central_midfielderb'
   });
 
-md.block.bbcode.ruler.push('central_midfielderc', {
+  ruler.push('central_midfielderc', {
     tag: 'central_midfielderc',
     wrap: 'div.central_midfielderc'
   });
 
-md.block.bbcode.ruler.push('central_midfielderd', {
+  ruler.push('central_midfielderd', {
     tag: 'central_midfielderd',
     wrap: 'div.central_midfielderd'
   });
 
-md.block.bbcode.ruler.push('central_midfieldere', {
+  ruler.push('central_midfieldere', {
     tag: 'central_midfieldere',
     wrap: 'div.central_midfieldere'
   });
 
-md.block.bbcode.ruler.push('lateral_midfielder', {
+  ruler.push('lateral_midfielder', {
     tag: 'lateral_midfielder',
     wrap: 'div.lateral_midfielder'
   });
 
-md.block.bbcode.ruler.push('lateral_midfieldera', {
+  ruler.push('lateral_midfieldera', {
     tag: 'lateral_midfieldera',
     wrap: 'div.lateral_midfieldera'
   });
 
-md.block.bbcode.ruler.push('lateral_midfielderb', {
+  ruler.push('lateral_midfielderb', {
     tag: 'lateral_midfielderb',
     wrap: 'div.lateral_midfielderb'
   });
 
-md.block.bbcode.ruler.push('lateral_midfielderc', {
+  ruler.push('lateral_midfielderc', {
     tag: 'lateral_midfielderc',
     wrap: 'div.lateral_midfielderc'
   });
 
-md.block.bbcode.ruler.push('lateral_midfielderd', {
+  ruler.push('lateral_midfielderd', {
     tag: 'lateral_midfielderd',
     wrap: 'div.lateral_midfielderd'
   });
 
-md.block.bbcode.ruler.push('lateral_midfieldere', {
+  ruler.push('lateral_midfieldere', {
     tag: 'lateral_midfieldere',
     wrap: 'div.lateral_midfieldere'
   });
 
-md.block.bbcode.ruler.push('striker', {
+  ruler.push('striker', {
     tag: 'striker',
     wrap: 'div.striker'
   });
 
-md.block.bbcode.ruler.push('strikera', {
+  ruler.push('strikera', {
     tag: 'strikera',
     wrap: 'div.strikera'
   });
 
-md.block.bbcode.ruler.push('strikerb', {
+  ruler.push('strikerb', {
     tag: 'strikerb',
     wrap: 'div.strikerb'
   });
 
-md.block.bbcode.ruler.push('strikerc', {
+  ruler.push('strikerc', {
     tag: 'strikerc',
     wrap: 'div.strikerc'
   });
 
-md.block.bbcode.ruler.push('strikerd', {
+  ruler.push('strikerd', {
     tag: 'strikerd',
     wrap: 'div.strikerd'
   });
 
-md.block.bbcode.ruler.push('strikere', {
+  ruler.push('strikere', {
     tag: 'strikere',
     wrap: 'div.strikere'
   });
 
 /* bbcode Menu hover */
 
-md.block.bbcode.ruler.push('menu_orange', {
+  ruler.push('menu_orange', {
     tag: 'menu_orange',
     wrap: 'div.menu_orange'
   });
 
-md.block.bbcode.ruler.push('menu_bleu', {
+  ruler.push('menu_bleu', {
     tag: 'menu_bleu',
     wrap: 'div.menu_bleu'
   });
 
-md.block.bbcode.ruler.push('menu_jaune', {
+  ruler.push('menu_jaune', {
     tag: 'menu_jaune',
     wrap: 'div.menu_jaune'
   });
 
-md.block.bbcode.ruler.push('menu_violet', {
+  ruler.push('menu_violet', {
     tag: 'menu_violet',
     wrap: 'div.menu_violet'
   });
 
-md.block.bbcode.ruler.push('menu_vert', {
+  ruler.push('menu_vert', {
     tag: 'menu_vert',
     wrap: 'div.menu_vert'
   });
 
-md.block.bbcode.ruler.push('menu_rouge', {
+  ruler.push('menu_rouge', {
     tag: 'menu_rouge',
     wrap: 'div.menu_rouge'
   });
 
-
-md.block.bbcode.ruler.push('menu_cyan', {
+  ruler.push('menu_cyan', {
     tag: 'menu_cyan',
     wrap: 'div.menu_cyan'
   });
 
-md.block.bbcode.ruler.push('menu_rose', {
+  ruler.push('menu_rose', {
     tag: 'menu_rose',
     wrap: 'div.menu_rose'
   });
 
-md.block.bbcode.ruler.push('menu_parme', {
+  ruler.push('menu_parme', {
     tag: 'menu_parme',
     wrap: 'div.menu_parme'
   });
 
-md.block.bbcode.ruler.push('menu_gris', {
+  ruler.push('menu_gris', {
     tag: 'menu_gris',
     wrap: 'div.menu_gris'
   });
 
-md.block.bbcode.ruler.push('menu_vertfluo', {
+  ruler.push('menu_vertfluo', {
     tag: 'menu_vertfluo',
     wrap: 'div.menu_vertfluo'
   });
 
-md.block.bbcode.ruler.push('menu_rosepastel', {
+  ruler.push('menu_rosepastel', {
     tag: 'menu_rosepastel',
     wrap: 'div.menu_rosepastel'
   });
 
-md.block.bbcode.ruler.push('menu_champions', {
+  ruler.push('menu_champions', {
     tag: 'menu_champions',
     wrap: 'div.menu_champions'
   });
 
-md.block.bbcode.ruler.push('menu_conference', {
+  ruler.push('menu_conference', {
     tag: 'menu_conference',
     wrap: 'div.menu_conference'
   });
 
-md.block.bbcode.ruler.push('menu_salmon', {
+  ruler.push('menu_salmon', {
     tag: 'menu_salmon',
     wrap: 'div.menu_salmon'
   });
 
-md.block.bbcode.ruler.push('menu_sapin', {
+  ruler.push('menu_sapin', {
     tag: 'menu_sapin',
     wrap: 'div.menu_sapin'
   });
 
-md.block.bbcode.ruler.push('menu_liberta', {
+  ruler.push('menu_liberta', {
     tag: 'menu_liberta',
     wrap: 'div.menu_liberta'
   });
 
-md.block.bbcode.ruler.push('menu_orangepastel', {
+  ruler.push('menu_orangepastel', {
     tag: 'menu_orangepastel',
     wrap: 'div.menu_orangepastel'
   });
   
-md.block.bbcode.ruler.push('menu_jaunepastel', {
+  ruler.push('menu_jaunepastel', {
     tag: 'menu_jaunepastel',
     wrap: 'div.menu_jaunepastel'
   });
 
-md.block.bbcode.ruler.push('menu_jaunefluo', {
+  ruler.push('menu_jaunefluo', {
     tag: 'menu_jaunefluo',
     wrap: 'div.menu_jaunefluo'
   });
 
-md.block.bbcode.ruler.push('menu_or', {
+  ruler.push('menu_or', {
     tag: 'menu_or',
     wrap: 'div.menu_or'
   });
 
-md.block.bbcode.ruler.push('menu_orpastel', {
+  ruler.push('menu_orpastel', {
     tag: 'menu_orpastel',
     wrap: 'div.menu_orpastel'
   });
 
-md.block.bbcode.ruler.push('menu_bordeaux', {
+  ruler.push('menu_bordeaux', {
     tag: 'menu_bordeaux',
     wrap: 'div.menu_bordeaux'
   });
 
-md.block.bbcode.ruler.push('menu_burgundy', {
+  ruler.push('menu_burgundy', {
     tag: 'menu_burgundy',
     wrap: 'div.menu_burgundy'
   });
 
-md.block.bbcode.ruler.push('menu_rosefluo', {
+  ruler.push('menu_rosefluo', {
     tag: 'menu_rosefluo',
     wrap: 'div.menu_rosefluo'
   });
 
-md.block.bbcode.ruler.push('menu_marron', {
+  ruler.push('menu_marron', {
     tag: 'menu_marron',
     wrap: 'div.menu_marron'
   });
 
-md.block.bbcode.ruler.push('menu_terracotta', {
+  ruler.push('menu_terracotta', {
     tag: 'menu_terracotta',
     wrap: 'div.menu_terracotta'
   });
-md.block.bbcode.ruler.push('menu_noir', {
+  
+  ruler.push('menu_noir', {
     tag: 'menu_noir',
     wrap: 'div.menu_noir'
   });
   
-md.block.bbcode.ruler.push('menu_blanc', {
+  ruler.push('menu_blanc', {
     tag: 'menu_blanc',
     wrap: 'div.menu_blanc'
   });
 
-md.block.bbcode.ruler.push('jelly_orange', {
+  ruler.push('jelly_orange', {
     tag: 'jelly_orange',
     wrap: 'div.jelly_orange'
   });
 
-md.block.bbcode.ruler.push('jelly_orangepastel', {
+  ruler.push('jelly_orangepastel', {
     tag: 'jelly_orangepastel',
     wrap: 'div.jelly_orangepastel'
   });
 
-md.block.bbcode.ruler.push('jelly_bleu', {
+  ruler.push('jelly_bleu', {
     tag: 'jelly_bleu',
     wrap: 'div.jelly_bleu'
   });
 
-md.block.bbcode.ruler.push('jelly_cyan', {
+  ruler.push('jelly_cyan', {
     tag: 'jelly_cyan',
     wrap: 'div.jelly_cyan'
   });
 
-md.block.bbcode.ruler.push('jelly_liberta', {
+  ruler.push('jelly_liberta', {
     tag: 'jelly_liberta',
     wrap: 'div.jelly_liberta'
   });
 
-md.block.bbcode.ruler.push('jelly_jaunepastel', {
+  ruler.push('jelly_jaunepastel', {
     tag: 'jelly_jaunepastel',
     wrap: 'div.jelly_jaunepastel'
   });
 
-md.block.bbcode.ruler.push('jelly_jaune', {
+  ruler.push('jelly_jaune', {
     tag: 'jelly_jaune',
     wrap: 'div.jelly_jaune'
   });
 
-md.block.bbcode.ruler.push('jelly_jaunefluo', {
+  ruler.push('jelly_jaunefluo', {
     tag: 'jelly_jaunefluo',
     wrap: 'div.jelly_jaunefluo'
   });
-md.block.bbcode.ruler.push('jelly_or', {
+  
+  ruler.push('jelly_or', {
     tag: 'jelly_or',
     wrap: 'div.jelly_or'
   });
   
-md.block.bbcode.ruler.push('jelly_orpastel', {
+  ruler.push('jelly_orpastel', {
     tag: 'jelly_orpastel',
     wrap: 'div.jelly_orpastel'
   });
 
-md.block.bbcode.ruler.push('jelly_violet', {
+  ruler.push('jelly_violet', {
     tag: 'jelly_violet',
     wrap: 'div.jelly_violet'
   });
 
-md.block.bbcode.ruler.push('jelly_parme', {
+  ruler.push('jelly_parme', {
     tag: 'jelly_parme',
     wrap: 'div.jelly_parme'
   });
 
-md.block.bbcode.ruler.push('jelly_vert', {
+  ruler.push('jelly_vert', {
     tag: 'jelly_vert',
     wrap: 'div.jelly_vert'
   });
 
-md.block.bbcode.ruler.push('menu_liberta', {
+  ruler.push('menu_liberta', {
     tag: 'menu_liberta',
     wrap: 'div.menu_liberta'
   });
 
-md.block.bbcode.ruler.push('jelly_vertfluo', {
+  ruler.push('jelly_vertfluo', {
     tag: 'jelly_vertfluo',
     wrap: 'div.jelly_vertfluo'
   });
 
-md.block.bbcode.ruler.push('jelly_sapin', {
+  ruler.push('jelly_sapin', {
     tag: 'jelly_sapin',
     wrap: 'div.jelly_sapin'
   });
 
-md.block.bbcode.ruler.push('jelly_rouge', {
+  ruler.push('jelly_rouge', {
     tag: 'jelly_rouge',
     wrap: 'div.jelly_rouge'
   });
 
-md.block.bbcode.ruler.push('jelly_bordeaux', {
+  ruler.push('jelly_bordeaux', {
     tag: 'jelly_bordeaux',
     wrap: 'div.jelly_bordeaux'
   });
-md.block.bbcode.ruler.push('jelly_burgundy', {
+  
+  ruler.push('jelly_burgundy', {
     tag: 'jelly_burgundy',
     wrap: 'div.jelly_burgundy'
   });
   
-md.block.bbcode.ruler.push('jelly_rose', {
+  ruler.push('jelly_rose', {
     tag: 'jelly_rose',
     wrap: 'div.jelly_rose'
   });
 
-md.block.bbcode.ruler.push('jelly_rosepastel', {
+  ruler.push('jelly_rosepastel', {
     tag: 'jelly_rosepastel',
     wrap: 'div.jelly_rosepastel'
   });
 
-md.block.bbcode.ruler.push('jelly_salmon', {
+  ruler.push('jelly_salmon', {
     tag: 'jelly_salmon',
     wrap: 'div.jelly_salmon'
   });
 
-md.block.bbcode.ruler.push('jelly_rosefluo', {
+  ruler.push('jelly_rosefluo', {
     tag: 'jelly_rosefluo',
     wrap: 'div.jelly_rosefluo'
   });
 
-md.block.bbcode.ruler.push('jelly_gris', {
+  ruler.push('jelly_gris', {
     tag: 'jelly_gris',
     wrap: 'div.jelly_gris'
   });
 
-md.block.bbcode.ruler.push('jelly_marron', {
+  ruler.push('jelly_marron', {
     tag: 'jelly_marron',
     wrap: 'div.jelly_marron'
   });
 
-md.block.bbcode.ruler.push('jelly_terracotta', {
+  ruler.push('jelly_terracotta', {
     tag: 'jelly_terracotta',
     wrap: 'div.jelly_terracotta'
   });
 
-md.block.bbcode.ruler.push('jelly_noir', {
+  ruler.push('jelly_noir', {
     tag: 'jelly_noir',
     wrap: 'div.jelly_noir'
   });
 
-md.block.bbcode.ruler.push('jelly_blanc', {
+  ruler.push('jelly_blanc', {
     tag: 'jelly_blanc',
     wrap: 'div.jelly_blanc'
   });
-md.block.bbcode.ruler.push('jelly_champions', {
+  ruler.push('jelly_champions', {
     tag: 'jelly_champions',
     wrap: 'div.jelly_champions'
   });
 
-md.block.bbcode.ruler.push('jelly_conference', {
+  ruler.push('jelly_conference', {
     tag: 'jelly_conference',
     wrap: 'div.jelly_conference'
   });
 
-md.block.bbcode.ruler.push('jelly_europa', {
+  ruler.push('jelly_europa', {
     tag: 'jelly_europa',
     wrap: 'div.jelly_europa'
   });
@@ -1693,7 +1680,7 @@ md.block.bbcode.ruler.push('jelly_europa', {
 
 export function setup(helper) {
 
-  helper.whiteList([
+  helper.allowList([
     'div.floatl',
     'div.floatr',
     'div.titrenews',
@@ -2021,7 +2008,7 @@ export function setup(helper) {
 
 
 
-  helper.whiteList({
+  helper.allowList({
     custom(tag, name, value) {
       if (tag === 'span' && name === 'style') {
         return /^font-size:.*|background-color:#?[a-zA-Z0-9]+$/.exec(value);
@@ -2031,6 +2018,10 @@ export function setup(helper) {
         return /^text-align:(center|left|right)$/.exec(value);
       }
     }
+  });
+
+  helper.registerOptions((opts) => {
+    opts.features["fms-bbcode"] = true;
   });
 
   if (helper.markdownIt) {
