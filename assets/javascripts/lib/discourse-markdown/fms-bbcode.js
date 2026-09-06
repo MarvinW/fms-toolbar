@@ -28,7 +28,7 @@ function wrap(tag, attr, callback) {
 }
 
 function setupMarkdownIt(md) {
-  const ruler = md.inline.bbcode.ruler;
+  let ruler = md.inline.bbcode.ruler;
 
   ruler.push('size', {
     tag: 'size',
@@ -71,7 +71,7 @@ function setupMarkdownIt(md) {
   });
 
   ruler.push('hover-image',{
-    tag: 'hover-card',
+    tag: 'hover-image',
     wrap: wrap('span', 'class', ()=>'hover-image')
   });
 
@@ -109,6 +109,8 @@ function setupMarkdownIt(md) {
     tag: 'image',
     wrap: 'div.image'
   });
+
+  ruler = md.block.bbcode.ruler;
 
   ruler.push('image-hover', {
     tag: 'image-hover',
@@ -2015,7 +2017,7 @@ export function setup(helper) {
       }
 
       if (tag === 'div' && name === 'style') {
-        return /^text-align:(center|left|right)$/.exec(value);
+        return /^text-align:(center|left|right|justify)$/.exec(value);
       }
     }
   });
