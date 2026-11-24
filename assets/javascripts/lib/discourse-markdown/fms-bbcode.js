@@ -1678,6 +1678,16 @@ function setupMarkdownIt(md) {
     wrap: 'div.jelly_europa'
   });
 
+  ruler.push('jelly_canard', {
+    tag: 'jelly_canard',
+    wrap: 'div.jelly_canard'
+  });
+
+  ruler.push('menu_canard', {
+    tag: 'menu_canard',
+    wrap: 'div.menu_canard'
+  });
+
 }
 
 export function setup(helper) {
@@ -1976,6 +1986,8 @@ export function setup(helper) {
     'div.menu_terracotta',
     'div.menu_noir',
     'div.menu_blanc',
+    'div.menu_canard',
+    'div.jelly_canard',
     'div.jelly_orange',
     'div.jelly_orangepastel',
     'div.jelly_bleu',
@@ -2355,6 +2367,8 @@ export function setup(helper) {
   replaceBBCode("jelly_champions", contents => ['div', {'class': 'jelly_champions'}].concat(contents));
   replaceBBCode("jelly_conference", contents => ['div', {'class': 'jelly_conference'}].concat(contents));
   replaceBBCode("jelly_europa", contents => ['div', {'class': 'jelly_europa'}].concat(contents));
+  replaceBBCode("menu_canard", contents => ['div', {'class': 'menu_canard'}].concat(contents));
+  replaceBBCode("jelly_canard", contents => ['div', {'class': 'jelly_canard'}].concat(contents));
 
   ["left", "center", "right", "justify"].forEach(direction => {
     replaceBBCode(direction, contents => ['div', {'style': "text-align:" + direction}].concat(contents));
